@@ -1,5 +1,8 @@
+
 <script>
     import Header from '$lib/Header.svelte';
+    import Footer from '$lib/Footer.svelte'
+
 </script>
 
 <Header headingTitle="Contact us!" />
@@ -14,6 +17,8 @@
     <label for="message">Your message</label>
     <textarea name="message" id="meddage"></textarea>
 </form>
+
+<Footer year={2024} />
 
 <style>
     form {
