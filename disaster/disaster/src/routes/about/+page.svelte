@@ -1,7 +1,9 @@
-<!--import Footer from '$lib/Footer.svelte';-->
-<!--import Header from '../../lib/Header.svelte';-->
-<!--<Header/>-->
-<h1>About Page:</h1>
+<script>
+    import Header from '$lib/Header.svelte';
+</script>
+
+<Header headingTitle="About Page" />
+
 <h2>About Us:</h2>
 <h3>Our Mission</h3>
 <p>To Give weather related information to various disaster response groups</p>
@@ -13,3 +15,8 @@
 <p>Photos here ig</p>
 
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+
+
+<style>
+
+</style>

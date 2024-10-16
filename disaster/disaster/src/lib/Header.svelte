@@ -1,14 +1,15 @@
 <script>
-    //export let headingTitle;
+    export let headingTitle;
 </script>
 
 <header>
-    <h1>Home Page</h1>
+
     <nav>
         <a href="/">Home</a>
-        <a href="/">About</a>
-        <a href="/">Contact</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
     </nav>
+    <h1>{headingTitle}</h1>
 </header>
 
 <style>

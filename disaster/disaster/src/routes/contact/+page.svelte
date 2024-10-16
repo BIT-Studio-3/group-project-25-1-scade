@@ -1,8 +1,8 @@
 <script>
-
+    import Header from '$lib/Header.svelte';
 </script>
 
-<h1>Contact us </h1>
+<Header headingTitle="Contact us!" />
 
 <form action="">
     <label for="name">Name

@@ -1,12 +1,11 @@
 <script>
-    
+    import Header from '$lib/Header.svelte';
 </script>
 
 
-<!-- <Header /> -->
+<Header headingTitle="Home Page" />
 
 
-<h1>Home</h1>
 <p>This is the home page of our emergency weather alert application.</p>
 
 
