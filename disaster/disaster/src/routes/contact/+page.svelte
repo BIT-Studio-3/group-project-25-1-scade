@@ -1,4 +1,4 @@
-<script>
+<!--contact page--><script>
 
 </script>
 
