@@ -1,5 +1,8 @@
+
 <script>
     import Footer from '$lib/Footer.svelte'
+
+
 </script>
 
 <h1>Contact us </h1>
