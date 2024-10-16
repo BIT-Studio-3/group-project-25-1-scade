@@ -1,2 +1,14 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    
+</script>
+
+
+<!-- <Header /> -->
+
+
+<h1>Home</h1>
+<p>This is the home page of our emergency weather alert application.</p>
+
+
+
+<!-- <Footer /> -->
