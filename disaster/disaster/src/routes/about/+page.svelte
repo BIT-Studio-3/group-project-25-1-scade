@@ -1,4 +1,7 @@
-<!--import Footer from '$lib/Footer.svelte';-->
+<script>
+    import Footer from '$lib/Footer.svelte';
+</script>
+
 <!--import Header from '../../lib/Header.svelte';-->
 <!--<Header/>-->
 <h1>About Page:</h1>
@@ -13,3 +16,9 @@
 <p>Photos here ig</p>
 
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+
+<Footer year={2024} />
+
+<style>
+
+</style>

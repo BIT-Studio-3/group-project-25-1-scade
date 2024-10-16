@@ -1,5 +1,5 @@
 <script>
-
+    import Footer from '$lib/Footer.svelte'
 </script>
 
 <h1>Contact us </h1>
@@ -14,6 +14,8 @@
     <label for="message">Your message</label>
     <textarea name="message" id="meddage"></textarea>
 </form>
+
+<Footer year={2024} />
 
 <style>
     form {
