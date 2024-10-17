@@ -1,5 +1,6 @@
 <script>
     import Header from '$lib/Header.svelte';
+    import Card from '$lib/Card.svelte';
     import Footer from '$lib/Footer.svelte'
     import Image from '$lib/Image.svelte';
     import homepic from '$lib/Weather.jpg';
@@ -7,7 +8,7 @@
 
 
 <Header headingTitle="Current Events" />
-<p>This is the home page of our emergency weather alert application.</p>
+<Card date="18/10/24" />
 
 <h1>Recent Events</h1>
 
