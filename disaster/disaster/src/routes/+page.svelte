@@ -12,9 +12,9 @@
 
 <h1>Recent Events</h1>
 
-<!-- <div class="imageContainor">
+<div class="imageContainor">
     <Image pic={homepic} picname={"cover"} />
-</div> -->
+</div>
 
 
 <Footer year={2024} />
