@@ -6,14 +6,14 @@
 </script>
 
 
-<Header headingTitle="Home Page" />
-
-
+<Header headingTitle="Current Events" />
 <p>This is the home page of our emergency weather alert application.</p>
 
-<div class="imageContainor">
+<h1>Recent Events</h1>
+
+<!-- <div class="imageContainor">
     <Image pic={homepic} picname={"cover"} />
-</div>
+</div> -->
 
 
 <Footer year={2024} />

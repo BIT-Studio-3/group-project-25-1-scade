@@ -34,4 +34,7 @@
         padding: 2em;
         border: 2px solid rgb(182, 81, 44);
     }
+    h1 {
+        font-size:xxx-large;
+    }
 </style>
