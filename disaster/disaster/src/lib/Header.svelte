@@ -6,6 +6,9 @@
 
     <nav>
         <a href="/">Home</a>
+        <a href="/">Current Events</a>
+        <a href="/">Recent Events</a>
+        <a href="/">Disasters^</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
     </nav>
