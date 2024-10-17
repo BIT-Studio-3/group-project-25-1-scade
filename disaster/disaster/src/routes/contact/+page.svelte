@@ -20,7 +20,7 @@
     <label for="email">Email
         <input type="email" id="email" placeholder="Your email..">
     </label>
-    
+
     <label for="message">Your message</label>
     <textarea name="message" id="message"></textarea>
 
@@ -30,11 +30,11 @@
 <Footer year={2024} />
 
 <style>
- /*   form {
+   form {
         display: flex;
         flex-direction: column;
-    }*/
-
+    }
+    
     input[type=text], textarea {
   width: 100%;
   padding: 12px;
@@ -45,7 +45,6 @@
   margin-bottom: 16px;
   resize: vertical;
 }
-
 input[type=submit] {
   background-color:salmon;
   color: white;
@@ -54,7 +53,6 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
 input[type=submit]:hover {
   background-color: salmon;
 }
