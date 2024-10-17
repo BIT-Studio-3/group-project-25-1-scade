@@ -14,7 +14,7 @@
 
 <style>
     h2 {
-        background-color: skyblue;
+        background-color: rgb(135, 209, 238);
         padding: 0.7em;
     }
     p {
