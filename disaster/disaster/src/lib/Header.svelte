@@ -23,6 +23,7 @@
         padding: 3px 10px;
         text-decoration: none;
         font-weight: bold;
+        font-size: large;
     }
     nav a:hover {
         background-color: #ddd;
