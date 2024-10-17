@@ -4,23 +4,25 @@
     import Header from '$lib/Header.svelte';
     import Footer from '$lib/Footer.svelte'
 
+
 </script>
 
 <Header headingTitle="Contact us!" />
 
 <form action="">
-    <label for="First name">Name
+  <label for="email">Email
+    <input type="email" id="email" placeholder="Your email..">
+</label>
+
+    <label for="First name"> First Name
         <input type="text" id="fname" placeholder="Your name..">
     </label>
 
-    <label for="Last name">Name
+    <label for="Last name"> Last Name
         <input type="text" id="lname" placeholder="Your  last name..">
     </label>
 
-    <label for="email">Email
-        <input type="email" id="email" placeholder="Your email..">
-    </label>
-
+   
     <label for="message">Your message</label>
     <textarea name="message" id="message"></textarea>
 
@@ -33,9 +35,10 @@
    form {
         display: flex;
         flex-direction: column;
-    }
+        padding: 12px;
+    } 
     
-    input[type=text], textarea {
+    input[type=text],input[type = email], textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
