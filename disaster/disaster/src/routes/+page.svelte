@@ -4,6 +4,7 @@
     import Footer from '$lib/Footer.svelte'
     import Image from '$lib/Image.svelte';
     import homepic from '$lib/Weather.jpg';
+    
 </script>
 
 
@@ -13,7 +14,7 @@
 <h1>Recent Events</h1>
 
 <div class="imageContainor">
-    <Image pic={homepic} picname={"cover"} />
+    <Image pic={homepic} picname={"cover"} picwidth={"800px"} picheight={"400px"}/>
 </div>
 
 

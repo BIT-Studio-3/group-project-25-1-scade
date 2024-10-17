@@ -1,20 +1,17 @@
 <script>
     export let pic;
     export let picname;
+    export let picwidth;
+    export let picheight;
 </script>
 
 <div>
-    <img src={pic} alt={picname}>
+    <img src={pic} alt={picname} width={picwidth} height={picheight}>
 </div>
 
 <style>
     div {
-        padding: 1em;
         text-align: center;
-        max-width: 800px;
-    }
-    img {
-        width: 800px
-        
+        margin-right: 10px;
     }
 </style>

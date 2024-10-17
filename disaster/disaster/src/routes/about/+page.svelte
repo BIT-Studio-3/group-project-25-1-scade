@@ -1,6 +1,8 @@
 <script>
     import Header from '$lib/Header.svelte';
     import Footer from '$lib/Footer.svelte';
+    import Image from '$lib/Image.svelte';
+    import homepic from '$lib/Weather.jpg';
 </script>
 
 <Header headingTitle="About Page" />
@@ -15,10 +17,66 @@
 <h3>Our Members</h3>
 <p>Photos here ig</p>
 
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div id="group">
+    <h4>Members</h4>
+
+    <div class="members">
+        <div class="imageContainer">
+            <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
+        </div>
+        <div class="name"><br /> Zandar</div>
+    </div>
+    
+    <div class="members">
+        <div class="imageContainer">
+            <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
+        </div>
+        <div class="name"><br /> Aston</div>
+    </div>
+    
+    <div class="members">
+        <div class="imageContainer">
+            <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
+        </div>
+        <div class="name"><br /> Hazel</div>
+    </div>
+    
+    <div class="members">
+        <div class="imageContainer">
+            <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
+        </div>
+        <div class="name"><br /> Saskia</div>
+    </div>
+    
+    <div class="members">
+        <div class="imageContainer">
+            <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
+        </div>
+        <div class="name"><br /> Joanne</div>
+    </div>
+</div>
 
 <Footer year={2024} />
 
 <style>
+
+.members {
+display: inline-block;
+width: 150px;
+height: 200px;
+vertical-align: top;
+text-align:center;
+margin: 100px; 
+
+}
+.name {
+    display: inline;
+}
+.imageContainer {
+    width: 100%;
+    display: block;
+    padding-right: 100px;
+    padding-left: 10px;
+}
 
 </style>
