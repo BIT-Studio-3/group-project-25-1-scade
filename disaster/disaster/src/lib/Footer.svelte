@@ -9,7 +9,7 @@
         &copy; The information provided is for your personal use in accordance with The Disasters Service website {year}
     </p>
     <nav>
-        <a href="/">Accessibility</a>
+        <a href="/accessibility">Accessibility</a>
         <a href="/howToUse">How to Use</a>
         <a href="/">SiteMap</a>
         <a href="/privacy">Privacy Policy</a>
