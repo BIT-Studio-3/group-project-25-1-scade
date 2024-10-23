@@ -23,6 +23,7 @@
         text-decoration: none;
         font-weight: bold;
         font-size: large;
+        border-radius: 5px;
     }
     nav a:hover {
         background-color: #ddd;
@@ -34,6 +35,7 @@
         background-color: salmon;
         padding: 2em;
         border: 2px solid rgb(182, 81, 44);
+        border-radius: 5px;
     }
     h1 {
         font-size:xxx-large;
