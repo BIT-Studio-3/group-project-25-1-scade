@@ -28,7 +28,6 @@
     .footerStyle{   
         background-color: skyblue;
         padding : 2em;
-        main
         font-weight: bold;
         font-size: large;
         line-height: 1.5;
@@ -36,7 +35,7 @@
         display : flex;
         flex-direction: column;
         min-height: 1vh;
-        margin-top: auto;
+        margin-top: 100px;
     
         /* position: fixed;
         left: 0;
