@@ -6,9 +6,11 @@
 
 <Header headingTitle="Accessibility" />
 
+<h2>Content to be added here</h2>
+
 <Footer year={2024} />
 
 <style>
 
-    
+
 </style>
