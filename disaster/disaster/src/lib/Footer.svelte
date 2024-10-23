@@ -10,7 +10,7 @@
     </p>
     <nav>
         <a href="/">Accessibility</a>
-        <a href="/">How to Use</a>
+        <a href="/howToUse">How to Use</a>
         <a href="/">SiteMap</a>
         <a href="/">Privacy Policy</a>
     </nav>
