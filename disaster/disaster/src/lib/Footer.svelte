@@ -49,6 +49,8 @@
     nav a:hover{
         text-decoration: underline;
         color: red;
+        background-color: #dddd;
+        
     }
     
     /* #feedback{
