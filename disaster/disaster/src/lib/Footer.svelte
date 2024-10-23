@@ -24,7 +24,7 @@
 <style>
 
     .footerStyle{   
-        
+        border-radius: 5px;
         background-color: skyblue;
         padding : 2em;
         font-weight: bold;
