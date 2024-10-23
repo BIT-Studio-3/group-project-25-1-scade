@@ -29,7 +29,6 @@
         border-radius: 5px;
         background-color: skyblue;
         padding : 2em;
-        main
         font-weight: bold;
         font-size: large;
         line-height: 1.5;
