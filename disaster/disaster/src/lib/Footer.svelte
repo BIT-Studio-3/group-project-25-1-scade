@@ -26,6 +26,7 @@
  
 
     .footerStyle{   
+        border-radius: 5px;
         background-color: skyblue;
         padding : 2em;
         main
@@ -52,6 +53,9 @@
     nav a:hover{
         text-decoration: underline;
         color: red;
+        background-color: #dddd;
+        border-radius: 5px;
+
     }
     
     /* #feedback{
