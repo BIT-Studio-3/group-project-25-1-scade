@@ -11,7 +11,6 @@
 <style>
 
     p{   
-        padding : 2em;
         font-weight: bold;
         font-size: large;
         line-height: 1.5;

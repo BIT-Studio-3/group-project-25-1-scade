@@ -14,48 +14,47 @@
 <p>We are a bunch of people trying to do something way above our paygrade <br> lol</p>
 <h3>What We Do</h3>
 <p>We do be trying to make weather. Science Yo!</p>
-<h3>Our Members</h3>
-<p>Photos here ig</p>
+
 
 <div id="group">
-    <h4>Members</h4>
+    <h3>Our Members:</h3>
 
     <div class="members">
         <div class="imageContainer">
             <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
         </div>
-        <div class="name"><br /> Zandar</div>
+        <div class="name"><br /> <p>Zandar</p></div>
     </div>
     
     <div class="members">
         <div class="imageContainer">
             <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
         </div>
-        <div class="name"><br /> Aston</div>
+        <div class="name"><br /> <p>Aston</p></div>
     </div>
     
     <div class="members">
         <div class="imageContainer">
             <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
         </div>
-        <div class="name"><br /> Hazel</div>
+        <div class="name"><br /> <p>Hazel</p></div>
     </div>
     
     <div class="members">
         <div class="imageContainer">
             <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
         </div>
-        <div class="name"><br /> Saskia</div>
+        <div class="name"><br /> <p>Saskia</p></div>
     </div>
     
     <div class="members">
         <div class="imageContainer">
             <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
         </div>
-        <div class="name"><br /> Joanne</div>
+        <div class="name"><br /> <p>Joanne</p></div>
     </div>
 </div>
-
+<br>
 <Footer year={2024} />
 
 <style>
@@ -66,17 +65,20 @@ width: 150px;
 height: 200px;
 vertical-align: top;
 text-align:center;
-margin: 100px; 
+margin-right: 100px; 
+margin-left: 100px; 
 
 }
 .name {
-    display: inline;
+    display: block; 
+    text-align: center; 
+    padding-left: 100px; 
 }
+
 .imageContainer {
     width: 100%;
     display: block;
     padding-right: 100px;
     padding-left: 10px;
 }
-
 </style>
