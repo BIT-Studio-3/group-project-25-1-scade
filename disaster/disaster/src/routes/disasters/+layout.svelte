@@ -14,11 +14,12 @@
     aside {
         padding: 1em;
         margin-right: 1em;
-        background-color: salmon;
+        background-color: skyblue;
         display: flex;
         text-align: center;
         padding: 2em;
-        border: 2px solid rgb(182, 81, 44);
+        border: 2px solid rgb(90, 140, 160);
+        border-radius: 5px;
     }
     aside a {
         color: #f2f2f2;
