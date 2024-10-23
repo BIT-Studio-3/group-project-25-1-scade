@@ -7,7 +7,7 @@
 
 <Header headingTitle="Volcanic Eruptions" />
 
-
+<p>Volcanic Eruptions</p>
 
 <Footer year={2024} />
 

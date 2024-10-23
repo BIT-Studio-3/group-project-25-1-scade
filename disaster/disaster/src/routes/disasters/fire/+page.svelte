@@ -7,7 +7,7 @@
 
 <Header headingTitle="Fires" />
 
-
+<p>Fires</p>
 
 <Footer year={2024} />
 
