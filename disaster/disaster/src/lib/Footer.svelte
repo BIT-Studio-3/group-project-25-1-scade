@@ -12,7 +12,7 @@
         <a href="/">Accessibility</a>
         <a href="/howToUse">How to Use</a>
         <a href="/">SiteMap</a>
-        <a href="/">Privacy Policy</a>
+        <a href="/privacy">Privacy Policy</a>
     </nav>
 <!-- 
     <button id = "feedback">
