@@ -24,6 +24,7 @@
 <style>
 
     .footerStyle{   
+        
         background-color: skyblue;
         padding : 2em;
         font-weight: bold;
@@ -50,7 +51,8 @@
         text-decoration: underline;
         color: red;
         background-color: #dddd;
-        
+        border-radius: 5px;
+
     }
     
     /* #feedback{
