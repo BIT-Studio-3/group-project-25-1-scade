@@ -22,39 +22,38 @@
         <div class="imageContainer">
             <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
         </div>
-        <div class="name"><br /> <p>Zandar</p></div>
+        <div class="name"><p>Zandar</p></div>
     </div>
     
     <div class="members">
         <div class="imageContainer">
             <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
         </div>
-        <div class="name"><br /> <p>Aston</p></div>
+        <div class="name"><p>Aston</p></div>
     </div>
     
     <div class="members">
         <div class="imageContainer">
             <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
         </div>
-        <div class="name"><br /> <p>Hazel</p></div>
+        <div class="name"><p>Hazel</p></div>
     </div>
     
     <div class="members">
         <div class="imageContainer">
             <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
         </div>
-        <div class="name"><br /> <p>Saskia</p></div>
+        <div class="name"><p>Saskia</p></div>
     </div>
     
     <div class="members">
         <div class="imageContainer">
             <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
         </div>
-        <div class="name"><br /> <p>Joanne</p></div>
+        <div class="name"><p>Joanne</p></div>
     </div>
 </div>
 <br>
-
 
 <style>
 
@@ -72,6 +71,7 @@
         text-align: center; 
         padding-left: 100px; 
     }
+
 
     .imageContainer {
         width: 100%;
