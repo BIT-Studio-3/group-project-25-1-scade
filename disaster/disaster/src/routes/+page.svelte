@@ -26,15 +26,12 @@
 </div>
 
 <style>
-    .card-container{
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping if there are too many cards */    
-    }
-
-    .card-container .card {
-    flex: 1; /* Adjusts the cards to share available space */
-    margin: 10px; /* Adds space between cards */
-    min-width: 200px; /* Minimum width for cards */
+    .card-container {
+        flex: 1; /* Adjusts the cards to share available space */
+        margin: 10px; /* Adds space between cards */
+        min-width: 200px; /* Minimum width for cards */
+        display: flex;
+        flex-wrap: wrap;
     }
     .imageContainor {
         display: flex;
