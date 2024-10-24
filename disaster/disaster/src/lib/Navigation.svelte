@@ -6,8 +6,8 @@
     <Image pic={homepic} picname={"cover"} picwidth={"40px"} picheight={"40px"}/> 
     <nav>
         <a href="/">Home</a>
-        <a href="/">Current Events</a>
-        <a href="/">Recent Events</a>
+        <a href="/current">Current Events</a>
+        <a href="/recent">Recent Events</a>
         <a href="/disasters">Disasters</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
