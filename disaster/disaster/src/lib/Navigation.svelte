@@ -1,7 +1,9 @@
 <script>
-
+    import Image from '$lib/Image.svelte';
+    import homepic from '$lib/logo.jpg';
 </script>
 <section>
+    <Image pic={homepic} picname={"cover"} picwidth={"40px"} picheight={"40px"}/> 
     <nav>
         <a href="/">Home</a>
         <a href="/">Current Events</a>
@@ -10,8 +12,6 @@
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
     </nav>
-    
-    <img src="src/lib/logo.jpg" alt ="The Disasters logo">
 </section>
 
 <style>
