@@ -24,9 +24,23 @@
     <label for = "region" >Region</label>
     <select>
       <option value="auckland">Auckland</option>
+      <option value="Bay of Plenty">Bay of Plenty</option>
       <option value="northland">Northland</option>
       <option value="Waikato">Waikato</option>
-     
+      <option value="Canterbury">Canterbury</option>
+     <option value="
+      Gisborne">Gisborne</option>
+     <option value="Hawke's Bay">Hawke's Bay</option>
+     <option value="Manawatū-Whanganui">Manawatū-Whanganui</option>
+      <option value="Marlborough">Marlborough</option>
+     <option value="Nelson">Nelson</option>
+      <option value="Otago">Otago</option>
+      <option value="Southland">Southland</option>
+     <option value="Taranaki">Taranaki</option>
+      <option value="Tasman">Tasman</option>
+    
+      <option value="Wellington">Wellington</option>
+      <option value="West Coast">West Coat</option>
    </select>
 
    
