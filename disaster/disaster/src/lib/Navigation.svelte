@@ -24,7 +24,7 @@
         
     }
     nav a {
-        color: #f2f2f2;
+        color: rgb(150, 64, 32);
         text-align: center;
         padding: 3px 10px;
         text-decoration: none;
@@ -34,7 +34,7 @@
     }
     nav a:hover {
         background-color: #ddd;
-        color: black;
+        color: rgb(34, 86, 199);
     }
     
    img {
