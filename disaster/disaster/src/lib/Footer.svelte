@@ -37,7 +37,7 @@
         flex-direction: column;
         min-height: 1vh;
         margin-top: auto;
-    
+        border: 2px solid rgb(90, 140, 160);
         /* position: fixed;
         left: 0;
         bottom: 0;
