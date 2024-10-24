@@ -75,7 +75,6 @@
                 We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page with a new effective date.
            </p>
         </article>
-
 </article>
 
 <details>
@@ -91,6 +90,15 @@
 <Footer year={2024} />
 
 <style>
+
+    .contact{
+      font-size: larger;
+      cursor: pointer;
+    }
+    #date{
+      
+    }
+    
   
 
 
