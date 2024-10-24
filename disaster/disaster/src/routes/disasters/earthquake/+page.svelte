@@ -30,16 +30,17 @@ function search()
     getData(userInput);
 }
 
+
 </script>
 
-<Header headingTitle="Earthquakes" />
+<Header headingTitle  = "Earthquakes"/>
 
 <p>Earthquakes</p>
 
 <div class="imageContainor">
     <Image pic={earthquake} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
 </div>
-<Header headingTitle="Earthquakes" />
+
 
 
 <h3>Search for former Earthquakes</h3>
