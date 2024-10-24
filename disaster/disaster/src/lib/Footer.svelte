@@ -12,6 +12,7 @@
         <a href="/">How to Use</a>
         <a href="/">SiteMap</a>
         <a href="/">Privacy Policy</a>
+        <a href="/references">References</a>
     </nav>
 </div>
 
