@@ -2,7 +2,6 @@
 <!--Contact page-->
 <script>
     import Header from '$lib/Header.svelte';
-    import Footer from '$lib/Footer.svelte'
 
 function myAlert(){
   alert("Hi your message has been sent")
@@ -31,7 +30,6 @@ function myAlert(){
     <input type="submit" value = "Submit" on:click={myAlert}>
 </form>
 
-<Footer year={2024} />
 
 <style>
    form {

@@ -1,6 +1,5 @@
 <script>
     import Header from '$lib/Header.svelte';
-    import Footer from '$lib/Footer.svelte';
     import Image from '$lib/Image.svelte';
     import earthquake from '$lib/earthquake.jpg';
     let userInput = '';
@@ -31,7 +30,6 @@ function search()
     getData(userInput);
 }
 
-
 </script>
 
 <Header headingTitle="Earthquakes" />
@@ -41,8 +39,6 @@ function search()
 <div class="imageContainor">
     <Image pic={earthquake} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
 </div>
-
-
 <Header headingTitle="Earthquakes" />
 
 
@@ -57,7 +53,6 @@ function search()
 <button class="searchbutton" on:click={search}>Click to Search</button>
 <p class="error">{error}</p>
 
-<Footer year={2024} />
 
 <style>
     #textbox{

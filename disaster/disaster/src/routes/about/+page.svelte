@@ -1,6 +1,5 @@
 <script>
     import Header from '$lib/Header.svelte';
-    import Footer from '$lib/Footer.svelte';
     import Image from '$lib/Image.svelte';
     import homepic from '$lib/Weather.jpg';
 </script>
@@ -55,31 +54,29 @@
     </div>
 </div>
 <br>
-<br>
-<br>
-<Footer year={2024} />
 
 <style>
 
-.members {
-display: inline-block;
-width: 150px;
-height: 200px;
-vertical-align: top;
-text-align:center;
-margin-right: 100px; 
-margin-left: 100px; 
-}
-.name {
-    display: block; 
-    text-align: center; 
-    padding-left: 100px;
-}
+    .members {
+        display: inline-block;
+        width: 150px;
+        height: 200px;
+        text-align:center;
+        margin-right: 100px; 
+        margin-left: 100px; 
 
-.imageContainer {
-    width: 100%;
-    display: block;
-    padding-right: 100px;
-    padding-left: 10px;
-}
+    }
+    .name {
+        display: block; 
+        text-align: center; 
+        padding-left: 100px; 
+    }
+
+
+    .imageContainer {
+        width: 100%;
+        display: block;
+        padding-right: 100px;
+        padding-left: 10px;
+    }
 </style>
