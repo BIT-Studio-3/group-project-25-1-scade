@@ -65,5 +65,11 @@ input:invalid:required, textarea:invalid:required{
   outline: 2px solid red;
   border-radius: 5px;
 }
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 
 </style>
