@@ -21,6 +21,11 @@
         <input type="text" id="lname" placeholder="Your  last name.." required>
     </label>
 
+    <label for = "region" >Region</label>
+    <select>
+    
+   </select>
+
    
     <label for="message">Your message</label>
     <textarea name="message" id="message" required></textarea>
