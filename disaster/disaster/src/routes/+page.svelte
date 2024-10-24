@@ -9,7 +9,7 @@
 
 
 <Header headingTitle="Current Events" />
-<Card where="/about" title="Dunedin Floods" date="18/10/24" info="About the floods" />
+<Card where="/disasters/flood" title="Dunedin Floods" date="18/10/24" info="About the floods" />
 
 <h1>Recent Events</h1>
 
