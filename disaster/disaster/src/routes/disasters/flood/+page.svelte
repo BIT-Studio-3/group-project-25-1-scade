@@ -13,8 +13,6 @@
 </div>
 
 
-<Footer year={2024} />
-
 <style>
 
 </style>

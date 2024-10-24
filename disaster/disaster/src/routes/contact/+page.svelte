@@ -30,7 +30,6 @@ function myAlert(){
     <input type="submit" value = "Submit" on:click={myAlert}>
 </form>
 
-<Footer year={2024} />
 
 <style>
    form {

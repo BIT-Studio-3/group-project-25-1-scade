@@ -13,7 +13,6 @@
 
 <!-- <Image pic={homepic} picname={"cover"} picwidth={"800px"} picheight={"400px"}/> -->
 
-<Footer year={2024} />
 
 <style>
 

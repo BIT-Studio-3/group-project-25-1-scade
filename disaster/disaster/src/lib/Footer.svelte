@@ -13,17 +13,10 @@
         <a href="/">SiteMap</a>
         <a href="/">Privacy Policy</a>
     </nav>
-<!-- 
-    <button id = "feedback">
-    feedback
-    </button> -->
 </div>
 
 
 <style>
-
- 
-
     .footerStyle{   
         border-radius: 5px;
         background-color: skyblue;

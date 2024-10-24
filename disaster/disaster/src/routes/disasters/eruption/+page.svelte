@@ -12,8 +12,6 @@
     <Image pic={volcano} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
 </div>
 
-<Footer year={2024} />
-
 <style>
 
 </style>

@@ -8,7 +8,6 @@
 
 <p>Different Disasters can be found in the side bar</p>
 
-<Footer year={2024} />
 
 <style>
 
