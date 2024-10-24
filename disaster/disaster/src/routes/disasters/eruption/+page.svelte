@@ -2,15 +2,15 @@
     import Header from '$lib/Header.svelte';
     import Footer from '$lib/Footer.svelte';
     import Image from '$lib/Image.svelte';
-    import fire from '$lib/fire.jpg'
+    import volcano from '$lib/volcano.jpg'
 </script>
 
-<Header headingTitle="Fires" />
+<Header headingTitle="Volcanic Eruptions" />
 
-<p>Fires</p>
+<p>Volcanic Eruptions</p>
 
 <div class="imageContainor">
-    <Image pic={fire} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
+    <Image pic={volcano} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
 </div>
 
 <Footer year={2024} />

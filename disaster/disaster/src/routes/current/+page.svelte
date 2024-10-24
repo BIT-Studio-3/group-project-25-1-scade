@@ -9,20 +9,13 @@
 
 
 <Header headingTitle="Current Events" />
-<Card where="/disasters/flood" title="Dunedin Floods" date="18/10/24" info="About the floods" />
 
-<h1>Recent Events</h1>
+<h1>Dunedin Floods</h1>
 
-<div class="imageContainor">
-    <Image pic={homepic} picname={"cover"} picwidth={"800px"} picheight={"400px"}/>
-</div>
-
+<!-- <Image pic={homepic} picname={"cover"} picwidth={"800px"} picheight={"400px"}/> -->
 
 <Footer year={2024} />
 
 <style>
-    .imageContainor {
-        display: flex;
-        justify-content: center;
-    }
+
 </style>

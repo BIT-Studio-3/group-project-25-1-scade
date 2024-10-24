@@ -2,16 +2,17 @@
     import Header from '$lib/Header.svelte';
     import Footer from '$lib/Footer.svelte';
     import Image from '$lib/Image.svelte';
-    import fire from '$lib/fire.jpg'
+    import flood from '$lib/flood.jpg'
 </script>
 
-<Header headingTitle="Fires" />
+<Header headingTitle="Floods" />
 
-<p>Fires</p>
+<p>Flooding</p>
 
 <div class="imageContainor">
-    <Image pic={fire} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
+    <Image pic={flood} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
 </div>
+
 
 <Footer year={2024} />
 
