@@ -22,12 +22,24 @@
 
         </article>
 
-        <article class = "content" >
+        <article class = "Information" >
             <h3> Information We Collect</h3>
-            <p> We may collect the following types of information:
-                Personal Information: Information that identifies you personally, such as your name, email address, and location, when you voluntarily provide it (e.g., signing up for newsletters or alerts).
-                Non-Personal Information: Data that does not identify you personally, such as browser type, device information, and website usage statistics collected through cookies and analytics tools.
-            </p>
+            <section class = "information"></section>
+            <h4>We may collect the following types of information:</h4>
+            <ul>
+                <li>Personal Information:</li>
+                <ul>
+                    <li>
+                        Information that identifies you personally, such as your name, email address, and location, when you voluntarily provide it (e.g., signing up for newsletters or alerts).
+                    </li>
+                    </ul>
+                
+                    <li>Non-Personal Information:</li>
+                <ul>
+                    <li>Data that does not identify you personally, such as browser type, device information, and website usage statistics collected through cookies and analytics tools.</li>
+
+                </ul>
+                </ul>      
         </article>
 
         <article class = "content" >
