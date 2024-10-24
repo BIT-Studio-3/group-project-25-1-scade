@@ -1,7 +1,6 @@
 <script>
     import Header from '$lib/Header.svelte';
     import Card from '$lib/Card.svelte';
-    import Footer from '$lib/Footer.svelte'
     import Image from '$lib/Image.svelte';
     import homepic from '$lib/Weather.jpg';
     let currentTime = new Date();
@@ -10,6 +9,7 @@
 
 
 <Header headingTitle="Current Events" />
+
 <p>{currentTime}</p>
 <div class="card-container">
     <Card where="/disasters/earthquake" title="Earthquakes" date="18/10/24" info="More about the Earthquakes" /> 
@@ -24,9 +24,6 @@
 <div class="imageContainor">
     <Image pic={homepic} picname={"cover"} picwidth={"800px"} picheight={"400px"}/> 
 </div>
-
-
-<Footer year={2024} />
 
 <style>
     .card-container{

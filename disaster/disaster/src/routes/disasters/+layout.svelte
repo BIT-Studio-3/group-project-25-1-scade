@@ -1,6 +1,9 @@
 <div>
     <aside>
+        <a href="disasters/earthquake">Earthquake</a>
+        <a href="disasters/eruption">Eruption</a>
         <a href="disasters/fire">Fire</a>
+        <a href="disasters/flood">Flood</a>
     </aside>
     <main>
         <slot />
@@ -10,27 +13,29 @@
 <style>
     div {
         display: flex;
+        padding-top: 5px;
     }
     aside {
-        padding: 1em;
         margin-right: 1em;
         background-color: skyblue;
-        display: flex;
         text-align: center;
-        padding: 2em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
         border: 2px solid rgb(90, 140, 160);
         border-radius: 5px;
     }
     aside a {
-        color: #f2f2f2;
+        display: block;
+        color:rgb(34, 86, 199);
         text-align: center;
-        padding: 3px 10px;
         text-decoration: none;
         font-weight: bold;
         font-size: large;
+        margin: 0.7em 0;
+        border-radius: 5px;
     }
     aside a:hover {
+        color: red;
         background-color: #ddd;
-        color: black;
     }
 </style>
