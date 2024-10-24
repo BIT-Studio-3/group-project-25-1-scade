@@ -1,6 +1,5 @@
 <script>
     import Header from '$lib/Header.svelte';
-    import Footer from '$lib/Footer.svelte';
     import Image from '$lib/Image.svelte';
     import flood from '$lib/flood.jpg'
 </script>

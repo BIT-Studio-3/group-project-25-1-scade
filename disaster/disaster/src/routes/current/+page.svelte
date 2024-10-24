@@ -1,7 +1,6 @@
 <script>
     import Header from '$lib/Header.svelte';
     import Card from '$lib/Card.svelte';
-    import Footer from '$lib/Footer.svelte'
     import Image from '$lib/Image.svelte';
     import homepic from '$lib/Weather.jpg';
     
