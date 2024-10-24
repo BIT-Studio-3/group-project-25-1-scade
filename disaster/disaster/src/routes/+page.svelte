@@ -10,10 +10,10 @@
 
 <Header headingTitle="Current Events" />
 <div class="card-container">
-    <Card where="/about" title="Earthquakes" date="18/10/24" info="More about the floods" /> 
-    <Card where="/about" title="Fires" date="18/10/24" info="About the floods" />
-    <Card where="/about" title="Eruptions" date="18/10/24" info="About the floods" />
-    <Card where="/about" title="Floods" date="18/10/24" info="About the floods" />
+    <Card where="/about" title="Earthquakes" date="18/10/24" info="More about the Earthquakes" /> 
+    <Card where="/about" title="Fires" date="18/10/24" info="More about the fires" />
+    <Card where="/about" title="Eruptions" date="18/10/24" info="More about the eruptions" />
+    <Card where="/about" title="Floods" date="18/10/24" info="More about the floods" />
 </div>
 
 
