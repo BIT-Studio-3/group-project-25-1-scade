@@ -9,18 +9,34 @@
 
 
 <Header headingTitle="Current Events" />
-<Card where="/about" title="Dunedin Floods" date="18/10/24" info="About the floods" />
+<div class="card-container">
+    <Card where="/about" title="Earthquakes" date="18/10/24" info="More about the floods" /> 
+    <Card where="/about" title="Fires" date="18/10/24" info="About the floods" />
+    <Card where="/about" title="Eruptions" date="18/10/24" info="About the floods" />
+    <Card where="/about" title="Floods" date="18/10/24" info="About the floods" />
+</div>
+
 
 <h1>Recent Events</h1>
 
 <div class="imageContainor">
-    <Image pic={homepic} picname={"cover"} picwidth={"800px"} picheight={"400px"}/>
+    <Image pic={homepic} picname={"cover"} picwidth={"800px"} picheight={"400px"}/> 
 </div>
 
 
 <Footer year={2024} />
 
 <style>
+    .card-container{
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if there are too many cards */    
+    }
+
+    .card-container .card {
+    flex: 1; /* Adjusts the cards to share available space */
+    margin: 10px; /* Adds space between cards */
+    min-width: 200px; /* Minimum width for cards */
+    }
     .imageContainor {
         display: flex;
         justify-content: center;
