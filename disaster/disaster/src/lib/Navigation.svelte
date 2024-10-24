@@ -6,8 +6,8 @@
     <Image pic={homepic} picname={"cover"} picwidth={"40px"} picheight={"40px"}/> 
     <nav>
         <a href="/">Home</a>
-        <a href="/">Current Events</a>
-        <a href="/">Recent Events</a>
+        <a href="/current">Current Events</a>
+        <a href="/recent">Recent Events</a>
         <a href="/disasters">Disasters</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
@@ -24,7 +24,7 @@
         
     }
     nav a {
-        color: #f2f2f2;
+        color: rgb(150, 64, 32);
         text-align: center;
         padding: 3px 10px;
         text-decoration: none;
@@ -34,7 +34,7 @@
     }
     nav a:hover {
         background-color: #ddd;
-        color: black;
+        color: rgb(34, 86, 199);
     }
     
    img {
