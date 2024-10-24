@@ -64,7 +64,7 @@ input[type=submit]:hover {
   background-color: salmon;
 }
 
-input:invalid{
+input:invalid:required, textarea:invalid:required{
   background-color: ivory;
   border: none;
   outline: 2px solid red;
