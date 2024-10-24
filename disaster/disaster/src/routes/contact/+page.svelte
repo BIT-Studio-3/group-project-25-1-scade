@@ -46,7 +46,7 @@
       
     } 
     
-    input[type=text],input[type = email], textarea {
+    input[type=text],input[type = email], textarea,select {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
