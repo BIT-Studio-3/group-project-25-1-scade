@@ -44,17 +44,15 @@
         width: 100%; */
     }
     nav a{
-        padding: 20px;
+        padding: 3px 10px;
         text-decoration: none;
-        color:black;
+        color:rgb(34, 86, 199);
         flex: 1;
     }
     nav a:hover{
-        text-decoration: underline;
         color: red;
         background-color: #dddd;
         border-radius: 5px;
-
     }
     
     /* #feedback{
