@@ -1,12 +1,11 @@
 <script>
-    //for year
-    export let year = 2024;
+
 </script>
 
 <div class = "footerStyle">
 
     <p>
-        &copy; The information provided is for your personal use in accordance with The Disasters Service website {year}
+        &copy; The information provided is for your personal use in accordance with The Disasters Service website 2024
     </p>
     <nav>
         <a href="/">Accessibility</a>
