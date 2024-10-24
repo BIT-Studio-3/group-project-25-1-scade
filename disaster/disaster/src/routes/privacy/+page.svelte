@@ -8,12 +8,12 @@
 
 <article class = "privacyPolicy">
     
-        <h2>Effective Date: 25 October 2024</h2>
+        <h2 id = "date">Effective Date: 25 October 2024</h2>
 
-        <article class = "outline">
-            <h2>
+        <article class = "content">
+            <h3>
                 Introduction
-            </h2>
+            </h3>
             <p>
                 This Privacy Policy outlines how thedisaster.org collects, uses, and protects your information when you visit our website thedisasters.com.
                 <!-- make website into link later on -->
@@ -21,11 +21,17 @@
       
 
         </article>
+
+        <article class = "content" >
+            <h3> Information We Collect</h3>
+            <p> We may collect the following types of information:
+                Personal Information: Information that identifies you personally, such as your name, email address, and location, when you voluntarily provide it (e.g., signing up for newsletters or alerts).
+                Non-Personal Information: Data that does not identify you personally, such as browser type, device information, and website usage statistics collected through cookies and analytics tools.
+            </p>
+        </article>
       
-        2. Information We Collect
-        We may collect the following types of information:
-        Personal Information: Information that identifies you personally, such as your name, email address, and location, when you voluntarily provide it (e.g., signing up for newsletters or alerts).
-        Non-Personal Information: Data that does not identify you personally, such as browser type, device information, and website usage statistics collected through cookies and analytics tools.
+      
+       
         3. How We Use Your Information
         We may use the information we collect for the following purposes:
         To provide and maintain our services, including real-time weather updates and disaster alerts.
@@ -55,9 +61,10 @@
 <details>
     <summary>Contact us</summary>
    
-    Phone Number: <br>
-    Email Address:
-    
+    <address>
+        <a href="thedisatsers@gmail.com">thedisatsers@gmail.com</a><br>
+        <a href="tel 022 222 2222">022 222 2222</a>
+      </address>
 
   </details>
 
