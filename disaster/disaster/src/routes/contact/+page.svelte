@@ -64,4 +64,11 @@ input[type=submit]:hover {
   background-color: salmon;
 }
 
+input:invalid{
+  background-color: ivory;
+  border: none;
+  outline: 2px solid red;
+  border-radius: 5px;
+}
+
 </style>
