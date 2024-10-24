@@ -1,6 +1,7 @@
 <div>
     <aside>
         <a href="disasters/fire">Fire</a>
+        <a href="disasters/earthquakes">Earthquakes</a>
     </aside>
     <main>
         <slot />
