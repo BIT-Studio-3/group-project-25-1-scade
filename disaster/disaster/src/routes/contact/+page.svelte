@@ -23,7 +23,10 @@
 
     <label for = "region" >Region</label>
     <select>
-    
+      <option value="auckland">Auckland</option>
+      <option value="northland">Northland</option>
+      <option value="Waikato">Waikato</option>
+     
    </select>
 
    
