@@ -58,26 +58,25 @@
 
 <style>
 
-.members {
-display: inline-block;
-width: 150px;
-height: 200px;
-vertical-align: top;
-text-align:center;
-margin-right: 100px; 
-margin-left: 100px; 
+    .members {
+        display: inline-block;
+        width: 150px;
+        height: 200px;
+        text-align:center;
+        margin-right: 100px; 
+        margin-left: 100px; 
 
-}
-.name {
-    display: block; 
-    text-align: center; 
-    padding-left: 100px; 
-}
+    }
+    .name {
+        display: block; 
+        text-align: center; 
+        padding-left: 100px; 
+    }
 
-.imageContainer {
-    width: 100%;
-    display: block;
-    padding-right: 100px;
-    padding-left: 10px;
-}
+    .imageContainer {
+        width: 100%;
+        display: block;
+        padding-right: 100px;
+        padding-left: 10px;
+    }
 </style>
