@@ -1,7 +1,6 @@
 <!--Contact page-->
 <script>
-  import Header from "$lib/Header.svelte";
-  import Footer from "$lib/Footer.svelte";
+    import Header from '$lib/Header.svelte';
 </script>
 
 <Header headingTitle="Contact us!" />
@@ -48,7 +47,6 @@
   <input type="submit" value="Submit" />
 </form>
 
-<Footer year={2024} />
 
 <style>
   form {

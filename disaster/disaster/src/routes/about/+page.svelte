@@ -1,6 +1,5 @@
 <script>
     import Header from '$lib/Header.svelte';
-    import Footer from '$lib/Footer.svelte';
     import Image from '$lib/Image.svelte';
     import homepic from '$lib/Weather.jpg';
 </script>
@@ -23,62 +22,61 @@
         <div class="imageContainer">
             <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
         </div>
-        <div class="name"><br /> <p>Zandar</p></div>
+        <div class="name"><p>Zandar</p></div>
     </div>
     
     <div class="members">
         <div class="imageContainer">
             <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
         </div>
-        <div class="name"><br /> <p>Aston</p></div>
+        <div class="name"><p>Aston</p></div>
     </div>
     
     <div class="members">
         <div class="imageContainer">
             <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
         </div>
-        <div class="name"><br /> <p>Hazel</p></div>
+        <div class="name"><p>Hazel</p></div>
     </div>
     
     <div class="members">
         <div class="imageContainer">
             <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
         </div>
-        <div class="name"><br /> <p>Saskia</p></div>
+        <div class="name"><p>Saskia</p></div>
     </div>
     
     <div class="members">
         <div class="imageContainer">
             <Image pic={homepic} picname={"cover"} picheight={"300px"} picwidth={"250px"} />
         </div>
-        <div class="name"><br /> <p>Joanne</p></div>
+        <div class="name"><p>Joanne</p></div>
     </div>
 </div>
 <br>
-<Footer year={2024} />
 
 <style>
 
-.members {
-display: inline-block;
-width: 150px;
-height: 200px;
-vertical-align: top;
-text-align:center;
-margin-right: 100px; 
-margin-left: 100px; 
+    .members {
+        display: inline-block;
+        width: 150px;
+        height: 200px;
+        text-align:center;
+        margin-right: 100px; 
+        margin-left: 100px; 
 
-}
-.name {
-    display: block; 
-    text-align: center; 
-    padding-left: 100px; 
-}
+    }
+    .name {
+        display: block; 
+        text-align: center; 
+        padding-left: 100px; 
+    }
 
-.imageContainer {
-    width: 100%;
-    display: block;
-    padding-right: 100px;
-    padding-left: 10px;
-}
+
+    .imageContainer {
+        width: 100%;
+        display: block;
+        padding-right: 100px;
+        padding-left: 10px;
+    }
 </style>

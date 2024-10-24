@@ -1,30 +1,23 @@
 <script>
-    //for year
-    export let year = 2024;
+
 </script>
 
 <div class = "footerStyle">
 
     <p>
-        &copy; The information provided is for your personal use in accordance with The Disasters Service website {year}
+        &copy; The information provided is for your personal use in accordance with The Disasters Service website 2024
     </p>
     <nav>
         <a href="/">Accessibility</a>
         <a href="/">How to Use</a>
         <a href="/">SiteMap</a>
         <a href="/">Privacy Policy</a>
+        <a href="/references">References</a>
     </nav>
-<!-- 
-    <button id = "feedback">
-    feedback
-    </button> -->
 </div>
 
 
 <style>
-
- 
-
     .footerStyle{   
         border-radius: 5px;
         background-color: skyblue;
@@ -44,17 +37,15 @@
         width: 100%; */
     }
     nav a{
-        padding: 20px;
+        padding: 3px 10px;
         text-decoration: none;
-        color:black;
+        color:rgb(34, 86, 199);
         flex: 1;
     }
     nav a:hover{
-        text-decoration: underline;
         color: red;
         background-color: #dddd;
         border-radius: 5px;
-
     }
     
     /* #feedback{
