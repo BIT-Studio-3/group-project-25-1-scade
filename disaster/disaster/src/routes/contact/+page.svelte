@@ -4,11 +4,6 @@
     import Header from '$lib/Header.svelte';
     import Footer from '$lib/Footer.svelte'
 
-function myAlert(){
-  alert("Hi your message has been sent")
-}
-
-
 </script>
 
 <Header headingTitle="Contact us!" />
@@ -30,7 +25,7 @@ function myAlert(){
     <label for="message">Your message</label>
     <textarea name="message" id="message" required></textarea>
 
-    <input type="submit" value = "Submit" >
+    <input type="submit" value = "Submit">
 </form>
 
 <Footer year={2024} />
