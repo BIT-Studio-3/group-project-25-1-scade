@@ -7,12 +7,25 @@
 <Header headingTitle="How To Use" />
 
 <article>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda quidem, libero praesentium eligendi perspiciatis incidunt maiores aliquam quis, aut quasi neque, dolores adipisci sequi odio nisi eveniet quas sapiente corrupti?</p>
-    <p>Quod iste non deleniti voluptas nobis ea rem explicabo, accusamus ipsum velit? Beatae eum quisquam ipsa illo, commodi impedit rem expedita facilis laborum reprehenderit alias cupiditate neque tenetur eius aspernatur!</p>
-    <p>Suscipit, quia, ducimus quaerat ad aut nesciunt eligendi fuga quasi modi debitis omnis quam voluptas laudantium doloremque sapiente? Exercitationem repellendus nam sint dolorem quod maiores architecto animi eius ratione rerum?</p>
-    <p>Veniam quis, inventore libero assumenda culpa ipsa odio! Voluptas iure, ratione ipsum fuga deleniti ducimus distinctio et quidem! Repellat sapiente doloribus a provident officia iusto sunt fugit at dolore veritatis.</p>
-    <p>Cum nulla eligendi, minima officia asperiores consequuntur ad ea error et ipsa illo ut fugiat eveniet ipsam beatae est quae perferendis laboriosam facere voluptatem maxime ab. Aut doloremque aliquam repellendus.</p>
-    <p>Numquam reprehenderit sint fuga ut autem esse hic dolores exercitationem possimus quod. Neque, quos qui ratione laboriosam dolor ipsa? Eos cupiditate necessitatibus illo voluptatibus, distinctio corporis magni placeat deleniti impedit.</p>
+    <!-- Getting Started: Instructions on how to navigate the website, including the main sections (e.g., alerts, preparedness resources).
+
+Accessing Alerts: How to find real-time disaster alerts and warnings, including any subscription options for notifications.
+
+Using Preparedness Tools: Guidance on using tools like checklists, emergency kit builders, or risk assessment quizzes.
+
+Finding Resources: Steps for locating recovery resources, community support, and educational materials.
+
+Interactive Maps: Instructions on how to use maps to find evacuation routes, shelters, or disaster-prone areas.
+
+Engaging with Content: How to read articles, watch videos, or access downloadable resources.
+
+Submitting Information: If applicable, instructions on how users can report local hazards or volunteer opportunities.
+
+FAQs and Support: Where to find answers to common questions and how to contact support for further assistance.
+
+Using Social Media Features: If you have social sharing options or community forums, explain how to engage with these features.
+
+Feedback Mechanism: How users can provide feedback or suggestions for improving the website. -->
 </article>
 
 
