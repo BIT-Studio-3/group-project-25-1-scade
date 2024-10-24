@@ -29,37 +29,57 @@
                 Non-Personal Information: Data that does not identify you personally, such as browser type, device information, and website usage statistics collected through cookies and analytics tools.
             </p>
         </article>
-      
-      
-       
-        3. How We Use Your Information
-        We may use the information we collect for the following purposes:
-        To provide and maintain our services, including real-time weather updates and disaster alerts.
-        To communicate with you, including responding to inquiries and sending relevant information.
-        To improve our website and services based on user feedback and analytics.
-        4. Cookies and Tracking Technologies
-        We use cookies and similar technologies to enhance your experience on our website. You can control cookie preferences through your browser settings.
-        5. Data Sharing and Disclosure
-        We do not sell, rent, or lease your personal information to third parties. We may share your information with:
-        Service providers who assist us in operating our website and conducting our business (e.g., hosting, analytics).
-        Law enforcement or regulatory authorities if required by law.
-        6. Data Security
-        We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure.
-        7. Your Rights
-        You have the right to:
-        Access your personal information.
-        Request corrections to your information.
-        Opt out of receiving promotional communications.
-        8. Changes to This Privacy Policy
-        We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page with a new effective date.
-        9. Contact Us
-        If you have any questions about this Privacy Policy, please contact us at [Your Contact Information].
-        has context menu
-    
+
+        <article class = "content" >
+            <h3> How We Use Your Information</h3>
+            <p>
+                We may use the information we collect for the following purposes:
+                To provide and maintain our services, including real-time weather updates and disaster alerts.
+                To communicate with you, including responding to inquiries and sending relevant information.
+                To improve our website and services based on user feedback and analytics.
+            </p>
+        </article>
+        <article class = "content" >
+            <h3> Cookies and Tracking Technologies</h3>
+            <p>
+                We use cookies and similar technologies to enhance your experience on our website. You can control cookie preferences through your browser settings.
+            </p>
+        </article>
+        <article class = "content" >
+            <h3>Data Sharing and Disclosure</h3>
+            <p>
+                We do not sell, rent, or lease your personal information to third parties. We may share your information with:
+                Service providers who assist us in operating our website and conducting our business (e.g., hosting, analytics).
+                Law enforcement or regulatory authorities if required by law.
+           </p>
+        </article>
+        <article class = "content" >
+            <h3>Data Security</h3>
+            <p>
+                We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure.
+
+           </p>
+        </article>
+        <article class = "content" >
+            <h3>Your Rights</h3>
+            <p>
+                You have the right to:
+                Access your personal information.
+                Request corrections to your information.
+                Opt out of receiving promotional communications.
+           </p>
+        </article>
+        <article class = "content" >
+            <h3>Changes to This Privacy Policy</h3>
+            <p>
+                We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page with a new effective date.
+           </p>
+        </article>
+
 </article>
 
 <details>
-    <summary>Contact us</summary>
+    <summary class ="contact">Contact us</summary>
    
     <address>
         <a href="thedisatsers@gmail.com">thedisatsers@gmail.com</a><br>
@@ -67,10 +87,6 @@
       </address>
 
   </details>
-
-
-
-
 
 <Footer year={2024} />
 
