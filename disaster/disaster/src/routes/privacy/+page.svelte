@@ -110,6 +110,10 @@
     #date{
       
     }
+    .privacyPolicy {
+        max-width: 800px; 
+         
+    }
     
   
 
