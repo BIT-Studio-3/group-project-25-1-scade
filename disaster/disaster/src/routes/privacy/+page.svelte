@@ -133,6 +133,12 @@
     address a{
         text-decoration: none;
     }
+    details {
+        background-color: #ecf0f1;
+        border-radius: 4px;
+        padding: 10px; 
+        max-width: fit-content;
+    }
   
 
 
