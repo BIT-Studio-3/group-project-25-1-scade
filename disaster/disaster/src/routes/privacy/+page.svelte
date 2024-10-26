@@ -133,6 +133,9 @@
     address a{
         text-decoration: none;
     }
+    /* address a :hover{
+        text-decoration: underline; 
+    } */
     details {
         background-color: #ecf0f1;
         border-radius: 4px;
