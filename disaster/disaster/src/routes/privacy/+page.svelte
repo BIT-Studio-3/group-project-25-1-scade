@@ -104,6 +104,7 @@
 <style>
 
     .contact{
+      color: #2980b9;
       font-size: larger;
       cursor: pointer;
     }
@@ -128,6 +129,7 @@
         line-height: 1.6;
         margin: 10px 0;  
     }
+  
 
 
     
