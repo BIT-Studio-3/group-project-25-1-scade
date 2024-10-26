@@ -142,6 +142,9 @@
         padding: 10px; 
         max-width: fit-content;
     }
+    .content p{
+        color: #2F2F2F;
+    }
   
 
 
