@@ -7,7 +7,10 @@
 <Header headingTitle="How To Use" />
 
 <article class = "container">
-    
+
+
+
+
 
 </article>
 
