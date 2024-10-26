@@ -87,17 +87,17 @@
                 We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page with a new effective date.
            </p>
         </article>
+        <details>
+            <summary class ="contact">Contact us</summary>
+           
+            <address>
+                <a href="thedisatsers@gmail.com">thedisatsers@gmail.com</a><br>
+                <a href="tel 022 222 2222">022 222 2222</a>
+              </address>
+        
+          </details>
 </article>
 
-<details>
-    <summary class ="contact">Contact us</summary>
-   
-    <address>
-        <a href="thedisatsers@gmail.com">thedisatsers@gmail.com</a><br>
-        <a href="tel 022 222 2222">022 222 2222</a>
-      </address>
-
-  </details>
 
 <Footer year={2024} />
 
@@ -115,7 +115,8 @@
         max-width: 800px; 
         padding: 20px;
         border-radius: 8px; 
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);    
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);   
+        
     }
     h2, h3 {
         color: #1c272f;
