@@ -120,6 +120,10 @@
         color: #1c272f;
         margin-bottom: 15px; 
     }
+    p {
+        line-height: 1.6;
+        margin: 10px 0; 
+    }
     
   
 
