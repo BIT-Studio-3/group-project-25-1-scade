@@ -91,8 +91,8 @@
             <summary class ="contact">Contact us</summary>
            
             <address>
-                <a href="thedisatsers@gmail.com">thedisatsers@gmail.com</a><br>
-                <a href="tel 022 222 2222">022 222 2222</a>
+                <a href="/contact">thedisatsers@gmail.com</a><br>
+                <a href="/contact">022 222 2222</a>
               </address>
         
           </details>
@@ -133,9 +133,9 @@
     address a{
         text-decoration: none;
     }
-    /* address a :hover{
+    address a:hover{
         text-decoration: underline; 
-    } */
+    }
     details {
         background-color: #ecf0f1;
         border-radius: 4px;
