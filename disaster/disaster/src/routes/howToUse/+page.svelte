@@ -36,6 +36,11 @@
 <Footer year={2024} />
 
 <style>
+    .container{
+        max-width: fit-content;
+        background-color: #ffff;
+       
+    }
 
 
 </style>
