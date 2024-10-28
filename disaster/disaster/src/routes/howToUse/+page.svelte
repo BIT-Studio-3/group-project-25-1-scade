@@ -56,7 +56,7 @@
         background-color: #ffff;
         padding: 20px;
         border-radius: 5px;
-        box-shadow: 0 2px 10px rgb(255, 7, 7); 
+        box-shadow: 0 2px 10px rgb(137, 137, 137); 
         margin-bottom: 20px;
     }
 
