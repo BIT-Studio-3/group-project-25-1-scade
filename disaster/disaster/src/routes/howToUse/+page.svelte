@@ -49,6 +49,9 @@
         color:rgb(41, 46, 51);
         font-size: 1.5em;;
     }
+    p{
+        line-height: 1.6;
+    }
 
     .info{
        
