@@ -146,6 +146,8 @@
     .content{
         background-color: #ecf0f1;
         border-radius: 5px;
+        border-left: 5px solid rgba(253, 109, 109, 0.603);
+
 
     }
     .content p{
