@@ -8,7 +8,7 @@
 
 <article class = "privacyPolicy">
     
-        <h2 id = "date">Effective Date: 25 October 2024</h2>
+        <!-- <h2 id = "date">Effective Date: 25 October 2024</h2> -->
 
         <article class = "content">
             <h3>
