@@ -51,8 +51,8 @@
 
 <style>
     .container{
-        max-width: fit-content; 
-        margin: 10px auto; 
+        /* max-width: max-content; 
+        margin: 10px auto;  */
         background-color: #ffff;
         padding: 20px;
         border-radius: 5px;
