@@ -4,9 +4,9 @@
 
 </script>
 
-<Header headingTitle="How to use our website" />
 
 <article class = "container">
+    <Header headingTitle="How to use our website" />
     <div class = "info">
       <h2> Explore Current and Recent Events</h2>
       <p>Stay informed by checking the latest and warnings issued for your region in either the Current events or Recent Events Pages.</p>
