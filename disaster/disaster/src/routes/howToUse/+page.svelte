@@ -46,7 +46,8 @@
     }
 
     h2{
-        color:rgb(41, 46, 51)
+        color:rgb(41, 46, 51);
+        font-size: 1.5em;;
     }
 
     .info{
