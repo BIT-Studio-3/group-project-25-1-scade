@@ -4,7 +4,7 @@
 
 </script>
 
-<Header headingTitle="How To Use" />
+<Header headingTitle="How to use our website" />
 
 <article class = "container">
 
