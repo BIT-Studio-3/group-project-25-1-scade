@@ -73,7 +73,7 @@
       margin-bottom: 20px;
       border-radius: 8px;
       padding-left: 10px;
-      border-left: 5px solid#fd7d78a0;
+      border: 5px solid#fd7d78a0;
 
     }
 
