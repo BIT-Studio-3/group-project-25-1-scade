@@ -148,6 +148,7 @@
         border-radius: 5px;
         border-left: 5px solid rgba(253, 109, 109, 0.603);
         padding-left: 10px;
+        margin-bottom: 20px;
 
     }
     .content p{
@@ -158,6 +159,7 @@
         border-radius: 5px;
         border-left: 5px solid rgba(253, 109, 109, 0.603);
         padding-left: 10px;
+        margin-bottom: 20px;
 
     }
   
