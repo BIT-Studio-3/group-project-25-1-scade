@@ -7,16 +7,20 @@
 <Header headingTitle="How to use our website" />
 
 <article class = "container">
-    <h2> Explore Current and Recent Events</h2>
-  <div>
-    <p>Visit our Home Page to find information on natural disaster preparedness, response, and recovery.</p>
-    <p>Stay informed by checking the latest and warnings issued for your region in either the Current events or Recent Events Pages.</p>
-    <p>Visit the Disasters page to understand various natural disasters that can affect New Zealand, including earthquakes, floods, fires and more.</p>
-    <p>Find out more about us on the About us Page</p>
-    <p>Contact us on the Contact Page </p>
-
+    <div class = "info">
+      <h2> Explore Current and Recent Events</h2>
+      <p>Stay informed by checking the latest and warnings issued for your region in either the Current events or Recent Events Pages.</p>
+      <h2>Prepare Response and Recovery</h2>
+      <p>Visit our Home Page to find information on natural disaster preparedness, response, and recovery.</p>
+      <h2>Learn About Natural Disasters</h2>
+      <p>Visit the Disasters page to understand various natural disasters that can affect New Zealand, including earthquakes, floods, fires and more.</p>
+      <h2>About us</h2>
+      <p>Find out more about us on the About us Page</p>
+      <h2>Getting in contact</h2>
+      <p>Contact us on the Contact Page </p>
 
 </div>
+
 
 
 
