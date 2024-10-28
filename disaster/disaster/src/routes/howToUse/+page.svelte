@@ -54,8 +54,8 @@
     }
 
     .info{
-       
-        
+      background-color: #ecf0f1; 
+
     }
 
 
