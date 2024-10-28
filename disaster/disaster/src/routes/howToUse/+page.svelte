@@ -62,6 +62,7 @@
     h2{
         color:rgb(41, 46, 51);
         font-size: 1.5em;
+        border-bottom: 5px solid #451c1c;
         
     }
     p{
