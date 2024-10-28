@@ -45,5 +45,14 @@
         margin-bottom: 20px;
     }
 
+    h2{
+        color:rgb(41, 46, 51)
+    }
+
+    .info{
+       
+        
+    }
+
 
 </style>
