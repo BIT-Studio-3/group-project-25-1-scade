@@ -11,7 +11,7 @@
       <h2> Explore Current and Recent Events</h2>
       <p>Stay informed by checking the latest and warnings issued for your region in either the Current events or Recent Events Pages.</p>
     </div>
-    
+
       <div class = "info">
 
           <h2>Prepare Response and Recovery</h2>
@@ -61,7 +61,8 @@
 
     h2{
         color:rgb(41, 46, 51);
-        font-size: 1.5em;;
+        font-size: 1.5em;
+        
     }
     p{
         line-height: 1.6;
@@ -70,6 +71,9 @@
     .info{
       background-color: #ecf0f1;
       margin-bottom: 20px;
+      border-radius: 8px;
+      padding-left: 10px;
+
 
     }
 
