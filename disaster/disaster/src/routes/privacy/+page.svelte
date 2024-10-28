@@ -121,6 +121,7 @@
     h2, h3 {
         color: #1c272f;
         margin-bottom: 15px; 
+        border-bottom: 2px solid black;
     }
     p {
         line-height: 1.6;
@@ -142,8 +143,19 @@
         padding: 10px; 
         max-width: fit-content;
     }
+    .content{
+        background-color: #ecf0f1;
+        border-radius: 5px;
+
+    }
     .content p{
         color: #2F2F2F;
+    }
+    .Information{
+        background-color: #ecf0f1;
+        border-radius: 5px;
+        border-left: 5px solid rgba(253, 109, 109, 0.603);
+
     }
   
 
