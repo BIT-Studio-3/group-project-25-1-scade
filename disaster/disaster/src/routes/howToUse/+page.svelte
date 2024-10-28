@@ -39,7 +39,7 @@
     .container{
         max-width: fit-content;
         background-color: #ffff;
-       
+        padding: 20px;
     }
 
 
