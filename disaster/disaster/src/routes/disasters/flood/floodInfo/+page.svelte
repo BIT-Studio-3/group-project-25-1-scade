@@ -20,6 +20,36 @@
 
 <!-- Add image here -->
 
+<h3>Flood Safety Tips</h3>
+
+<p>
+Before a Flood:
+<ul>
+    <li>Create an emergency kit with essentials (water, food, medications, flashlight).
+    </li>
+    <li>Make a family communication plan that includes meeting points.
+    </li>
+    <li>Know your evacuation routes and nearest shelters.
+    </li>
+    </ul>
+
+During a Flood:
+
+<ul>
+    <li>Follow evacuation orders promptly.</li>
+    <li> Do not wait for the last minute.</li>
+    <li>Move to higher ground; avoid walking or driving through flooded areas.</li>
+    <li>Stay tuned to local news or weather channels for updates.
+    </li>
+</ul>
+After a Flood:
+
+Avoid floodwaters; they may be contaminated or deeper than they appear.
+Return home only when authorities say it’s safe.
+Document damage for insurance claims. 
+
+ 
+
 
 <p> 
     <!-- content to go here -->
