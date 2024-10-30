@@ -93,4 +93,8 @@
 </section>
 
 <style>
+    section{
+        margin: 2em;
+    }
+    
 </style>
