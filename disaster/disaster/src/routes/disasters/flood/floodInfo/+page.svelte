@@ -4,7 +4,7 @@
 </script>
 
 
-<Header headingTitle="Current Events" />
+<Header headingTitle="Floods and your Safety" />
 <Footer year ={2024} />
 
 <style>
