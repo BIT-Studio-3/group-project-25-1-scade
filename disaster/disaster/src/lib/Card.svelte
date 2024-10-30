@@ -1,5 +1,5 @@
 <script>
-    export let where = "/";
+    export let where  ;
     export let title = Empty;
     export let date = 0/0/0;
     export let info = Empty;
