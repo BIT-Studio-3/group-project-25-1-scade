@@ -16,6 +16,20 @@
 
 <!-- Add image here -->
 
+
+<p> 
+    <!-- content to go here -->
+</p>
+
+<h2>Keeping community safe after a flood</h2>
+
+<p>
+    <!-- content to go here -->
+</p>
+
+<h2>
+    Re-entering flooded homes
+</h2>
 <style>
 
     #keyPoints{
