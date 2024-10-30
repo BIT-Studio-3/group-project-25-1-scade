@@ -18,7 +18,7 @@
         <h1><Header headingTitle="Current Events" /></h1>
         <p>{currentTime}</p>
         <div class="card-container">
-            <Card where="/disasters/earthquake" title="Earthquakes" date={formattedDate} info="More about the Earthquakes" /> 
+            <Card where="/disasters/earthquake" title="Earthquakes" date={formattedDate} info="More about the Earthquakes" /> <!--Current event cards will need to be designed so they update their title, description, and link based on current disaster or alert.-->
             <Card where="/disasters/fire" title="Fires" date={formattedDate} info="More about the fires" />
             <Card where="/disasters/eruption" title="Eruptions" date={formattedDate} info="More about the eruptions" />
             <Card where="/disasters/flood" title="Floods" date={formattedDate} info="More about the floods" />
@@ -55,15 +55,22 @@
         border-color: grey;
     }
 
-    .card-container{
+    .card-container {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping if there are too many cards */    
-    }
+    flex-wrap: wrap; 
+    padding: 10px; 
+    gap: 50px; 
+    }   
 
     .card-container .card {
-    flex: 1; /* Adjusts the cards to share available space */
-    margin: 10px; /* Adds space between cards */
-    min-width: 200px; /* Minimum width for cards */
+    flex: 1; 
+    margin: 10px; 
+    min-width: 200px; 
+    padding: 10px; 
+    background-color: white; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+
     }
     .imageContainor {
         display: flex;
