@@ -3,6 +3,7 @@
     import Image from '$lib/Image.svelte';
     import earthquake from '$lib/earthquake.jpg';
     import homepic from '$lib/Weather.jpg';
+    import Footer from '$lib/Footer.svelte'
 
     let userInput = '';
     let error = '';
@@ -85,11 +86,10 @@ function search()
 <p class="error">{error}</p>
 
 
-<Footer year={2024} />
 
 
 
-
+<style>
 #textbox{
     padding:10px
 }

@@ -62,16 +62,7 @@
     gap: 50px; 
     }   
 
-    .card-container .card {
-    flex: 1; 
-    margin: 10px; 
-    min-width: 200px; 
-    padding: 10px; 
-    background-color: white; 
-    border-radius: 5px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-
-    }
+    
     .imageContainor {
         display: flex;
         justify-content: right;
