@@ -5,7 +5,8 @@
     import Footer from '$lib/Footer.svelte'
     import homepic from '$lib/Weather.jpg';
     let currentTime = new Date();
-
+    let currentYear = currentTime.getFullYear();
+    console.log(currentYear);
 </script>
 
 <body>
