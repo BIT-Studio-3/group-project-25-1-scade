@@ -4,9 +4,11 @@
     import Image from '$lib/Image.svelte';
     import Footer from '$lib/Footer.svelte'
     import homepic from '$lib/Weather.jpg';
-    let currentTime = new Date();
-    let currentYear = currentTime.getFullYear();
-    console.log(currentYear);
+    let day = String(currentTime.getDate()).padStart(2, '0');
+    let month = String(currentTime.getMonth() + 1).padStart(2, '0'); 
+    let year = currentTime.getFullYear(); 
+    let formattedDate = `${day}/${month}/${year}`;
+    console.log(formattedDate);
 </script>
 
 <body>
@@ -14,7 +16,7 @@
         <h1><Header headingTitle="Current Events" /></h1>
         <p>{currentTime}</p>
         <div class="card-container">
-            <Card where="/disasters/earthquake" title="Earthquakes" date={currentTime} info="More about the Earthquakes" /> 
+            <Card where="/disasters/earthquake" title="Earthquakes" date={currentYear} info="More about the Earthquakes" /> 
             <Card where="/disasters/fire" title="Fires" date={currentTime} info="More about the fires" />
             <Card where="/disasters/eruption" title="Eruptions" date={currentTime} info="More about the eruptions" />
             <Card where="/disasters/flood" title="Floods" date={currentTime} info="More about the floods" />
