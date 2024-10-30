@@ -14,7 +14,7 @@
 </div>
 
 <Card
-   where ={"/fireInfo"}
+   where ={"/disasters/fire/fireInfo"}
    title ={"What are Wildfires ?"}
    date = 19/10/2024
    info = "Wildfires are unplanned and uncontrolled fires that typically occur in wilderness areas..."
