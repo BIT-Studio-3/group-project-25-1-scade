@@ -8,11 +8,12 @@
         &copy; The information provided is for your personal use in accordance with The Disasters Service website 2024
     </p>
     <nav>
-        <a href="/">Accessibility</a>
-        <a href="/">How to Use</a>
+        <a href="/accessibility">Accessibility</a>
+        <a href="/howToUse">How to Use</a>
         <a href="/">SiteMap</a>
-        <a href="/">Privacy Policy</a>
+        <a href="/privacy">Privacy Policy</a>
         <a href="/references">References</a>
+
     </nav>
 </div>
 
