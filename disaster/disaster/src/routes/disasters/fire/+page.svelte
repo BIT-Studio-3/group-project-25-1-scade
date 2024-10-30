@@ -3,6 +3,8 @@
     import Image from '$lib/Image.svelte';
     import Card from '$lib/Card.svelte'
     import fire from '$lib/fire.jpg';
+    
+  
 </script>
 
 <Header headingTitle="Fires" />
