@@ -11,6 +11,7 @@
 <div class="imageContainor">
     <Image pic={flood} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
 </div>
+<a href="/disasters/flood/floodInfo">Floods and your safety</a>
 
 
 <style>
