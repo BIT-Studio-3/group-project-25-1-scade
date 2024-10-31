@@ -10,8 +10,7 @@
         <a href="/recent">Recent Events</a>
         <a href="/disasters">Disasters</a>
         <a href="/about">About</a>
-        <a href="/feedback">Feedback</a>
-        <a href="/contact">Contact</a>
+        <a href="/contact">Contact and Feedback</a>
     </nav>
 </section>
 
