@@ -87,6 +87,7 @@ function search()
 <p class="error">{error}</p>
 
 
+
 <Card
    where ={"/disasters/earthquake/quakeInfo"}
    title ={"What is an earthquake ?"}
@@ -96,7 +97,7 @@ function search()
 
 <style>
 #textbox{
-    padding:10px
+    padding: 10px;
 }
 
 .searchbutton{
