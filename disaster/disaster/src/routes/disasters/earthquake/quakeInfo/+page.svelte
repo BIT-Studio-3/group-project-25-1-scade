@@ -66,16 +66,45 @@
     </li>
   </ol>
   <h3>Measuring Earthquakes</h3>
-     <p>The strength and magnitude of an earthquake are measured using instruments called seismometers. The most commonly referenced scale for measuring earthquakes is the Richter scale, which quantifies the amount of energy released. More recently, the Moment Magnitude Scale (Mw) has gained popularity due to its ability to provide a more accurate measurement of larger earthquakes.</p>
+  <p>
+    The strength and magnitude of an earthquake are measured using instruments
+    called seismometers. The most commonly referenced scale for measuring
+    earthquakes is the Richter scale, which quantifies the amount of energy
+    released. More recently, the Moment Magnitude Scale (Mw) has gained
+    popularity due to its ability to provide a more accurate measurement of
+    larger earthquakes.
+  </p>
   <h3>Effects of Earthquakes</h3>
-  <p>The impacts of an earthquake can vary widely depending on its magnitude, depth, and the geology of the area. Common effects include:</p>
-<ul>
-    <li><strong>Ground Shaking:</strong>The primary effect, which can cause buildings and infrastructure to collapse.</li>
-    <li><strong>Surface Rupture:</strong>The ground can crack or shift, causing damage to roads and utilities.</li>
-    <li><strong>Aftershocks: </strong>Smaller tremors that occur after the main event can continue for days, weeks, or even months.</li>
-    <li><strong>Tsunamis:</strong>Underwater earthquakes can trigger massive sea waves, leading to devastation in coastal areas.</li>
-</ul>
-<p>Earthquakes are natural phenomena that remind us of the dynamic processes shaping our planet. By understanding their causes, effects, and how to prepare for them, we can reduce the risks associated with these powerful events. As technology and research continue to advance, our ability to predict and respond to earthquakes improves, enhancing safety and resilience in earthquake-prone regions.</p>
+  <p>
+    The impacts of an earthquake can vary widely depending on its magnitude,
+    depth, and the geology of the area. Common effects include:
+  </p>
+  <ul>
+    <li>
+      <strong>Ground Shaking:</strong>The primary effect, which can cause
+      buildings and infrastructure to collapse.
+    </li>
+    <li>
+      <strong>Surface Rupture:</strong>The ground can crack or shift, causing
+      damage to roads and utilities.
+    </li>
+    <li>
+      <strong>Aftershocks: </strong>Smaller tremors that occur after the main
+      event can continue for days, weeks, or even months.
+    </li>
+    <li>
+      <strong>Tsunamis:</strong>Underwater earthquakes can trigger massive sea
+      waves, leading to devastation in coastal areas.
+    </li>
+  </ul>
+  <p>
+    Earthquakes are natural phenomena that remind us of the dynamic processes
+    shaping our planet. By understanding their causes, effects, and how to
+    prepare for them, we can reduce the risks associated with these powerful
+    events. As technology and research continue to advance, our ability to
+    predict and respond to earthquakes improves, enhancing safety and resilience
+    in earthquake-prone regions.
+  </p>
 </section>
 
 <style>

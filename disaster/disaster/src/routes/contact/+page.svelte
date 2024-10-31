@@ -1,6 +1,6 @@
 <!--Contact page-->
 <script>
-    import Header from '$lib/Header.svelte';
+  import Header from "$lib/Header.svelte";
 </script>
 
 <Header headingTitle="Contact us!" />
@@ -47,7 +47,6 @@
   <input type="submit" value="Submit" />
 </form>
 
-
 <style>
   form {
     display: flex;
@@ -89,7 +88,6 @@
   }
 
   @media screen and (max-width: 600px) {
-   
     input[type="submit"] {
       width: 100%;
       margin-top: 0;

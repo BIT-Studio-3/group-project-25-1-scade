@@ -1,71 +1,121 @@
 <script>
-    import Header from '$lib/Header.svelte';
-    import Card from '$lib/Card.svelte';
-    import Image from '$lib/Image.svelte';
-    import Footer from '$lib/Footer.svelte'
-    import homepic from '$lib/Weather.jpg';
-    let currentTime = new Date();
-    let currentYear = currentTime.getFullYear();
-    let day = String(currentTime.getDate()).padStart(2, '0');
-    let month = String(currentTime.getMonth() + 1).padStart(2, '0'); 
-    let year = currentTime.getFullYear(); 
-    let formattedDate = `${day}/${month}/${year}`;
-    console.log(formattedDate);
+  import Header from "$lib/Header.svelte";
+  import Card from "$lib/Card.svelte";
+  import Image from "$lib/Image.svelte";
+  import Footer from "$lib/Footer.svelte";
+  import homepic from "$lib/Weather.jpg";
+  let currentTime = new Date();
+  let currentYear = currentTime.getFullYear();
+  let day = String(currentTime.getDate()).padStart(2, "0");
+  let month = String(currentTime.getMonth() + 1).padStart(2, "0");
+  let year = currentTime.getFullYear();
+  let formattedDate = `${day}/${month}/${year}`;
+  console.log(formattedDate);
 </script>
 
 <body>
-    <div class="top-of-body">
-        <h1><Header headingTitle="Current Events" /></h1>
-        <p>{currentTime}</p>
-        <div class="card-container">
-            <Card where="/disasters/earthquake" title="Earthquakes" date={formattedDate} info="More about the Earthquakes" /> <!--Current event cards will need to be designed so they update their title, description, and link based on current disaster or alert.-->
-            <Card where="/disasters/fire" title="Fires" date={formattedDate} info="More about the fires" />
-            <Card where="/disasters/eruption" title="Eruptions" date={formattedDate} info="More about the eruptions" />
-            <Card where="/disasters/flood" title="Floods" date={formattedDate} info="More about the floods" />
-        </div>
+  <div class="top-of-body">
+    <h1><Header headingTitle="Current Events" /></h1>
+    <p>{currentTime}</p>
+    <div class="card-container">
+      <Card
+        where="/disasters/earthquake"
+        title="Earthquakes"
+        date={formattedDate}
+        info="More about the Earthquakes"
+      />
+      <!--Current event cards will need to be designed so they update their title, description, and link based on current disaster or alert.-->
+      <Card
+        where="/disasters/fire"
+        title="Fires"
+        date={formattedDate}
+        info="More about the fires"
+      />
+      <Card
+        where="/disasters/eruption"
+        title="Eruptions"
+        date={formattedDate}
+        info="More about the eruptions"
+      />
+      <Card
+        where="/disasters/flood"
+        title="Floods"
+        date={formattedDate}
+        info="More about the floods"
+      />
     </div>
-    <p></p>
-    <div class="bottom-of-body">
-        <h1>Recent Events</h1>
-        <div class="card-container">
-            <Card where="/disasters/earthquake" title="Earthquakes" date="18/10/24" info="More about the Earthquakes" />  <!-- Date and description will be pulled by most recent alert-->
-            <Card where="/disasters/fire" title="Fires" date="18/10/24" info="More about the fires" />      <!-- Date and description will be pulled by most recent alert-->
-            <Card where="/disasters/eruption" title="Eruptions" date="18/10/24" info="More about the eruptions" />  <!-- Date and description will be pulled by most recent alert-->
-            <Card where="/disasters/flood" title="Floods" date="18/10/24" info="More about the floods" />       <!-- Date and description will be pulled by most recent alert-->
-        </div>
-        <div class="imageContainor">
-            <Image pic={homepic} picname={"cover"} picwidth={"800px"} picheight={"400px"}/> 
-        </div>
+  </div>
+  <p></p>
+  <div class="bottom-of-body">
+    <h1>Recent Events</h1>
+    <div class="card-container">
+      <Card
+        where="/disasters/earthquake"
+        title="Earthquakes"
+        date="18/10/24"
+        info="More about the Earthquakes"
+      />
+      <!-- Date and description will be pulled by most recent alert-->
+      <Card
+        where="/disasters/fire"
+        title="Fires"
+        date="18/10/24"
+        info="More about the fires"
+      />
+      <!-- Date and description will be pulled by most recent alert-->
+      <Card
+        where="/disasters/eruption"
+        title="Eruptions"
+        date="18/10/24"
+        info="More about the eruptions"
+      />
+      <!-- Date and description will be pulled by most recent alert-->
+      <Card
+        where="/disasters/flood"
+        title="Floods"
+        date="18/10/24"
+        info="More about the floods"
+      />
+      <!-- Date and description will be pulled by most recent alert-->
     </div>
-</body> 
+    <div class="imageContainor">
+      <Image
+        pic={homepic}
+        picname={"cover"}
+        picwidth={"800px"}
+        picheight={"400px"}
+      />
+    </div>
+  </div>
+</body>
+
 <style>
-    p{
-        padding: 0.2%;
-    }
-    h1{
-        padding: 0.2%;
-    }
-    .top-of-body{
-        border-style: solid;
-        border-color: grey;
-    }
+  p {
+    padding: 0.2%;
+  }
+  h1 {
+    padding: 0.2%;
+  }
+  .top-of-body {
+    border-style: solid;
+    border-color: grey;
+  }
 
-    .bottom-of-body{
-        border-style: solid;
-        border-color: grey;
-    }
+  .bottom-of-body {
+    border-style: solid;
+    border-color: grey;
+  }
 
-    .card-container {
+  .card-container {
     display: flex;
-    flex-wrap: wrap; 
-    padding: 10px; 
-    gap: 50px; 
-    }   
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 50px;
+  }
 
-    
-    .imageContainor {
-        display: flex;
-        justify-content: right;
-        padding: 2%;
-    }
+  .imageContainor {
+    display: flex;
+    justify-content: right;
+    padding: 2%;
+  }
 </style>
