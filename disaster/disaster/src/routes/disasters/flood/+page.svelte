@@ -93,6 +93,7 @@
 
     .error {
         color: red;
+    }
     .imageContainer{
         float: left;
         margin-left: 2em;
