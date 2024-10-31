@@ -46,7 +46,6 @@
         picheight={"400px"}
       />
     </div>
-  </div>
 </body>
 
 <style>
