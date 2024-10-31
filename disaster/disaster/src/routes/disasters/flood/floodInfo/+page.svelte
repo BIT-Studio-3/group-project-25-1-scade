@@ -56,11 +56,8 @@ After a Flood:
 </ul>
 
 
- 
-
-
 <p> 
-    <!-- content to go here -->
+
 </p>
 
 <h2>Keeping community safe after a flood</h2>
@@ -69,8 +66,7 @@ After a Flood:
     Floodwater and standing water can be dangerous and can make the community vulnerable to infectious diseases, chemical hazards, and injuries. Know how to protect yourself and your loved ones from the risks brought by floodwater.
 </p>
 
-<h2>Re-entering flooded homes</h2>
-<p></p>
+
 
 
 </section>
@@ -80,7 +76,7 @@ After a Flood:
 <style>
 
     #keyPoints{
-        color: rgba(0, 68, 255, 0.658);
+        color: rgb(57, 110, 255);
     }
 
     .content{
