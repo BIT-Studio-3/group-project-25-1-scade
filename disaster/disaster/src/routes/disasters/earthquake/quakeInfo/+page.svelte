@@ -9,7 +9,7 @@
 <Header headingTitle="What is an earthquake ?"></Header>
 
 <div>
-  <Image
+  <Image id = "road"
     pic={quake}
     picname={"Earthquake damaged a roa"}
     picwidth={"500px"}
@@ -29,7 +29,7 @@
 </section>
 
 <Image
-  id="plates"
+  id="plateimage"
   pic={faults}
   picname={" Different types of faults that cause earthquakes"}
   picwidth={"500px"}
@@ -108,4 +108,8 @@
 </section>
 
 <style>
+    section{
+        margin: 2em;
+    }
+    
 </style>
