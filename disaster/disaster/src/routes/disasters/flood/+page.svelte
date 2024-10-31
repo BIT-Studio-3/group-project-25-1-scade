@@ -8,10 +8,8 @@
 <Header headingTitle="Floods" />
 
 
-<div class="imageContainer">
-    <Image pic={flood} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
-</div>
 
+<div>
 <div class="float">
 <Card
    where ={"/disasters/flood/floodInfo"}
@@ -23,13 +21,20 @@
         where ={"/"}
         title ={"Event"}
         date = 19/10/2024
-        info = "Recent fire event in 'Location' at 'time', placeholder for now" ></Card>
+        info = "Recent flood event in 'Location' at 'time', placeholder for now" ></Card>
     </div>
+    <div class="imageContainer">
+        <Image pic={flood} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
+    </div>
+</div>
 
 
 <style>
-    /* .imageContainer{
+    .imageContainer{
         float: left;
-    } */
+    }
+    .float {
+        float: left;
+    }
 
 </style>
