@@ -25,6 +25,7 @@
         transition: 0.3s;
         padding: 2px 16px;
         width: fit-content;
+        margin: 2em;
     }
     .card:hover {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
