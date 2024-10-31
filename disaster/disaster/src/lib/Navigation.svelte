@@ -10,6 +10,7 @@
         <a href="/recent">Recent Events</a>
         <a href="/disasters">Disasters</a>
         <a href="/about">About</a>
+        <a href="/feedback">Feedback</a>
         <a href="/contact">Contact</a>
     </nav>
 </section>
@@ -36,11 +37,4 @@
         background-color: #ddd;
         color: rgb(34, 86, 199);
     }
-    
-   img {
-    width: 100px;
-  height: auto;
-  float :right;
-}
-    
 </style>
