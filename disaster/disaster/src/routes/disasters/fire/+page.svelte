@@ -7,8 +7,6 @@
 
 <Header headingTitle="Fires" />
 
-<p>Fires</p>
-
 <div>
     <div class="float">
         <Card
@@ -28,8 +26,6 @@
         <Image pic={fire} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
     </div>
 </div>
-
-
 
 <style>
     .float {
