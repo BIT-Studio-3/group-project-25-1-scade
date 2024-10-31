@@ -92,7 +92,7 @@ function search()
    where ={"/disasters/earthquake/quakeInfo"}
    title ={"What is an earthquake ?"}
    date = 19/10/2024
-   info = "Wildfires are unplanned and uncontrolled fires that typically occur in wilderness areas..."
+   info = "An earthquake is a sudden and intense shaking of the ground caused by the movement..."
 ></Card>
 
 <Footer year ={2024}/>
