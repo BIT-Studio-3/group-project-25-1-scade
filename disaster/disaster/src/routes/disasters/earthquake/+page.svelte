@@ -3,6 +3,7 @@
     import Image from '$lib/Image.svelte';
     import earthquake from '$lib/earthquake.jpg';
     import homepic from '$lib/Weather.jpg';
+    import Card from '$lib/Card.svelte';
     import Footer from '$lib/Footer.svelte'
 
     let userInput = '';
@@ -87,9 +88,14 @@ function search()
 <p class="error">{error}</p>
 
 
+<Card
+   where ={"/disasters/earthquake/quakeInfo"}
+   title ={"What is an earthquake ?"}
+   date = 19/10/2024
+   info = "Wildfires are unplanned and uncontrolled fires that typically occur in wilderness areas..."
+></Card>
 
-
-
+<Footer year ={2024}/>
 <style>
 #textbox{
     padding:10px
