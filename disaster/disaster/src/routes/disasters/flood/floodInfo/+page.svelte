@@ -83,7 +83,7 @@ After a Flood:
         background-color: #ffff;
         padding: 10px;
         border-radius: 5px;
-        margin-bottom: 20px;
+        margin-bottom: 2em;
     }
     p{
         line-height: 1.8;
