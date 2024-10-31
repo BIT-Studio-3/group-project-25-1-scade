@@ -89,5 +89,8 @@ After a Flood:
         border-radius: 5px;
         margin-bottom: 20px;
     }
+    p{
+        line-height: 1.8;
+    }
 
 </style>
