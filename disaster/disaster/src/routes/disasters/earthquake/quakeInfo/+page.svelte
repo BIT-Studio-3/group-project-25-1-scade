@@ -6,6 +6,23 @@
  import quake from "$lib/quake.jpg"
 </script>
 
-<div></div>
+<Header  headingTitle= "What is an earthquake ?"></Header>
 
-<style></style>
+<div>
+<Image 
+    pic={quake}
+    picname={"Earthquake damaged a roa"}
+    picwidth={"500px"}
+    picheight={"300px"}
+    />
+</div>
+<Image
+pic={faults}
+    picname={" Different types of faults that cause earthquakes"}
+    picwidth={"500px"}
+    picheight={"300px"} 
+/>
+
+<style>
+
+</style>
