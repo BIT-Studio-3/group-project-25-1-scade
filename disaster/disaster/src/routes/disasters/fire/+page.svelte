@@ -10,11 +10,7 @@
 <p>Fires</p>
 
 <div>
-    <div class="block">
-        <Image pic={fire} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
-    </div>
-
-    <div class="block">
+    <div class="float">
         <Card
         where ={"/disasters/fire/fireInfo"}
         title ={"What are Wildfires ?"}
@@ -22,12 +18,15 @@
         info = "Wildfires are unplanned and uncontrolled fires that typically occur in wilderness areas..."
         ></Card>
     </div>
+    <div class="float">
+        <Image pic={fire} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
+    </div>
 </div>
 
 
 
 <style>
-    .block {
-        display: inline-block;
+    .float {
+        float: left;
     }
 </style>
