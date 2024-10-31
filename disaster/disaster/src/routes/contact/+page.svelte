@@ -1,6 +1,6 @@
 <!--Contact page-->
 <script>
-    import Header from '$lib/Header.svelte';
+  import Header from '$lib/Header.svelte';
 </script>
 
 <Header headingTitle="Contact us!" />
@@ -41,12 +41,11 @@
     <option value="West Coast">West Coat</option>
   </select>
 
-  <label for="message">Your message</label>
+  <label for="message">Your message / Feedback</label>
   <textarea name="message" id="message" required></textarea>
 
   <input type="submit" value="Submit" />
 </form>
-
 
 <style>
   form {
@@ -89,7 +88,6 @@
   }
 
   @media screen and (max-width: 600px) {
-   
     input[type="submit"] {
       width: 100%;
       margin-top: 0;

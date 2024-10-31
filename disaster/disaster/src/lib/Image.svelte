@@ -10,8 +10,8 @@
 </div>
 
 <style>
-    /* div {
+     div {
         text-align: center;
         margin-right: 10px;
-    } */
+     }
 </style>

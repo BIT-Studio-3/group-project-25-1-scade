@@ -3,6 +3,7 @@
     import Image from '$lib/Image.svelte';
     import earthquake from '$lib/earthquake.jpg';
     import homepic from '$lib/Weather.jpg';
+    import Card from '$lib/Card.svelte';
 
     let userInput = '';
     let error = '';
@@ -59,36 +60,42 @@ function search()
     <Image pic={earthquake} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
 </div>
 
-
-<h3>Search for former Earthquakes:</h3>
-<h4>Please Keep in mind that these earthquakes are only in the past 2-3 days. <br>The lower the number input the more recent the quake was. For example, 1 is the most recent 2, is the 2nd most recent etc, etc.</h4>
-<input
+<section>
+    <h3>Search for former Earthquakes:</h3>
+    <h4>Please Keep in mind that these earthquakes are only in the past 2-3 days. <br>The lower the number input the more recent the quake was. For example, 1 is the most recent 2, is the 2nd most recent etc, etc.</h4>
+    <input
     id="textbox"
     type="number"
     bind:value={userInput}
     placeholder="Please enter a Number"
     min="0"
-/>
-<br>
-<button class="searchbutton" on:click={search}>Click to Search</button>
-<div class="earthquakeSpecifics">
-    <p>
-        {#if quakeTime && location && magnitude && mmi}
-        Time: {quakeTime}<br>
-        Location: {location}* <br>
-        Magnitude: {magnitude} <br>
-        Depth: {depth} Kilometers <br>
-        MMI: {mmi}
-        {/if}
-    </p>            
-</div>
+    />
+    <br>
+    <button class="searchbutton" on:click={search}>Click to Search</button>
+    <div class="earthquakeSpecifics">
+        <p>
+            {#if quakeTime && location && magnitude && mmi}
+            Time: {quakeTime}<br>
+            Location: {location}* <br>
+            Magnitude: {magnitude} <br>
+            Depth: {depth} Kilometers <br>
+            MMI: {mmi}
+            {/if}
+        </p>            
+    </div>
+</section>
 <p class="error">{error}</p>
 
 
-<Footer year={2024} />
+
+<Card
+   where ={"/disasters/earthquake/quakeInfo"}
+   title ={"What is an earthquake ?"}
+   date = 19/10/2024
+   info = "An earthquake is a sudden and intense shaking of the ground caused by the movement..."
+></Card>
 
 <style>
-
 #textbox{
     padding: 10px;
 }
