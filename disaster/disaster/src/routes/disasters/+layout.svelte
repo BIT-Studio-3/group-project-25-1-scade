@@ -15,6 +15,6 @@
         padding-top: 5px;
     }
     :global(*){
-        font-family:monospace
+        font-family:Arial, Helvetica, sans-serif
     }
 </style>
