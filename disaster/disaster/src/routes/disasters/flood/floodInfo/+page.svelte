@@ -92,5 +92,8 @@ After a Flood:
     p{
         line-height: 1.8;
     }
+    li{
+        line-height: 1.6;
+    }
 
 </style>
