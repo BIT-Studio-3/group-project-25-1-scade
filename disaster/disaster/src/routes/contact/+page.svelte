@@ -1,6 +1,6 @@
 <!--Contact page-->
 <script>
-    import Header from '$lib/Header.svelte';
+  import Header from '$lib/Header.svelte';
 </script>
 
 <Header headingTitle="Contact us!" />
