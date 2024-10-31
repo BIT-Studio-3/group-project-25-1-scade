@@ -38,23 +38,33 @@
             <Image pic={homepic} picname={"cover"} picwidth={"800px"} picheight={"400px"}/> 
         </div>
     </div>
-</body> 
-<style>
-    p{
-        padding: 0.2%;
-    }
-    h1{
-        padding: 0.2%;
-    }
-    .top-of-body{
-        border-style: solid;
-        border-color: grey;
-    }
+    <div class="imageContainor">
+      <Image
+        pic={homepic}
+        picname={"cover"}
+        picwidth={"800px"}
+        picheight={"400px"}
+      />
+    </div>
+  </div>
+</body>
 
-    .bottom-of-body{
-        border-style: solid;
-        border-color: grey;
-    }
+<style>
+  p {
+    padding: 0.2%;
+  }
+  h1 {
+    padding: 0.2%;
+  }
+  .top-of-body {
+    border-style: solid;
+    border-color: grey;
+  }
+
+  .bottom-of-body {
+    border-style: solid;
+    border-color: grey;
+  }
 
     .current-events {
     display: flex;
@@ -70,10 +80,9 @@
     gap: 50px
     }
 
-    
-    .imageContainor {
-        display: flex;
-        justify-content: right;
-        padding: 2%;
-    }
+  .imageContainor {
+    display: flex;
+    justify-content: right;
+    padding: 2%;
+  }
 </style>

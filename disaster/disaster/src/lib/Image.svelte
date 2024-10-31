@@ -10,11 +10,8 @@
 </div>
 
 <style>
-    /* div {
+     div {
         text-align: center;
         margin-right: 10px;
-    } */
-     div {
-      margin-left: 2em;
      }
 </style>

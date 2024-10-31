@@ -1,6 +1,6 @@
 <script>
-    import Navigation from "$lib/Navigation.svelte";
-    import Footer from "$lib/Footer.svelte";
+  import Navigation from "$lib/Navigation.svelte";
+  import Footer from "$lib/Footer.svelte";
 </script>
 
 <Navigation />
