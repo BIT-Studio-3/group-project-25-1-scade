@@ -4,7 +4,6 @@
     import earthquake from '$lib/earthquake.jpg';
     import homepic from '$lib/Weather.jpg';
     import Card from '$lib/Card.svelte';
-    import Footer from '$lib/Footer.svelte'
 
     let userInput = '';
     let error = '';
@@ -95,7 +94,6 @@ function search()
    info = "An earthquake is a sudden and intense shaking of the ground caused by the movement..."
 ></Card>
 
-<Footer year ={2024}/>
 <style>
 #textbox{
     padding:10px
