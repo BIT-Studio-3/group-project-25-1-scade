@@ -32,6 +32,7 @@
 <style>
     .imageContainer{
         float: left;
+        margin-left: 2em;
     }
     .float {
         float: left;
