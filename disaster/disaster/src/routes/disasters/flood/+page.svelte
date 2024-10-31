@@ -69,11 +69,6 @@
 {/if}
 
 <style>
-    #userIndexInput {
-        padding: 10px;
-        margin: 5px;
-    }
-
     .searchbutton {
         margin-top: 10px;
         margin-bottom: 10px;
