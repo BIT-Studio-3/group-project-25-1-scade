@@ -17,7 +17,7 @@
    where ={"/disasters/flood/floodInfo"}
    title ={"Floods and your Safety"}
    date = 19/10/2024
-   info = "";
+   info = "Learn what to inform the public on how to prepare for a flood";
 ></Card>
 
 
