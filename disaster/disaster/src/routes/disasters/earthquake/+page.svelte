@@ -87,11 +87,10 @@ function search()
 
 <Footer year={2024} />
 
-
-
+<style>
 
 #textbox{
-    padding:10px
+    padding: 10px;
 }
 
 .searchbutton{
