@@ -20,7 +20,6 @@
 
 <h2>Prepare for a flood</h2>
 
-<!-- Add image here -->
 
 <h3>Flood Safety Tips</h3>
 
@@ -90,6 +89,9 @@ After a Flood:
     }
     li{
         line-height: 1.6;
+    }
+    h2{
+        font-size: x-large;
     }
 
 </style>
