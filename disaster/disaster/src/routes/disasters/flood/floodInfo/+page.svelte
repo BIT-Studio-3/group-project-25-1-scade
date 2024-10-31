@@ -83,8 +83,11 @@ After a Flood:
         color: rgba(0, 68, 255, 0.658);
     }
 
-    .section{
+    .content{
         background-color: #ffff;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
     }
 
 </style>
