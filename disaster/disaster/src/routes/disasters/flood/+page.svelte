@@ -7,9 +7,8 @@
 
 <Header headingTitle="Floods" />
 
-<p>Flooding</p>
 
-<div class="imageContainor">
+<div class="imageContainer">
     <Image pic={flood} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
 </div>
 
@@ -19,9 +18,17 @@
    date = 19/10/2024
    info = "Learn what to inform the public on how to prepare for a flood";
 ></Card>
+<Card
+        where ={"/"}
+        title ={"Event"}
+        date = 19/10/2024
+        info = "Recent fire event in 'Location' at 'time', placeholder for now" ></Card>
 
 
 
 <style>
+    /* .imageContainer{
+        float: left;
+    } */
 
 </style>
