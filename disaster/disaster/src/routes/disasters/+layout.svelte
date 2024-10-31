@@ -14,7 +14,5 @@
         display: flex;
         padding-top: 5px;
     }
-    :global(*){
-        font-family:Arial, Helvetica, sans-serif
-    }
+    
 </style>
