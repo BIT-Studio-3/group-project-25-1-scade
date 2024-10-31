@@ -3,7 +3,7 @@
  import Header from "$lib/Header.svelte";
  import Image from "$lib/Image.svelte";
  import faults from "$lib/faults.jpg";
- import quake from "$lib/quake.jpg"
+ import quake from "$lib/quakes.jpg"
 </script>
 
 <Header  headingTitle= "What is an earthquake ?"></Header>
