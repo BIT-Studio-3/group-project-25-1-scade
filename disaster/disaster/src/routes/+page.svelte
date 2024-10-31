@@ -1,6 +1,7 @@
 <script>
     import Header from '$lib/Header.svelte';
     import Card from '$lib/Card.svelte';
+    import Maincard from '$lib/Maincard.svelte';
     import Image from '$lib/Image.svelte';
     import Footer from '$lib/Footer.svelte'
     import homepic from '$lib/Weather.jpg';
@@ -17,17 +18,17 @@
     <div class="top-of-body">
         <h1><Header headingTitle="Current Events" /></h1>
         <p>{currentTime}</p>
-        <div class="card-container">
-            <Card where="/disasters/earthquake" title="Earthquakes" date={formattedDate} info="More about the Earthquakes" /> <!--Current event cards will need to be designed so they update their title, description, and link based on current disaster or alert.-->
-            <Card where="/disasters/fire" title="Fires" date={formattedDate} info="More about the fires" />
-            <Card where="/disasters/eruption" title="Eruptions" date={formattedDate} info="More about the eruptions" />
-            <Card where="/disasters/flood" title="Floods" date={formattedDate} info="More about the floods" />
+        <div class="current-events">
+            <Maincard where="/disasters/earthquake" title="Earthquakes" date={formattedDate} info="More about the Earthquakes" /> <!--Current event cards will need to be designed so they update their title, description, and link based on current disaster or alert.-->
+            <Maincard where="/disasters/fire" title="Fires" date={formattedDate} info="More about the fires" />
+            <Maincard where="/disasters/eruption" title="Eruptions" date={formattedDate} info="More about the eruptions" />
+            <Maincard where="/disasters/flood" title="Floods" date={formattedDate} info="More about the floods" />
         </div>
     </div>
     <p></p>
     <div class="bottom-of-body">
         <h1>Recent Events</h1>
-        <div class="card-container">
+        <div class="recent-events">
             <Card where="/disasters/earthquake" title="Earthquakes" date="18/10/24" info="More about the Earthquakes" />  <!-- Date and description will be pulled by most recent alert-->
             <Card where="/disasters/fire" title="Fires" date="18/10/24" info="More about the fires" />      <!-- Date and description will be pulled by most recent alert-->
             <Card where="/disasters/eruption" title="Eruptions" date="18/10/24" info="More about the eruptions" />  <!-- Date and description will be pulled by most recent alert-->
@@ -55,12 +56,19 @@
         border-color: grey;
     }
 
-    .card-container {
+    .current-events {
     display: flex;
     flex-wrap: wrap; 
     padding: 10px; 
     gap: 50px; 
-    }   
+    }
+
+    .recent-events {
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 10px; 
+    gap: 50px
+    }
 
     
     .imageContainor {

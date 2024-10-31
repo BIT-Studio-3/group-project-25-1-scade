@@ -30,5 +30,6 @@
 <style>
     .float {
         float: left;
+        width: 500px;
     }
 </style>
