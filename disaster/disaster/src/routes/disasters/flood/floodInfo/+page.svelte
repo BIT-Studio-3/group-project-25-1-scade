@@ -11,6 +11,8 @@
     <Image pic={flood} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
 
 <h2 id = "keyPoints">Key Points</h2>
+
+<section class = "content">
 <ul>
     <li>Floods, big or small, can have devastating effects on your home,your family and the general public. You can take steps to reduce the harm caused by flooding.</li>
     <li>Learn what to inform the public on how to prepare for a flood, stay safe during a flood, and protect health after returning home from a flood</li>
@@ -44,9 +46,15 @@ During a Flood:
 </ul>
 After a Flood:
 
-Avoid floodwaters; they may be contaminated or deeper than they appear.
-Return home only when authorities say it’s safe.
-Document damage for insurance claims. 
+<ul>
+    <li>Avoid floodwaters; they may be contaminated or deeper than they appear.
+    </li>
+    <li>Return home only when authorities say it is safe.
+    </li>
+    <li>Document damage for insurance claims. 
+    </li>
+</ul>
+
 
  
 
@@ -65,7 +73,7 @@ Document damage for insurance claims.
 <p></p>
 
 
-
+</section>
 
 
 
@@ -73,6 +81,10 @@ Document damage for insurance claims.
 
     #keyPoints{
         color: rgba(0, 68, 255, 0.658);
+    }
+
+    .section{
+        background-color: #ffff;
     }
 
 </style>
