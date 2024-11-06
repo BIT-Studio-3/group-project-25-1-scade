@@ -95,7 +95,11 @@
   ></Card>
   
 <style>
-  
+  @media only screen and (max-width:866px){
+ section{
+  display:block;
+ }
+  }
   section{
     display:flex;
   }
@@ -103,6 +107,9 @@
     padding: 10px;
   }
 
+  aside{
+    padding: 0.5em;
+  }
   .earthquakeSpecifics {
     transition: 0.3s;
     width: fit-content;
