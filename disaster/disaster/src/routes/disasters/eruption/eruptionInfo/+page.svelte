@@ -35,13 +35,10 @@
   </section>
   
   <style>
-      section{
-          margin: 2em;
-      }
-
+     
       .container{
-        
+        margin: 1rem;
       }
-      
+     
   </style>
   
