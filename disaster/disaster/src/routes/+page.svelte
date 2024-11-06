@@ -34,9 +34,6 @@
             <Card where="/disasters/eruption" title="Eruptions" date="18/10/24" info="More about the eruptions" />  <!-- Date and description will be pulled by most recent alert-->
             <Card where="/disasters/flood" title="Floods" date="18/10/24" info="More about the floods" />       <!-- Date and description will be pulled by most recent alert-->
         </div>
-        <div class="imageContainor">
-            <Image pic={homepic} picname={"cover"} picwidth={"800px"} picheight={"400px"}/> 
-        </div>
     </div>
     
 </body>
