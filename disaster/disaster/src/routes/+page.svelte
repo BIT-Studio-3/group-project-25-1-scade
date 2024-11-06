@@ -29,10 +29,10 @@
     <div class="bottom-of-body">
         <h1>&numsp;Recent Events</h1>
         <div class="recent-events">
-            <Card where="/disasters/earthquake" title="Earthquakes" date="18/10/24" info="More about the Earthquakes" />  <!-- Date and description will be pulled by most recent alert-->
-            <Card where="/disasters/fire" title="Fires" date="18/10/24" info="More about the fires" />      <!-- Date and description will be pulled by most recent alert-->
-            <Card where="/disasters/eruption" title="Eruptions" date="18/10/24" info="More about the eruptions" />  <!-- Date and description will be pulled by most recent alert-->
-            <Card where="/disasters/flood" title="Floods" date="18/10/24" info="More about the floods" />       <!-- Date and description will be pulled by most recent alert-->
+            <Maincard where="/disasters/earthquake" title="Earthquakes" date="18/10/24" info="More about the Earthquakes" />  <!-- Date and description will be pulled by most recent alert-->
+            <Maincard where="/disasters/fire" title="Fires" date="18/10/24" info="More about the fires" />      <!-- Date and description will be pulled by most recent alert-->
+            <Maincard where="/disasters/eruption" title="Eruptions" date="18/10/24" info="More about the eruptions" />  <!-- Date and description will be pulled by most recent alert-->
+            <Maincard where="/disasters/flood" title="Floods" date="18/10/24" info="More about the floods" />       <!-- Date and description will be pulled by most recent alert-->
         </div>
     </div>
     
