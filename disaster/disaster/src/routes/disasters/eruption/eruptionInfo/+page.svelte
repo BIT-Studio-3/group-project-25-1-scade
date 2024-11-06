@@ -1,7 +1,7 @@
 <script>
     import Header from '$lib/Header.svelte';
     import Image from '$lib/Image.svelte';
-    import flood from '$lib/volcano.jpg'
+    import volcano from '$lib/volcano.jpg'
     
 </script>
 <Header headingTitle = "What are volcanoes" />
