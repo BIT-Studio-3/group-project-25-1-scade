@@ -89,6 +89,7 @@
 </div>
 
 
+
 <Card
 where={"/disasters/earthquake/quakeInfo"}
 title={"What is an earthquake ?"}
@@ -96,9 +97,13 @@ date="19/10/2024"
 info="An earthquake is a sudden and intense shaking of the ground caused by the movement..."
 ></Card>
 
+<style>
+#textbox{
+    padding: 10px;
+}
 
   <style>
-    
+
     .earthquakeSpecifics{
         
         transition: 0.3s;
