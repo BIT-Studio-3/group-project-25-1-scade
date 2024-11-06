@@ -38,14 +38,7 @@
             <Image pic={homepic} picname={"cover"} picwidth={"800px"} picheight={"400px"}/> 
         </div>
     </div>
-    <div class="imageContainor">
-      <Image
-        pic={homepic}
-        picname={"cover"}
-        picwidth={"800px"}
-        picheight={"400px"}
-      />
-    </div>
+    
 </body>
 
 <style>
