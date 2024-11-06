@@ -27,7 +27,7 @@
     </div>
     <p></p>
     <div class="bottom-of-body">
-        <h1>Recent Events</h1>
+        <h1>&numsp;Recent Events</h1>
         <div class="recent-events">
             <Card where="/disasters/earthquake" title="Earthquakes" date="18/10/24" info="More about the Earthquakes" />  <!-- Date and description will be pulled by most recent alert-->
             <Card where="/disasters/fire" title="Fires" date="18/10/24" info="More about the fires" />      <!-- Date and description will be pulled by most recent alert-->
@@ -64,6 +64,7 @@
 
     .recent-events {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap; 
     padding: 10px; 
     gap: 50px
