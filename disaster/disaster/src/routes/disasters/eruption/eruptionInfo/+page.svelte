@@ -15,7 +15,8 @@
     />
   </div>
 
-  <section>
+  <section  class = "container">
+
     <h2>Introduction to Volcanoes</h2>
     <p>
       
@@ -36,6 +37,10 @@
   <style>
       section{
           margin: 2em;
+      }
+
+      .container{
+        
       }
       
   </style>
