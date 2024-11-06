@@ -97,11 +97,12 @@
 <style>
   @media only screen and (max-width:866px){
  section{
-  display:block;
+  flex-direction: column;
  }
   }
   section{
     display:flex;
+    
   }
   #textbox {
     padding: 10px;
