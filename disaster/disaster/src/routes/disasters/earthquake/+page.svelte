@@ -47,18 +47,7 @@
 
 <Header headingTitle="Earthquakes" />
 
-<p>Earthquakes</p>
-
-<div class="imageContainor">
-  <Image
-    pic={earthquake}
-    picname={"cover"}
-    picwidth={"600px"}
-    picheight={"400px"}
-  />
-</div>
-
-<section>
+<aside>
   <h3>Search for former Earthquakes:</h3>
   <h4>
     Please Keep in mind that these earthquakes are only in the past 2-3 days. <br
@@ -72,30 +61,59 @@
     placeholder="Please enter a Number"
     min="0"
   />
-  <br />
+  <br>
   <button class="searchbutton" on:click={search}>Click to Search</button>
   <div class="earthquakeSpecifics">
     <p>
       {#if quakeTime && location && magnitude && mmi}
-        Time: {quakeTime}<br />
-        Location: {location}* <br />
-        Magnitude: {magnitude} <br />
-        Depth: {depth} Kilometers <br />
+         {quakeTime}<br />
+         <strong>Location:</strong>{location}* <br>
+        Magnitude: {magnitude} <br>
+        Depth: {depth} Kilometers <br>
         MMI: {mmi}
       {/if}
     </p>
+    <p class="error">{error}</p>
   </div>
-  <p class="error">{error}</p>
-</section>
+</aside>
+
+
+
+<div class="imageContainor">
+  <Image
+    pic={earthquake}
+    picname={"cover"}
+    picwidth={"600px"}
+    picheight={"400px"}
+  />
+</div>
+
 
 <Card
-  where={"/disasters/earthquake/quakeInfo"}
-  title={"What is an earthquake ?"}
-  date="19/10/2024"
-  info="An earthquake is a sudden and intense shaking of the ground caused by the movement..."
+where={"/disasters/earthquake/quakeInfo"}
+title={"What is an earthquake ?"}
+date="19/10/2024"
+info="An earthquake is a sudden and intense shaking of the ground caused by the movement..."
 ></Card>
 
-<style>
+
+  <style>
+    
+    .earthquakeSpecifics{
+        
+        transition: 0.3s;
+        width: fit-content;
+        padding: 1em;
+        margin: 2em;
+      }
+    
+      .earthquakeSpecifics:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+
+      p {
+        padding-left: 0.7em;
+    }
   #textbox {
     padding: 10px;
   }
@@ -119,4 +137,4 @@
     -webkit-appearance: none;
     margin: 0;
   }
-</style>
+</styl>
