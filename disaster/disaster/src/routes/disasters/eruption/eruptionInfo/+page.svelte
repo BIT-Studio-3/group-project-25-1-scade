@@ -14,3 +14,29 @@
       picheight={"300px"}
     />
   </div>
+
+  <section>
+    <h2>Introduction to Volcanoes</h2>
+    <p>
+      
+    </p>
+  
+    <h2>Causes of Volcanoes</h2>
+    <p>
+    
+    </p>
+    
+  
+    <h2>Impacts of Volcanoes</h2>
+
+    <h2>Management of Volcanoes</h2>
+    
+  </section>
+  
+  <style>
+      section{
+          margin: 2em;
+      }
+      
+  </style>
+  
