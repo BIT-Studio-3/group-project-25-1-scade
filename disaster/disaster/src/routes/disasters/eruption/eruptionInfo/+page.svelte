@@ -24,7 +24,7 @@
   
     <h2>Causes of Volcanoes</h2>
     <p>
-    
+      The primary causes of volcanic activity include tectonic plate movements, magma formation, and the release of gases. When tectonic plates collide, pull apart, or slide against each other, magma can rise to the surface, resulting in volcanic eruptions. Additionally, hot spots beneath the Earth's crust can lead to the formation of volcanoes independent of plate boundaries.
     </p>
     
   
