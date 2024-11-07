@@ -108,8 +108,6 @@
     font-size: larger;
     cursor: pointer;
   }
-  #date {
-  }
   .privacyPolicy {
     /* max-width: 800px;  */
     padding: 20px;
@@ -117,7 +115,6 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
   }
-  h2,
   h3 {
     color: #1c272f;
     margin-bottom: 15px;
