@@ -56,6 +56,7 @@
      
       .container{
         margin: 1rem;
+        line-height: 1.6;
       }
      
   </style>
