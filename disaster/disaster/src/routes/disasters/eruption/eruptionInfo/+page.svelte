@@ -41,6 +41,14 @@
 
 
     <h2>Management of Volcanoes</h2>
+    <p>Effective management of volcanic risks involves monitoring, preparedness, and response strategies. Key measures include:</p>
+    <ul>
+      <li>Implementing early warning systems to alert communities of potential eruptions.</li>
+      <li>Conducting research and monitoring activities to understand volcanic behavior.</li>
+      <li>Developing emergency response plans and evacuation routes for at-risk populations.</li>
+      <li>Engaging communities in education and preparedness programs to enhance resilience.</li>
+  </ul>
+  <p> Collaboration between government agencies, scientists, and local communities is essential to mitigate the risks associated with volcanic activity.</p>
     
   </section>
   
