@@ -29,6 +29,16 @@
     
   
     <h2>Impacts of Volcanoes</h2>
+    <p>
+      Volcanic eruptions can have significant impacts on the environment and human populations. These impacts can include:
+  </p>
+  <ul>
+    <li>Destruction of infrastructure and property due to lava flows and pyroclastic flows.</li>
+    <li>Health hazards from ashfall, which can cause respiratory issues and contaminate water supplies.</li>
+    <li>Climate effects, such as temporary cooling due to ash and gases released into the atmosphere.</li>
+    <li>Long-term changes in land use and agricultural productivity in affected areas.</li>
+</ul>
+
 
     <h2>Management of Volcanoes</h2>
     
