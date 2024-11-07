@@ -66,6 +66,10 @@
         
         color: #252e37; 
     }
+    ul {
+        margin-left: 1.5rem;
+        color: #252e37; 
+    }
      
   </style>
   
