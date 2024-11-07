@@ -58,6 +58,10 @@
         margin: 1rem;
         line-height: 1.6;
       }
+      h2 {
+        color: #15191de7; 
+        margin-top: 1.5rem;
+    }
      
   </style>
   
