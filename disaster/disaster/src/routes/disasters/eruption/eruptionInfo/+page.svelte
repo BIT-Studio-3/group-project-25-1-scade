@@ -62,6 +62,10 @@
         color: #15191de7; 
         margin-top: 1.5rem;
     }
+    p {
+        
+        color: #252e37; 
+    }
      
   </style>
   
