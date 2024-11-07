@@ -94,10 +94,11 @@
     .error {
         color: red;
     }
-    .imageContainer{
+    .imageContainer
+        {   
         float: left;
         margin-left: 2em;
-    }
+        }
     .float {
         float: left;
     }
