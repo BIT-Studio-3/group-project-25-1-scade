@@ -60,7 +60,7 @@
     <h4>
       Please Keep in mind that these earthquakes are only in the past 2-3 days. <br
       />The lower the number input the more recent the quake was. For example, 1
-      is the most recent 2, is the 2nd most recent etc, etc.
+      is the most recent. 2 is the 2nd most recent etc, etc.
     </h4>
     <input
     id="textbox"

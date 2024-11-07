@@ -75,7 +75,14 @@
     placeholder="Enter Tide Index Number"
 />
 <br>
+
 <button class="searchbutton" on:click={fetchTideData}>Get Tide Data</button>
+
+<h4>
+    Please Keep in mind that this data is recent, only in the past 2-3 days.
+    The lower the number input the more recent the event was. For example,
+    1 is the most recent. 2 is the 2nd most recent etc, etc.
+</h4>
 
 {#if selectedTime && selectedValue}
     <p>Selected Time: {selectedTime}</p>
