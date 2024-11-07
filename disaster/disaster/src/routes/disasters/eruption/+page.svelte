@@ -6,32 +6,35 @@
 </script>
 
 <Header headingTitle="Volcanic Eruptions" />
-
-<div>
-    <div class="float">
-        <Card
-        where ={"/disasters/eruption/eruptionInfo"}
-        title ={"What are Volcanoes?"}
-        date = 19/10/2024
-        info = "Volcanoes are "
-        ></Card>
-        <Card
-        where ={"/"}
-        title ={"Event"}
-        date = 19/10/2024
-        info = "Recent fire event in 'Location' at 'time', placeholder for now"
-        ></Card>
+<section>
+    <div>
+        <div class="float">
+            <Card
+            where ={"/disasters/eruption/eruptionInfo"}
+            title ={"What are Volcanoes?"}
+            date = 19/10/2024
+            info = "Volcanoes are "
+            ></Card>
+            <Card
+            where ={"/"}
+            title ={"Event"}
+            date = 19/10/2024
+            info = "Recent fire event in 'Location' at 'time', placeholder for now"
+            ></Card>
+        </div>
     </div>
-</div>
-
-
-
-<div class="imageContainor">
-    <Image pic={volcano} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
-</div>
+    
+    
+    
+    <div class="imageContainor">
+        <Image pic={volcano} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
+    </div>
+</section>
 
 <style>
-
+section{
+    display: flex;
+}
 
  
 </style>
