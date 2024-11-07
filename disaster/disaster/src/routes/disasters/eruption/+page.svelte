@@ -35,7 +35,7 @@
 section{
     display: flex;
 }
-@media only screen and (max-width:866px){
+@media only screen and (max-width:900px){
  section{
   flex-direction: column;
  }}
