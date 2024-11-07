@@ -3,24 +3,6 @@
     import Image from '$lib/Image.svelte';
     import volcano from '$lib/volcano.jpg'
     import Card from '$lib/Card.svelte';
-
-    let searchInput = "";
-    let errorMessage = "No volcanoes found matching your search."
-    let filteredVolcanoes = [];
-
-
-    async function getData(e){
-        const response = await fetch(`http://api.geonet.org.nz/volcano/val`);
-
-        if (response.ok) {
-          const fetched = await response.json();
-          console.log(fetched.features);
-          volcano = fetched;
-      } 
-      else {
-         
-      }
-    }
 </script>
 
 <Header headingTitle="Volcanic Eruptions" />
