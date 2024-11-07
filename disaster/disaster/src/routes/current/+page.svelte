@@ -58,7 +58,6 @@
 <body>
   <div class="top-of-body">
     <h2><Header headingTitle="Current Events" /></h2>
-    <p>{currentTime}</p>
     <div class="current-events">
       <Maincard class="earthquake-card" where="/disasters/earthquake" title="Earthquakes" date={formattedDate} info="More about the Earthquakes" />
       <Maincard where="/disasters/fire" title="Fires" date={formattedDate} info="More about the fires" />
