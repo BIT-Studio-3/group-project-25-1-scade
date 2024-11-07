@@ -2,16 +2,42 @@
     import Header from '$lib/Header.svelte';
     import Image from '$lib/Image.svelte';
     import volcano from '$lib/volcano.jpg'
+    import Card from '$lib/Card.svelte';
 </script>
 
 <Header headingTitle="Volcanic Eruptions" />
-
-<p>Volcanic Eruptions</p>
-
-<div class="imageContainor">
-    <Image pic={volcano} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
-</div>
+<section>
+    <div>
+        <div class="float">
+            <Card
+            where ={"/disasters/eruption/eruptionInfo"}
+            title ={"What are Volcanoes?"}
+            date = 19/10/2024
+            info = "Volcanoes are "
+            ></Card>
+            <Card
+            where ={"/"}
+            title ={"Event"}
+            date = 19/10/2024
+            info = "Recent fire event in 'Location' at 'time', placeholder for now"
+            ></Card>
+        </div>
+    </div>
+    
+    
+    
+    <div class="imageContainor">
+        <Image pic={volcano} picname={"cover"} picwidth={"600px"} picheight={"400px"}/>
+    </div>
+</section>
 
 <style>
-
+section{
+    display: flex;
+}
+@media only screen and (max-width:900px){
+ section{
+  flex-direction: column;
+ }}
+ 
 </style>
