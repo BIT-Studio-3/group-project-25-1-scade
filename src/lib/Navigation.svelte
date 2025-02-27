@@ -18,9 +18,9 @@
     section {
         display: flex;
         align-items: center; /* Center the image and nav vertically */
-        background-color: salmon;
+        background-color: rgb(8, 31, 179);
         padding: 0; /* Remove padding to fit the image */
-        border: 3px solid rgb(182, 81, 44);
+        border: 3px solid rgb(8, 31, 179);
         border-radius: 5px;
     }
     nav {
@@ -30,7 +30,7 @@
         padding: 0; /* Remove padding */
     }
     nav a {
-        color: rgb(150, 64, 32);
+        color: rgb(255, 255, 255);
         text-align: left; /* Align text to the left */
         padding: 30px 30px; /* Adjust padding as needed */
         text-decoration: none;
@@ -39,7 +39,7 @@
         border-radius: 5px;
     }
     nav a:hover {
-        background-color: #ddd;
-        color: rgb(34, 86, 199);
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
     }
 </style>
