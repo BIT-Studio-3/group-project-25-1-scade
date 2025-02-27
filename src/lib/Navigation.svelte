@@ -3,7 +3,7 @@
     import homepic from '$lib/logoversion2.jpg';
 </script>
 <section>
-    <Image pic={homepic} picname={"cover"} picwidth={"200px"} picheight={"50px"}/> 
+    <p>&nbsp;</p><Image pic={homepic} picname={"cover"} picwidth={"200px"} picheight={"50px"}/> 
     <nav>
         <a href="/">Home</a>
         <a href="/current">Current Events</a>
@@ -20,7 +20,7 @@
         align-items: center; /* Center the image and nav vertically */
         background-color: rgb(40, 51, 122);
         padding: 0; /* Remove padding to fit the image */
-        border: 3px solid rgb(8, 31, 179);
+        border: 3px solid rgb(255, 255, 255); /* border colour is white to add thin-ness */
         border-radius: 5px;
     }
     nav {
