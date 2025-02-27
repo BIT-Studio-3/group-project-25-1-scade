@@ -21,7 +21,7 @@
 <style>
     .footerStyle{   
         border-radius: 5px;
-        background-color: skyblue;
+        background-color: rgb(40, 51, 122);
         padding : 2em;
         font-weight: bold;
         font-size: large;
@@ -31,7 +31,7 @@
         flex-direction: column;
         min-height: 1vh;
         margin-top: auto;
-        border: 2px solid rgb(90, 140, 160);
+        border: 2px solid rgb(8, 31, 179);
         /* position: fixed;
         left: 0;
         bottom: 0;
@@ -40,13 +40,15 @@
     nav a{
         padding: 3px 10px;
         text-decoration: none;
-        color:rgb(34, 86, 199);
+        color:rgb(255, 255, 255);
         flex: 1;
     }
     nav a:hover{
-        color: red;
-        background-color: #dddd;
+        text-decoration: underline;
         border-radius: 5px;
+    }
+    p{
+        color:white;
     }
     
     /* #feedback{

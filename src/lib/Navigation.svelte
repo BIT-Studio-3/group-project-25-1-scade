@@ -18,7 +18,7 @@
     section {
         display: flex;
         align-items: center; /* Center the image and nav vertically */
-        background-color: rgb(8, 31, 179);
+        background-color: rgb(40, 51, 122);
         padding: 0; /* Remove padding to fit the image */
         border: 3px solid rgb(8, 31, 179);
         border-radius: 5px;
