@@ -1,9 +1,9 @@
 <script>
     import Image from '$lib/Image.svelte';
-    import homepic from '$lib/logo.jpg';
+    import homepic from '$lib/logoversion2.jpg';
 </script>
 <section>
-    <Image pic={homepic} picname={"cover"} picwidth={"80px"} picheight={"80px"}/> 
+    <Image pic={homepic} picname={"cover"} picwidth={"200px"} picheight={"50px"}/> 
     <nav>
         <a href="/">Home</a>
         <a href="/current">Current Events</a>
