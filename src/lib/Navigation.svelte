@@ -20,8 +20,6 @@
         align-items: center; /* Center the image and nav vertically */
         background-color: rgb(40, 51, 122);
         padding: 0; /* Remove padding to fit the image */
-        border: 3px solid rgb(255, 255, 255); /* border colour is white to add thin-ness */
-        border-radius: 5px;
     }
     nav {
         display: flex;

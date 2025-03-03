@@ -11,6 +11,9 @@
 
 <style>
     :global(*){
-        font-family:Arial, Helvetica, sans-serif
+        font-family:Arial, Helvetica, sans-serif;
+        margin: 0px;
     }
+
+
 </style>

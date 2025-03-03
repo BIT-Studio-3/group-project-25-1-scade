@@ -20,7 +20,7 @@
 
 <style>
     .footerStyle{   
-        border-radius: 5px;
+
         background-color: rgb(40, 51, 122);
         padding : 2em;
         font-weight: bold;
