@@ -106,4 +106,7 @@
     padding-right: 100px;
     padding-left: 10px;
   }
+  *{
+    margin: 10px;
+  }
 </style>
