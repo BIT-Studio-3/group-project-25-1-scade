@@ -57,14 +57,13 @@
 
 <body>
   <!--current warning-->
-  <div class="warning"></div>
   <section class="card-section">
-    <div class="index-card" id="indexCard1">most important</div>
-    <div class="index-card" id="indexCard2">other important</div>
-    <div class="index-card" id="indexCard3">risks</div>
-    <div class="index-card" id="indexCard4">user add</div>
-    <div class="index-card" id="indexCard5">user add</div>
-    <div class="index-card" id="indexCard6">map</div>
+    <Card title="most important";class="index-card" id="indexCard1"/>
+    <Card title="other important" id="indexCard2"/>
+    <Card title ="risks" id="indexCard3"/>
+    <Card title ="user add" class="index-card" id="indexCard4"/>
+    <Card title ="user add" class="index-card" id="indexCard5"/>
+    <Card title ="map" class="indexCard6" id="indexCard6"/>
 
   </section>
 
@@ -107,26 +106,13 @@
 </body>
 
 <style>
- .warning{
-  height: 5em;
-  width: 100%;
-  background-color: red;
-  margin-bottom: 2em;
- }
+
  .card-section{
   display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 8px;
  }
-  .index-card{
-
-  height: 15em;
-  border-radius: 30px;
-  background: #e0e0e0;
-
-             padding: 1rem;
-  }
 
   #indexCard1{
     grid-row: span 2 / span 2;
@@ -137,7 +123,7 @@
   }
   #indexCard4{grid-row-start: 3;}
   #indexCard5{grid-row-start: 3;}
-  #indexCard6{grid-column: span 2 / span 2;
+  .indexCard6{grid-column: span 2 / span 2;
     grid-row: span 2 / span 2;
     grid-row-start: 4;}
 
