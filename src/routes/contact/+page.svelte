@@ -3,7 +3,7 @@
   import Header from '$lib/Header.svelte';
 </script>
 
-<Header headingTitle="Contact us!" />
+<Header headingTitle="Contact" />
 
 <form action="">
   <label for="email"
@@ -68,7 +68,7 @@
     resize: vertical;
   }
   input[type="submit"] {
-    background-color: salmon;
+    background-color: rgb(40, 51, 122);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -76,14 +76,14 @@
     cursor: pointer;
   }
   input[type="submit"]:hover {
-    background-color: salmon;
+    background-color: rgb(57, 72, 167);
   }
 
   input:invalid:required,
   textarea:invalid:required {
     background-color: ivory;
     border: none;
-    outline: 2px solid red;
+    outline: 2px solid rgb(40, 51, 122);
     border-radius: 5px;
   }
 

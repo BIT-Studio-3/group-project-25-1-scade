@@ -1,0 +1,7 @@
+:root {
+    --mainColor: <insert colour>;
+    --backgroundColor:aliceblue;
+  }
+body{
+    background-color: var(--backgroundColor);
+}

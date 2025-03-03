@@ -69,6 +69,7 @@
         padding: 1em;
     }
     p {
+      margin: 10px;
         padding-left: 1em;
     }
     .card {

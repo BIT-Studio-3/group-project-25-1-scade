@@ -8,7 +8,7 @@
 <style>
     aside {
         margin-right: 1em;
-        background-color: skyblue;
+        background-color: rgb(40, 51, 122);
         text-align: center;
         padding-left: 0.5em;
         padding-right: 0.5em;
@@ -17,7 +17,7 @@
     }
     aside a {
         display: block;
-        color:rgb(34, 86, 199);
+        color:rgb(255, 255, 255);
         text-align: center;
         text-decoration: none;
         font-weight: bold;
@@ -26,7 +26,6 @@
         border-radius: 5px;
     }
     aside a:hover {
-        color: red;
-        background-color: #ddd;
+        text-decoration: underline;
     }
 </style>
