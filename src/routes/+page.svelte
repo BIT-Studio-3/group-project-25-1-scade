@@ -58,20 +58,25 @@
 <body>
   <!--current warning-->
   <section class="card-section">
-    <Card title="most important";class="index-card" id="indexCard1"/>
-    <Card title="other important" id="indexCard2"/>
-    <Card title ="risks" id="indexCard3"/>
-    <Card title ="user add" class="index-card" id="indexCard4"/>
-    <Card title ="user add" class="index-card" id="indexCard5"/>
-    <Card title ="map" class="indexCard6" id="indexCard6"/>
-
+    <div class="index-row1">
+      <div class="index-row1-left-side">
+        <Card title="most important" class="index-card1" id="index-card1"/>
+      </div>
+      <div class="index-row1-right-side">
+        <Card title="other important" id="indexCard2"/>
+        <Card title ="risks" id="indexCard3"/>
+      </div>
+    </div>
+    <div class="index-row2">
+      <Card title ="user add" class="index-card" id="indexCard4"/>
+      <Card title ="user add" class="index-card" id="indexCard5"/>
+    </div>
+    <div class="index-row3">
+      <Card title ="map" class="indexCard6" id="indexCard6"/>
+    </div>
   </section>
 
-
-
-
-
-  <div class="top-of-body">
+  <!-- <div class="top-of-body">
     <h2><Header headingTitle="Current Events" /></h2>
     <p>{currentTime}</p>
     <div class="current-events">
@@ -102,32 +107,43 @@
     </div>
 
     
-  </div>
+  </div> -->
 </body>
 
 <style>
 
- .card-section{
-  display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
- }
-
-  #indexCard1{
-    grid-row: span 2 / span 2;
-  }
-
-  #indexCard3{
+  .index-row1{
+    display: flex;
+    flex-direction: row;
 
   }
-  #indexCard4{grid-row-start: 3;}
-  #indexCard5{grid-row-start: 3;}
-  .indexCard6{grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-    grid-row-start: 4;}
+  .index-row2{
+    display: flex;
+    flex-direction: row;
 
-  p {
+  }
+  .index-row3{
+    display: flex;
+    flex-direction: row;
+    width:100%
+  }
+
+  .index-row1-left-side{
+    width:50%; 
+    padding-right: 1em;
+  }
+  .index-card1{
+    max-height: 100em;
+  }
+  .index-row1-right-side{
+    width:50%; 
+    flex-direction: column;
+
+  }
+
+
+
+  /* p {
     padding: 1.2%;
   }
   h2 {
@@ -161,6 +177,6 @@
     display: flex;
     justify-content: right;
     padding: 2%;
-  }
+  } */
 
 </style>
