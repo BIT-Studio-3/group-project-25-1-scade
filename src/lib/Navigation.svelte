@@ -1,16 +1,16 @@
 <script>
     import Image from '$lib/Image.svelte';
-    import homepic from '$lib/logo.jpg';
+    import homepic from '$lib/logoversion2.jpg';
 </script>
 <section>
-    <Image pic={homepic} picname={"cover"} picwidth={"80px"} picheight={"80px"}/> 
+    <p>&nbsp;</p><Image pic={homepic} picname={"cover"} picwidth={"200px"} picheight={"50px"}/> 
     <nav>
         <a href="/">Home</a>
         <a href="/current">Current Events</a>
         <a href="/recent">Recent Events</a>
         <a href="/disasters">Disasters</a>
         <a href="/about">About</a>
-        <a href="/contact">Contact and Feedback</a>
+        <a href="/contact">Contact</a>
     </nav>
 </section>
 
@@ -18,10 +18,8 @@
     section {
         display: flex;
         align-items: center; /* Center the image and nav vertically */
-        background-color: salmon;
+        background-color: rgb(40, 51, 122);
         padding: 0; /* Remove padding to fit the image */
-        border: 3px solid rgb(182, 81, 44);
-        border-radius: 5px;
     }
     nav {
         display: flex;
@@ -30,7 +28,7 @@
         padding: 0; /* Remove padding */
     }
     nav a {
-        color: rgb(150, 64, 32);
+        color: rgb(255, 255, 255);
         text-align: left; /* Align text to the left */
         padding: 30px 30px; /* Adjust padding as needed */
         text-decoration: none;
@@ -39,7 +37,7 @@
         border-radius: 5px;
     }
     nav a:hover {
-        background-color: #ddd;
-        color: rgb(34, 86, 199);
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
     }
 </style>
