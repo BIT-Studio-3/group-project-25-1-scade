@@ -56,25 +56,18 @@
 </script>
 
 <body>
-  <!--current warning-->
+  
+  <!-- <div class="warning"></div> to be added  -->
   <section class="card-section">
-    <div class="index-row1">
-      <div class="index-row1-left-side">
-        <Card title="most important" class="index-card1" id="index-card1"/>
-      </div>
-      <div class="index-row1-right-side">
-        <Card title="other important" id="indexCard2"/>
-        <Card title ="risks" id="indexCard3"/>
-      </div>
-    </div>
-    <div class="index-row2">
-      <Card title ="user add" class="index-card" id="indexCard4"/>
-      <Card title ="user add" class="index-card" id="indexCard5"/>
-    </div>
-    <div class="index-row3">
-      <Card title ="map" class="indexCard6" id="indexCard6"/>
-    </div>
+    <div class="index-card" id="indexCard1">most important</div>
+    <div class="index-card" id="indexCard2">other important</div>
+    <div class="index-card" id="indexCard3">risks</div>
+    <div class="index-card" id="indexCard4">user add</div>
+    <div class="index-card" id="indexCard5">user add</div>
+    <div class="index-card" id="indexCard6">map</div>
+
   </section>
+
 
   <!-- <div class="top-of-body">
     <h2><Header headingTitle="Current Events" /></h2>
@@ -87,7 +80,7 @@
     </div>
   </div>
 
-  <p></p>
+
 
   <div class="bottom-of-body">
     <h1>&numsp;Recent Events</h1>
@@ -111,36 +104,41 @@
 </body>
 
 <style>
+ .card-section{
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.75em;
+ }
+  .index-card{
 
-  .index-row1{
-    display: flex;
-    flex-direction: row;
+  height: 15em;
+  border-radius: 30px;
+  background: #ececf3;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        padding: 1em;
+        border-radius: 30px;
 
-  }
-  .index-row2{
-    display: flex;
-    flex-direction: row;
-
-  }
-  .index-row3{
-    display: flex;
-    flex-direction: row;
-    width:100%
-  }
-
-  .index-row1-left-side{
-    width:50%; 
-    padding-right: 1em;
-  }
-  .index-card1{
-    max-height: 100em;
-  }
-  .index-row1-right-side{
-    width:50%; 
-    flex-direction: column;
 
   }
+  .index-card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+  
 
+  #indexCard1{
+    grid-row: span 2/ span 2;
+    height: 94%;
+ 
+  }
+
+  #indexCard4{grid-row-start: 3;}
+  #indexCard5{grid-row-start: 3;}
+  #indexCard6{grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-row-start: 4;}
 
 
   /* p {
