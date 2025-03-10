@@ -25,60 +25,35 @@
 
   <div class="members">
     <div class="imageContainer">
-      <Image
-        pic={homepic}
-        picname={"cover"}
-        picheight={"300px"}
-        picwidth={"250px"}
-      />
+      
     </div>
     <div class="name"><p>Zandar</p></div>
   </div>
 
   <div class="members">
     <div class="imageContainer">
-      <Image
-        pic={homepic}
-        picname={"cover"}
-        picheight={"300px"}
-        picwidth={"250px"}
-      />
+      
     </div>
     <div class="name"><p>Aston</p></div>
   </div>
 
   <div class="members">
     <div class="imageContainer">
-      <Image
-        pic={homepic}
-        picname={"cover"}
-        picheight={"300px"}
-        picwidth={"250px"}
-      />
+      
     </div>
     <div class="name"><p>Hazel</p></div>
   </div>
 
   <div class="members">
     <div class="imageContainer">
-      <Image
-        pic={homepic}
-        picname={"cover"}
-        picheight={"300px"}
-        picwidth={"250px"}
-      />
+      
     </div>
     <div class="name"><p>Saskia</p></div>
   </div>
 
   <div class="members">
     <div class="imageContainer">
-      <Image
-        pic={homepic}
-        picname={"cover"}
-        picheight={"300px"}
-        picwidth={"250px"}
-      />
+      
     </div>
     <div class="name"><p>Joanne</p></div>
   </div>
