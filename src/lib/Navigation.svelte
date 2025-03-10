@@ -12,7 +12,6 @@
         <a href="/disasters/flood">Flood</a>
         <a href="/disasters/eruption">Eruption</a>
         <a href="/about">About</a>
-        <a href="/contact">Contact</a>
     </nav>
 </section>
 
