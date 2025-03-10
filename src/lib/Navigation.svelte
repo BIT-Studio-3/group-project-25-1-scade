@@ -7,7 +7,10 @@
     <nav>
         <a href="/">Home</a>
         <a href="/current">Events</a>
-        <a href="/disasters">Disasters</a>
+        <a href="/disasters/fire">Fire</a>
+        <a href="/disasters/earthquake">Earthquake</a>
+        <a href="/disasters/flood">Flood</a>
+        <a href="/disasters/eruption">Eruption</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
     </nav>
