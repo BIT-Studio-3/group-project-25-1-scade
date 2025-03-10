@@ -3,7 +3,8 @@
     import homepic from '$lib/logoversion2.jpg';
 </script>
 <section>
-    <p>&nbsp;</p><Image pic={homepic} picname={"cover"} picwidth={"200px"} picheight={"50px"}/> 
+    <!-- <p>&nbsp;</p><Image pic={homepic} picname={"cover"} picwidth={"200px"} picheight={"50px"}/>  -->
+    <h1><a href="/" id="logo">SCADE</a></h1>
     <nav>
         <a href="/">Home</a>
         <a href="/current">Current Events</a>
@@ -96,5 +97,14 @@
 
     .dropdown:hover .dropdown-content {
         display: block;
+    }
+
+    #logo {
+        font-family:'Times New Roman', Times, serif;
+        color: #f9f9f9;
+        text-decoration: none;
+        font-size: larger;
+        padding: 15px;
+        font-weight: lighter;
     }
 </style>
