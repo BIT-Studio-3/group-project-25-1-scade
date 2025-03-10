@@ -58,12 +58,35 @@
 <body>
   <div class="top-of-body">
     <h2><Header headingTitle="Current Events" /></h2>
+    <p>{currentTime}</p>
     <div class="current-events">
       <Maincard class="earthquake-card" where="/disasters/earthquake" title="Earthquakes" date={formattedDate} info="More about the Earthquakes" />
       <Maincard where="/disasters/fire" title="Fires" date={formattedDate} info="More about the fires" />
       <Maincard where="/disasters/eruption" title="Eruptions" date={formattedDate} info="More about the eruptions" />
       <Maincard where="/disasters/flood" title="Floods" date={formattedDate} info="More about the floods" />
     </div>
+  </div>
+
+  <p></p>
+
+  <div class="bottom-of-body">
+    <h1>&numsp;Recent Events</h1>
+    <div class="recent-events">
+      <Maincard class="earthquakeCard" where="/disasters/earthquake" title="Earthquakes" date="18/10/24" info="More about the Earthquakes"location={location}>
+        <p><strong>Location:</strong> {location}</p>
+        <p><strong>Magnitude:</strong> {magnitude}</p>
+        <p><strong>Depth:</strong> {depth} km</p>
+        <p><strong>MMI:</strong> {mmi}</p>
+        <p><strong>Time:</strong> {quakeTime}</p>  
+      </Maincard> 
+      <Maincard where="/disasters/fire" title="Fires" date="18/10/24" info="More about the fires" />
+      <Maincard where="/disasters/eruption" title="Eruptions" date="18/10/24" info="More about the eruptions" />
+      <Maincard where="/disasters/flood" title="Floods" date="18/10/24" info="More about the floods">
+        <p>testtestest</p>
+      </Maincard>
+    </div>
+
+    
   </div>
 </body>
 
