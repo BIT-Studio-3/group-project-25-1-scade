@@ -11,7 +11,7 @@
         <a href="/howToUse">How to Use</a>
         <!-- <a href="/">SiteMap</a> -->
         <a href="/privacy">Privacy Policy</a>
-        <a href="/about">Contact Us</a>
+        <a href="/contact">Contact</a>
 
     </nav>
 </div>
