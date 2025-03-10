@@ -6,8 +6,7 @@
     <p>&nbsp;</p><Image pic={homepic} picname={"cover"} picwidth={"200px"} picheight={"50px"}/> 
     <nav>
         <a href="/">Home</a>
-        <a href="/current">Current Events</a>
-        <a href="/recent">Recent Events</a>
+        <a href="/current">Events</a>
         <a href="/disasters">Disasters</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
