@@ -56,7 +56,20 @@
 </script>
 
 <body>
-  <div class="top-of-body">
+  
+  <!-- <div class="warning"></div> to be added  -->
+  <section class="card-section">
+    <div class="index-card" id="indexCard1">most important</div>
+    <div class="index-card" id="indexCard2">other important</div>
+    <div class="index-card" id="indexCard3">risks</div>
+    <div class="index-card" id="indexCard4">user add</div>
+    <div class="index-card" id="indexCard5">user add</div>
+    <div class="index-card" id="indexCard6">map</div>
+
+  </section>
+
+
+  <!-- <div class="top-of-body">
     <h2><Header headingTitle="Current Events" /></h2>
     <p>{currentTime}</p>
     <div class="current-events">
@@ -67,7 +80,7 @@
     </div>
   </div>
 
-  <p></p>
+
 
   <div class="bottom-of-body">
     <h1>&numsp;Recent Events</h1>
@@ -87,11 +100,48 @@
     </div>
 
     
-  </div>
+  </div> -->
 </body>
 
 <style>
-  p {
+ .card-section{
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.75em;
+ }
+  .index-card{
+
+  height: 15em;
+  border-radius: 30px;
+  background: #ececf3;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        padding: 1em;
+        border-radius: 30px;
+
+
+  }
+  .index-card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+  
+
+  #indexCard1{
+    grid-row: span 2/ span 2;
+    height: 94%;
+ 
+  }
+
+  #indexCard4{grid-row-start: 3;}
+  #indexCard5{grid-row-start: 3;}
+  #indexCard6{grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-row-start: 4;}
+
+
+  /* p {
     padding: 1.2%;
   }
   h2 {
@@ -125,5 +175,6 @@
     display: flex;
     justify-content: right;
     padding: 2%;
-  }
+  } */
+
 </style>
