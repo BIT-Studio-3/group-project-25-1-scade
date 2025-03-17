@@ -6,21 +6,21 @@
 
 <Header headingTitle="About" />
 
-<h2>About Us:</h2>
-<h3>Our Mission</h3>
-<p>
-  To Give weather related information to various disaster response groups, to
-  help them remain informed about what is happening at all times.
+<p> 
+Scade stands for <b>System for Climate Alerts, Disasters, and Emergencies</b>.<br>
+Our mission is to build a sustainable weather API platform. <br>
+The lack of a pre-existing system within the New Zealand government inspired us to develop this application. <br>
 </p>
-<h3>Who We Are</h3>
 <p>
-  We are a bunch of people working hard to bring you a working disaster API to
-  help those who are helping others.
+  This website is designed for the use of New Zealand emergency responders. <br>
+  Scade may also be applicable to relevant responders such as council members.
 </p>
-<h3>What We Do</h3>
-<p>We do be trying to make weather do the thing. Science Yo!</p>
+
+<p>If you wish to contact us, please use the contact form below.</p>
 
 
 <style>
-  
+  p {
+  margin-bottom: 20px;
+}
 </style>
