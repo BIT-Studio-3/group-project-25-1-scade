@@ -3,13 +3,12 @@
     import homepic from '$lib/logoversion2.jpg';
 </script>
 <section>
-    <!-- <p>&nbsp;</p><Image pic={homepic} picname={"cover"} picwidth={"200px"} picheight={"50px"}/>  -->
     <h1><a href="/" id="logo">SCADE</a></h1>
     <nav>
         <a href="/">Home</a>
         <a href="/current">Current Events</a>
         <a href="/recent">Recent Events</a>
-        <a href="/disasters" class="dropbtn">Disasters</a>
+        <a href="/disasters">Disasters</a>
 
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
