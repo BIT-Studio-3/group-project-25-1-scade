@@ -4,7 +4,7 @@
   import homepic from "$lib/Weather.jpg";
 </script>
 
-<Header headingTitle="About Page" />
+<Header headingTitle="About" />
 
 <h2>About Us:</h2>
 <h3>Our Mission</h3>
@@ -20,93 +20,7 @@
 <h3>What We Do</h3>
 <p>We do be trying to make weather do the thing. Science Yo!</p>
 
-<div id="group">
-  <h3>Our Members:</h3>
-
-  <div class="members">
-    <div class="imageContainer">
-      <Image
-        pic={homepic}
-        picname={"cover"}
-        picheight={"300px"}
-        picwidth={"250px"}
-      />
-    </div>
-    <div class="name"><p>Zandar</p></div>
-  </div>
-
-  <div class="members">
-    <div class="imageContainer">
-      <Image
-        pic={homepic}
-        picname={"cover"}
-        picheight={"300px"}
-        picwidth={"250px"}
-      />
-    </div>
-    <div class="name"><p>Aston</p></div>
-  </div>
-
-  <div class="members">
-    <div class="imageContainer">
-      <Image
-        pic={homepic}
-        picname={"cover"}
-        picheight={"300px"}
-        picwidth={"250px"}
-      />
-    </div>
-    <div class="name"><p>Hazel</p></div>
-  </div>
-
-  <div class="members">
-    <div class="imageContainer">
-      <Image
-        pic={homepic}
-        picname={"cover"}
-        picheight={"300px"}
-        picwidth={"250px"}
-      />
-    </div>
-    <div class="name"><p>Saskia</p></div>
-  </div>
-
-  <div class="members">
-    <div class="imageContainer">
-      <Image
-        pic={homepic}
-        picname={"cover"}
-        picheight={"300px"}
-        picwidth={"250px"}
-      />
-    </div>
-    <div class="name"><p>Joanne</p></div>
-  </div>
-</div>
-<br />
 
 <style>
-  .members {
-    display: inline-block;
-    width: 150px;
-    height: 200px;
-    text-align: center;
-    margin-right: 100px;
-    margin-left: 100px;
-  }
-  .name {
-    display: block;
-    text-align: center;
-    padding-left: 100px;
-  }
-
-  .imageContainer {
-    width: 100%;
-    display: block;
-    padding-right: 100px;
-    padding-left: 10px;
-  }
-  *{
-    margin: 10px;
-  }
+  
 </style>
