@@ -5,7 +5,6 @@
   import Maincard from '$lib/Maincard.svelte';
   import Image from '$lib/Image.svelte';
   import Footer from '$lib/Footer.svelte';
-  import homepic from '$lib/Weather.jpg';
   import earthquakeCard from '$lib/Maincard.svelte';
 
   let currentTime = new Date();

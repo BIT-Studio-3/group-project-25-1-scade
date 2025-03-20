@@ -1,11 +1,12 @@
 <script>
   import Header from "$lib/Header.svelte";
   import Image from "$lib/Image.svelte";
-  import homepic from "$lib/Weather.jpg";
   import flood from "$lib/flood.jpg";
   import fire from "$lib/fire.jpg";
   import earthquake from "$lib/earthquake.jpg";
   import volcano from "$lib/volcano.jpg";
+
+  let homepic = "/images/Weather.jpg";
 </script>
 
 <Header headingTitle="References" />
