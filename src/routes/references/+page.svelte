@@ -3,10 +3,10 @@
   import Image from "$lib/Image.svelte";
   import flood from "$lib/flood.jpg";
   import fire from "$lib/fire.jpg";
-  import earthquake from "$lib/earthquake.jpg";
   import volcano from "$lib/volcano.jpg";
 
   let homepic = "/images/Weather.jpg";
+  let earthquake = "/images/earthquake.jpg";
 </script>
 
 <Header headingTitle="References" />
