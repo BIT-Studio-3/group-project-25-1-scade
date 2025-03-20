@@ -1,6 +1,7 @@
 <script>
     import Image from '$lib/Image.svelte';
-    import homepic from '$lib/logoversion2.jpg';
+
+    let homepic = "/images/logoversion2.jpg";
 </script>
 <section>
     <p>&nbsp;</p><Image pic={homepic} picname={"cover"} picwidth={"200px"} picheight={"50px"}/> 
