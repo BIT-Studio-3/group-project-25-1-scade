@@ -24,10 +24,7 @@ The lack of a pre-existing system within the New Zealand government inspired us 
 		<input name="email" type="email">
 	</label>
   <br>
-	<label>
-		Your Message
-		<textarea name="message" bind:value={message} placeholder="Enter your message here..."></textarea>
-	</label>
+  <textarea name="message" bind:value={message} placeholder="Enter your message here..."></textarea>
 	<button>Submit</button>
 </form>
 
@@ -45,5 +42,15 @@ The lack of a pre-existing system within the New Zealand government inspired us 
   .message{
     margin-bottom: 20px;
   }
-  
+  textarea,
+  select {
+    width: 30%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing:content-box;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    resize:none;
+  }
 </style>
