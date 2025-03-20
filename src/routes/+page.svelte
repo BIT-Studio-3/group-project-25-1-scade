@@ -22,6 +22,7 @@
   let depth = "";
   let mmi = "";
   let error = "";
+  
 
   async function getData() {
       const response = await fetch(`http://api.geonet.org.nz/quake?MMI=-1`);
