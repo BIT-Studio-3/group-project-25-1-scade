@@ -2,9 +2,9 @@
 <script>
   import Header from "$lib/Header.svelte";
   import Image from "$lib/Image.svelte";
-  import quake from "$lib/quakes.jpg";
 
   let faults = "/images/faults.jpg";
+  let quake = "/images/quakes.jpg";
 </script>
 
 <Header headingTitle="What is an earthquake ?"></Header>
