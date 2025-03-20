@@ -1,7 +1,8 @@
 <script>
     import Header from '$lib/Header.svelte';
-      import Image from '$lib/Image.svelte';
-    import flood from '$lib/flood.jpg'
+    import Image from '$lib/Image.svelte';
+
+    let flood = "/images/flood.jpg";
     
 </script>
 
