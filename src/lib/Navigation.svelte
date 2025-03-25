@@ -1,6 +1,7 @@
 <script>
     import Image from '$lib/Image.svelte';
-    import homepic from '$lib/logoversion2.jpg';
+
+    let homepic = "/images/logoversion2.jpg";
 </script>
 <section>
     <h1><a href="/" id="logo">SCADE</a></h1>

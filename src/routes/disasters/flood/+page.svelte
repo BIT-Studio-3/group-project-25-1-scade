@@ -2,7 +2,8 @@
     import Header from '$lib/Header.svelte';
     import Image from '$lib/Image.svelte';
     import Card from '$lib/Card.svelte'
-    import flood from '$lib/flood.jpg';
+
+    let flood = "/images/flood.jpg";
 
     const apiKey = "gvzqb8DKRo8iVxK38YHq5Psak0iT09Jq"; 
     let tideData = null; 
