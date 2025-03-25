@@ -4,16 +4,14 @@
 
 <div class = "footerStyle">
 
-    <p>
+    <p class = "topSentince">
         &copy; The information provided is for your personal use in accordance with The Disasters Service website 2024
     </p>
     <nav>
-        <a href="/accessibility">Accessibility</a>
-        <a href="/howToUse">How to Use</a>
         <a href="/">SiteMap</a>
         <a href="/privacy">Privacy Policy</a>
-        <a href="/references">References</a>
-
+        <a href="/contact">Contact</a>
+        <a href="/about">Further Information</a>
     </nav>
 </div>
 
@@ -32,10 +30,11 @@
         min-height: 1vh;
         margin-top: auto;
         border: 2px solid rgb(8, 31, 179);
-        /* position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%; */
+        position: absolute;
+        width: 100%;
+    }
+    .topSentince {
+        padding-bottom: 30px;
     }
     nav a{
         padding: 3px 10px;
