@@ -10,6 +10,8 @@
     <nav>
         <a href="/">SiteMap</a>
         <a href="/privacy">Privacy Policy</a>
+        <a href="/contact">Contact</a>
+        <a href="/about">Further Information</a>
     </nav>
 </div>
 
