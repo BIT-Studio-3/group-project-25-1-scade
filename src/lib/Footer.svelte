@@ -3,7 +3,7 @@
 </script>
 
 <div class = "footerStyle">
-    <p class = "topSentince">
+    <p class = "topSentence">
         &copy; The information provided is for your personal use in accordance with The Disasters Service website 2024
     </p>
     <nav>
@@ -29,7 +29,7 @@
         width: 100%;
         margin-top: auto;
     }
-    .topSentince {
+    .topSentence {
         padding-bottom: 30px;
     }
     nav a{
