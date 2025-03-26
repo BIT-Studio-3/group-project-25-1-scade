@@ -17,16 +17,15 @@
 
 <style>
     .footerStyle{   
-
         background-color: rgb(40, 51, 122);
-        padding : 2em;
+        padding-top : 2em;
+        padding-bottom: 2em;
         font-weight: bold;
         font-size: large;
         line-height: 1.5;
         text-align: center;
         display : flex;
         flex-direction: column;
-        border: 2px solid rgb(8, 31, 179);
         width: 100%;
         margin-top: auto;
     }
