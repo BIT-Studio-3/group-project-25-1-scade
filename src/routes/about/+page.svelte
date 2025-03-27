@@ -1,7 +1,7 @@
 <script>
   import Header from "$lib/Header.svelte";
   import Image from "$lib/Image.svelte";
-  import homepic from "$lib/Weather.jpg";
+  let homepic = "/images/Weather.jpg";
 </script>
 
 <Header headingTitle="About Page" />

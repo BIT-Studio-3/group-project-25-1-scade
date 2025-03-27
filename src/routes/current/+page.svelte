@@ -1,9 +1,11 @@
 <script>
   import Header from '$lib/Header.svelte';
   import Maincard from '$lib/Maincard.svelte';
-
+  import Image from '$lib/Image.svelte';
+  import Footer from '$lib/Footer.svelte';
+  import earthquakeCard from '$lib/Maincard.svelte';
   let currentTime = new Date();
-
+  
   let day = String(currentTime.getDate()).padStart(2, '0');
   let month = String(currentTime.getMonth() + 1).padStart(2, '0'); 
   let year = currentTime.getFullYear(); 

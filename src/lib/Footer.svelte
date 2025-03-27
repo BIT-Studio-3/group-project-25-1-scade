@@ -2,40 +2,33 @@
 
 </script>
 
-<div class = "footerStyle">
-
-    <p>
+<footer>
+    <h3>
         &copy; The information provided is for your personal use in accordance with The Disasters Service website 2024
-    </p>
+    </h3>
     <nav>
-        <a href="/accessibility">Accessibility</a>
-        <a href="/howToUse">How to Use</a>
         <a href="/">SiteMap</a>
         <a href="/privacy">Privacy Policy</a>
-        <a href="/references">References</a>
-
+        <a href="/contact">Contact</a>
+        <a href="/about">Further Information</a>
     </nav>
-</div>
+</footer>
 
 
 <style>
-    .footerStyle{   
-
+    footer{   
         background-color: rgb(40, 51, 122);
-        padding : 2em;
+        padding-top : 2em;
+        padding-bottom: 2em;
         font-weight: bold;
         font-size: large;
         line-height: 1.5;
         text-align: center;
         display : flex;
         flex-direction: column;
-        min-height: 1vh;
+        width: 100%;
         margin-top: auto;
-        border: 2px solid rgb(8, 31, 179);
-        /* position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%; */
+        color:white;
     }
     nav a{
         padding: 3px 10px;
@@ -47,14 +40,7 @@
         text-decoration: underline;
         border-radius: 5px;
     }
-    p{
-        color:white;
+    h3{
+        padding-bottom: 30px;
     }
-    
-    /* #feedback{
-        
-    } */
-
-    
-
 </style>
