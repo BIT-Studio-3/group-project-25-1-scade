@@ -1,17 +1,18 @@
 <script>
   import Header from "$lib/Header.svelte";
   import Image from "$lib/Image.svelte";
-  import homepic from "$lib/Weather.jpg";
-  import flood from "$lib/flood.jpg";
-  import fire from "$lib/fire.jpg";
-  import earthquake from "$lib/earthquake.jpg";
-  import volcano from "$lib/volcano.jpg";
+
+  let homepic = "/images/Weather.jpg";
+  let earthquake = "/images/earthquake.jpg";
+  let fire = "/images/fire.jpg";
+  let flood = "/images/flood.jpg";
+  let volcano = "/images/volcano.jpg";
 </script>
 
 <Header headingTitle="References" />
 
 <p>Logo made by us</p>
-
+ 
 <p>
   Home page image: Makao Investments
   (https://makao.co.nz/thoughts/in-the-eye-of-the-storm-with-cat-bonds/) Sourced
