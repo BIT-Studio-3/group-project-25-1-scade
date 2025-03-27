@@ -65,7 +65,7 @@
 
 <style>
     h2 {
-        background-color: rgb(135, 209, 238);
+        background-color: rgb(206, 203, 203);
         padding: 1em;
     }
     p {
@@ -75,6 +75,7 @@
     .card {
         box-shadow: 0 7px 5px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
+        background-color: #ececf3;
         padding: 3em;
         margin: 1em;
         width: 300px;
