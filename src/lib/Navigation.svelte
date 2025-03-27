@@ -8,7 +8,7 @@
     <nav>
         <a href="/">Home</a>
         <a href="/current">Current Events</a>
-        <a href="/recent">Recent Events</a>
+        <a href="/damage">Damage Records</a>
         <a href="/disasters">Disasters</a>
 
         <a href="/about">About</a>
