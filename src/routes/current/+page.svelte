@@ -14,7 +14,7 @@
   let month = String(currentTime.getMonth() + 1).padStart(2, '0'); 
   let year = currentTime.getFullYear(); 
   let formattedDate = `${day}/${month}/${year}`;
-  
+  //date and time script
   // Earthquake data variables
   let quakeTime = "";
   let location = "";
