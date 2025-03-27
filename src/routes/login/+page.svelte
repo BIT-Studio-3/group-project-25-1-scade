@@ -95,11 +95,11 @@
         flex-direction: column;
       }
 
-      .right h1 {
+      .title h1 {
         font-size: 3rem;
       }
 
-      .left {
+      .right {
         flex: none;
         width: 100%;
         padding: 15px;
@@ -110,7 +110,7 @@
         margin: 0 auto;
       }
 
-      .right {
+      .title {
         flex: none;
         width: 100%;
         padding: 20px;
