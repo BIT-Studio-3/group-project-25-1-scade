@@ -1,6 +1,8 @@
 <script>
   import Navigation from "$lib/Navigation.svelte";
   import Footer from "$lib/Footer.svelte";
+
+  import { page } from '$app/stores';
 </script>
 
 <svelte:head>
@@ -8,13 +10,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </svelte:head>
 
-<div class="page-container">
-  <Navigation />
-  
+{#if $page.url.pathname === '/login'}
   <slot />
-  
-  <Footer />
-</div>
+{:else}
+  <div class="page-container">
+    <Navigation />
+    
+    <slot />
+    
+    <Footer />
+  </div>
+{/if}
+
 
 <style>
   :global(*){
