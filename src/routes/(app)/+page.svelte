@@ -13,6 +13,11 @@
   let month = String(currentTime.getMonth() + 1).padStart(2, '0'); 
   let year = currentTime.getFullYear(); 
   let formattedDate = `${day}/${month}/${year}`;
+
+  onMount(() => {
+		document.cookie = "user=exampleUser; path=/; max-age=86400"; // Expires in 1 day
+		console.log('User cookie set:', document.cookie);
+	});
   
   // Earthquake data variables
   let quakeTime = "";
