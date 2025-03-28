@@ -1,5 +1,4 @@
 <script>
-  import { onMount } from 'svelte';
   import Header from '$lib/Header.svelte';
   import Card from '$lib/Card.svelte';
   import Maincard from '$lib/Maincard.svelte';
@@ -14,10 +13,6 @@
   let year = currentTime.getFullYear(); 
   let formattedDate = `${day}/${month}/${year}`;
 
-  onMount(() => {
-		document.cookie = "user=exampleUser; path=/; max-age=86400"; // Expires in 1 day
-		console.log('User cookie set:', document.cookie);
-	});
   
   // Earthquake data variables
   let quakeTime = "";
