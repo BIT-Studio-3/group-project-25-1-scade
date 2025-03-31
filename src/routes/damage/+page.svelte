@@ -1,34 +1,67 @@
 <script>
   import { onMount } from 'svelte';
   import Header from '$lib/Header.svelte';
-  import Card from '$lib/Card.svelte';
-  import Maincard from '$lib/Maincard.svelte';
-  import Image from '$lib/Image.svelte';
-  import Footer from '$lib/Footer.svelte';
-  import earthquakeCard from '$lib/Maincard.svelte';
+
 
   let damages = [
     { damage: 'This and that is damaged', location: '123 Paper St'},
-    { damage: 'that is damaged and this is not', location: '321 Paper St'}
+    { damage: 'that is damaged and this is not', location: '321 Paper St'},
+    { damage: 'This and that is damaged', location: '123 Paper St'},
+    { damage: 'that is damaged and this is not', location: '321 Paper St'},
+    { damage: 'This and that is damaged', location: '123 Paper St'},
+    { damage: 'that is damaged and this is not', location: '321 Paper St'},
+    { damage: 'This and that is damaged', location: '123 Paper St', time: '17/5/25 12:15'},
+    { damage: 'that is damaged and this is not', location: '321 Paper St',time: '17/5/25 13:05'}
   ];
 </script>
 
 <body>
   <div class="top-of-body">
     <h2><Header headingTitle="Damage Records" /></h2>
-    
+
+    <form method="POST" action="?/report">
+      <label>
+          Time
+      <input name="time" type="time">
+      </label>
+
+      <label>
+        Damage
+    <input name="details" type="string">
+    </label>
+
+    <label>
+      Location
+    <input name="location" type="string">
+    </label>
+
+
+
+      <button formaction="?/report">Submit</button>
+      </form>
+
     <table>
       <thead>
         <tr>
+          <th>Time</th>
           <th>Damage</th>
           <th>Location</th>
+          
+        </tr>
+        <tr>
+          <td>Input 1</td>
+          <td>Input 2</td>
+          <td>Input 3</td>
+          
         </tr>
       </thead>
       <tbody>
-        {#each damages as { damage, location}}
+        {#each damages as { damage, location, time}}
           <tr>
+            <td>{time}</td>
             <td>{damage}</td>
             <td>{location}</td>
+            
           </tr>
         {/each}
       </tbody>
