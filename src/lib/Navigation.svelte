@@ -22,12 +22,14 @@
         align-items: center; 
         background-color: rgb(40, 51, 122);
         padding: 0; /* Remove padding to fit the image */
+        flex-direction: row;
     }
     nav {
         display: flex;
         align-items: center; /* Center the text vertically */
         background-color: transparent; /* Make the background transparent */
         padding: 0; /* Remove padding */
+        flex-wrap: wrap;
     }
     nav a {
         color: rgb(255, 255, 255);
@@ -40,7 +42,7 @@
     }
     nav a:hover {
         color: rgb(255, 255, 255);
-        text-decoration: underline;
+        background-color: rgb(13, 33, 55);
     }
 
     #logo {
@@ -50,5 +52,25 @@
         font-size: larger;
         padding: 15px;
         font-weight: lighter;
+        flex: 1;
+    }
+
+    @media (max-width: 970px) {
+        section {
+            flex-direction: column; 
+            align-items: flex-start; 
+        }
+        
+        nav {
+            width: 100%; 
+            justify-content: center; 
+        }
+        
+        nav a {
+            padding: 10px 15px; 
+            font-size: medium; 
+            width: 100%;
+            text-align: center;
+        }
     }
 </style>
