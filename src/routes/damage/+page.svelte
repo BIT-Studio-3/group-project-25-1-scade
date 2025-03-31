@@ -1,14 +1,16 @@
 <script>
-  import { onMount } from 'svelte';
-  import Header from '$lib/Header.svelte';
-  export let data;
-  let damages = data.data;
-  console.log(damages);
+ export let cookieData; // Data passed from the server-side `load` function
 
+import { onMount } from 'svelte';
+import Header from '$lib/Header.svelte';
+
+onMount(() => {
+  console.log(cookieData); // You can see the cookie data in the browser's console
+});
 </script>
 
 <body>
-  <div class="top-of-body">
+  <!-- <div class="top-of-body">
     <h2><Header headingTitle="Damage Records" /></h2>
 
     <form method="POST" action="?/report">
@@ -59,7 +61,7 @@
       </tbody>
     </table>
   
-  </div>
+  </div> -->
 </body>
 
 <style>
