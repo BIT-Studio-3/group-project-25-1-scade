@@ -1,19 +1,25 @@
 <script>
     import Image from '$lib/Image.svelte';
-
     let homepic = "/images/logoversion2.jpg";
+
+    let isMenuOpen = false;
 </script>
 <section>
     <h1><a href="/" id="logo">SCADE</a></h1>
-    <nav>
+    <nav class={isMenuOpen ? 'open' : ''}>
         <a href="/">Home</a>
         <a href="/current">Events</a>
         <a href="/recent">Recent Events</a>
         <a href="/disasters">Disasters</a>
-
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
     </nav>
+
+    <div id="hamburger" on:click={() => isMobileMenuOpen = !isMobileMenuOpen}>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
 </section>
 
 <style>
@@ -21,20 +27,20 @@
         display: flex;
         align-items: center; 
         background-color: rgb(40, 51, 122);
-        padding: 0; /* Remove padding to fit the image */
+        padding: 0; 
         flex-direction: row;
     }
     nav {
         display: flex;
-        align-items: center; /* Center the text vertically */
-        background-color: transparent; /* Make the background transparent */
-        padding: 0; /* Remove padding */
+        align-items: center;
+        background-color: transparent; 
+        padding: 0; 
         flex-wrap: wrap;
     }
     nav a {
         color: rgb(255, 255, 255);
-        text-align: left; /* Align text to the left */
-        padding: 30px 30px; /* Adjust padding as needed */
+        text-align: left; 
+        padding: 30px 30px; 
         text-decoration: none;
         font-weight: bold;
         font-size: large;
@@ -55,6 +61,22 @@
         flex: 1;
     }
 
+    #hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        justify-content: space-around;
+        height: 25px;
+        width: 30px;
+    }
+
+    #hamburger .bar {
+        height: 4px;
+        width: 30px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
     @media (max-width: 970px) {
         section {
             flex-direction: column; 
@@ -64,6 +86,12 @@
         nav {
             width: 100%; 
             justify-content: center; 
+            display: none;
+            flex-direction: column;
+        }
+
+        nav.open {
+            display: flex;
         }
         
         nav a {
@@ -71,6 +99,10 @@
             font-size: medium; 
             width: 100%;
             text-align: center;
+        }
+
+        #hamburger {
+            display: flex;
         }
     }
 </style>
