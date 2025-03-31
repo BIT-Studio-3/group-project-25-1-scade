@@ -8,14 +8,17 @@
     </div>
 
     <div class="right">
-        <div class="login-box">
+        <form method="POST" action="?/login">
             <h2>Login</h2>
-            <input type="text" placeholder="Username" required />
-            <input type="password" placeholder="password" required />
+            username<input name="username" type="username" required>
+            password<input name="pasword" type="password" required>
             <button type="submit">Log In</button>
-        </div>
+        </form>
     </div>
 </div>
+<form method="POST" action="?/login">
+    <button class="login-button" formaction="?/login">login</button>
+</form>
 
 
 <style>
