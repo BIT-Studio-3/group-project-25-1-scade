@@ -1,18 +1,10 @@
 <script>
   import { onMount } from 'svelte';
   import Header from '$lib/Header.svelte';
+  export let data;
+  let damages = data.data;
+  console.log(damages);
 
-
-  let damages = [
-    { damage: 'This and that is damaged', location: '123 Paper St'},
-    { damage: 'that is damaged and this is not', location: '321 Paper St'},
-    { damage: 'This and that is damaged', location: '123 Paper St'},
-    { damage: 'that is damaged and this is not', location: '321 Paper St'},
-    { damage: 'This and that is damaged', location: '123 Paper St'},
-    { damage: 'that is damaged and this is not', location: '321 Paper St'},
-    { damage: 'This and that is damaged', location: '123 Paper St', time: '17/5/25 12:15'},
-    { damage: 'that is damaged and this is not', location: '321 Paper St',time: '17/5/25 13:05'}
-  ];
 </script>
 
 <body>
