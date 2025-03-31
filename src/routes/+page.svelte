@@ -5,7 +5,8 @@
   import Maincard from '$lib/Maincard.svelte';
   import Image from '$lib/Image.svelte';
   import Footer from '$lib/Footer.svelte';
-  import earthquakeCard from '$lib/Maincard.svelte';
+  import IndexCard from '$lib/indexcard.svelte'; // Import the IndexCard component
+  let earthquakeData = {};  // This will hold the data from the child component
 
   let currentTime = new Date();
   let currentYear = currentTime.getFullYear();
@@ -14,52 +15,21 @@
   let year = currentTime.getFullYear(); 
   let formattedDate = `${day}/${month}/${year}`;
   
-  // Earthquake data variables
-  let quakeTime = "";
-  let location = "";
-  let magnitude = "";
-  let depth = "";
-  let mmi = "";
-  let error = "";
-  
-
-  async function getData() {
-      const response = await fetch(`http://api.geonet.org.nz/quake?MMI=-1`);
-
-      if (response.ok) {
-        const data = await response.json();
-        const feature = data.features[0]; // First earthquake entry
-        console.log (data);
-        if (feature) {
-          quakeTime = feature.properties.time;
-          location = feature.properties.locality;
-          magnitude = feature.properties.magnitude;
-          depth = feature.properties.depth;
-          mmi = feature.properties.mmi;
-          console.log("Earthquake Time: ", quakeTime);
-        console.log("Location: ", location);
-        console.log("Magnitude: ", magnitude);
-        console.log("Depth: ", depth);
-        console.log("MMI: ", mmi);
-        } else {
-          error = "No earthquake data available.";
-        }
-      } else {
-        error = "Failed to fetch earthquake data.";
-      }
-    }
-
-  // Call the function when the component mounts
-
-    getData();
-
 </script>
 
 <body>
   
   <!-- <div class="warning"></div> to be added  -->
   <section class="card-section">
-    <div class="index-card" id="indexCard1">most important</div>
+    <div class="index-card" id="indexCardEarthquake">
+      <!-- Use the IndexCard component, bind data to the exported variables -->
+      <IndexCard bind:quakeTime={earthquakeData.quakeTime}
+                 bind:location={earthquakeData.location}
+                 bind:magnitude={earthquakeData.magnitude}
+                 bind:depth={earthquakeData.depth}
+                 bind:mmi={earthquakeData.mmi}
+                 bind:error={earthquakeData.error} />
+    </div>
     <div class="index-card" id="indexCard2">other important</div>
     <div class="index-card" id="indexCard3">risks</div>
     <div class="index-card" id="indexCard4">user add</div>
@@ -67,7 +37,7 @@
     <div class="index-card" id="indexCard6">map</div>
 
   </section>
-
+  
 
   <!-- <div class="top-of-body">
     <h2><Header headingTitle="Current Events" /></h2>
@@ -102,6 +72,7 @@
     
   </div> -->
 </body>
+
 
 <style>
  .card-section{
