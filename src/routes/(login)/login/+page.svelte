@@ -1,5 +1,5 @@
 <script>
-
+    export let data;
 </script>
 
 <div class="container">
@@ -11,14 +11,12 @@
         <form method="POST" action="?/login">
             <h2>Login</h2>
             username<input name="username" type="username" required>
-            password<input name="pasword" type="password" required>
-            <button type="submit">Log In</button>
+            password<input name="password" type="password" required>
+            <button formaction="?/login">login</button>
         </form>
     </div>
 </div>
-<form method="POST" action="?/login">
-    <button class="login-button" formaction="?/login">login</button>
-</form>
+
 
 
 <style>
