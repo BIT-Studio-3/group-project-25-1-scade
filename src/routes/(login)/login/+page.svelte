@@ -53,7 +53,7 @@
         max-width: 400px;
         padding: 20px;
         background-color: white;
-        border: 2px solid black;
+        border: 3px solid #20538c;
         display:flex;
         flex-direction: column;
         align-items: center;
