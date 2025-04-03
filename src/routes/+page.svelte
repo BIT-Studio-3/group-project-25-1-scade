@@ -1,10 +1,5 @@
 <script>
   import { onMount } from 'svelte';
-  import Header from '$lib/Header.svelte';
-  import Card from '$lib/Card.svelte';
-  import Maincard from '$lib/Maincard.svelte';
-  import Image from '$lib/Image.svelte';
-  import Footer from '$lib/Footer.svelte';
   import IndexCard from '$lib/indexcard.svelte'; // Import the IndexCard component
   let earthquakeData = {};  // This will hold the data from the child component
 
@@ -29,11 +24,24 @@
                  bind:depth={earthquakeData.depth}
                  bind:mmi={earthquakeData.mmi}
                  bind:error={earthquakeData.error} />
+                 <IndexCard bind:quakeTime={earthquakeData.quakeTime}
+                 bind:location={earthquakeData.location}
+                 bind:magnitude={earthquakeData.magnitude}
+                 bind:depth={earthquakeData.depth}
+                 bind:mmi={earthquakeData.mmi}
+                 bind:error={earthquakeData.error} />
     </div>
-    <div class="index-card" id="indexCard2">other important</div>
-    <div class="index-card" id="indexCard3">risks</div>
-    <div class="index-card" id="indexCard4">user add</div>
-    <div class="index-card" id="indexCard5">user add</div>
+    <div class="index-card" id="indexCard2">other important
+      <IndexCard bind:quakeTime={earthquakeData.quakeTime}
+                 bind:location={earthquakeData.location}
+                 bind:magnitude={earthquakeData.magnitude}
+                 bind:depth={earthquakeData.depth}
+                 bind:mmi={earthquakeData.mmi}
+                 bind:error={earthquakeData.error} />
+    </div>
+    <div class="index-card" id="indexCard3">Risks: None</div>
+    <div class="index-card" id="indexCard4">user add +</div>
+    <div class="index-card" id="indexCard5">user add +</div>
     <div class="index-card" id="indexCard6">map</div>
 
   </section>
