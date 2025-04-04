@@ -49,7 +49,7 @@
         align-items: center;
         padding: 20px;
     }
-    .login-box {
+    form {
         width: 100%;
         max-width: 400px;
         padding: 20px;
@@ -60,7 +60,7 @@
         align-items: center;
         border-radius: 5px;
     }
-    .login-box input {
+    form input {
         width: 100%;
         padding: 10px;
         margin: 10px 0;
@@ -68,7 +68,7 @@
         border-radius: 5px;
         font-size: 1rem;
     }
-    .login-box button {
+    form button {
         width: 100%;
         padding: 10px;
         background-color: rgb(40, 51, 122);
@@ -78,7 +78,7 @@
         font-size: 1rem;
         cursor: pointer;
     }
-    .login-box button:hover {
+    form button:hover {
         background-color: rgb(30, 41, 92);
     }
 
