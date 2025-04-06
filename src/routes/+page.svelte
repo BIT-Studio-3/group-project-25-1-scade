@@ -7,7 +7,15 @@
 </script>
 
 <body>
-
+  <div class="card-section">
+    {#each disasters as disaster}
+    <div class="index-card">
+      <h2>{disaster.properties.locality}</h2>
+      <h3>{disaster.properties.time}</h3>
+      <h3>{disaster.properties.magnitude}</h3>
+    </div>
+    {/each}
+    </div>
 </body>
 
 
