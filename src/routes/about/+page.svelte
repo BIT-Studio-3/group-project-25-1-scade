@@ -3,6 +3,7 @@
   import Image from "$lib/Image.svelte";
   let email = "";
   let message = "";
+
 </script>
 
 <Header headingTitle="About" />

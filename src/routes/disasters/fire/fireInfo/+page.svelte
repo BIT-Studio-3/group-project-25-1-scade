@@ -2,7 +2,8 @@
 <script>
   import Header from "$lib/Header.svelte";
   import Image from "$lib/Image.svelte";
-  import wildfire from "$lib/images/wildfire.jpg";
+  
+  let wildfire = "/images/wildfire.jpg";
 </script>
 
 <Header headingTitle="What are wildfires ?" />

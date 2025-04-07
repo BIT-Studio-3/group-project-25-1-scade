@@ -1,14 +1,16 @@
 <script>
     import Image from '$lib/Image.svelte';
-    import homepic from '$lib/logoversion2.jpg';
+
+    let homepic = "/images/logoversion2.jpg";
 </script>
 <section>
-    <p>&nbsp;</p><Image pic={homepic} picname={"cover"} picwidth={"200px"} picheight={"50px"}/> 
+    <h1><a href="/" id="logo">SCADE</a></h1>
     <nav>
         <a href="/">Home</a>
         <a href="/current">Events</a>
         <a href="/recent">Recent Events</a>
         <a href="/disasters">Disasters</a>
+
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
     </nav>
@@ -17,7 +19,7 @@
 <style>
     section {
         display: flex;
-        align-items: center; /* Center the image and nav vertically */
+        align-items: center; 
         background-color: rgb(40, 51, 122);
         padding: 0; /* Remove padding to fit the image */
     }
@@ -39,5 +41,14 @@
     nav a:hover {
         color: rgb(255, 255, 255);
         text-decoration: underline;
+    }
+
+    #logo {
+        font-family:'Times New Roman', Times, serif;
+        color: #f9f9f9;
+        text-decoration: none;
+        font-size: larger;
+        padding: 15px;
+        font-weight: lighter;
     }
 </style>

@@ -1,9 +1,9 @@
 <script>
   import Header from "$lib/Header.svelte";
   import Image from "$lib/Image.svelte";
-  import earthquake from "$lib/earthquake.jpg";
-  import homepic from "$lib/Weather.jpg";
   import Card from "$lib/Card.svelte";
+
+  let earthquake = "/images/earthquake.jpg";
 
   let userInput = "";
   let error = "";
