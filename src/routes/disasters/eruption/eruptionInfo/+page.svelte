@@ -1,8 +1,9 @@
 <script>
-    import Header from '$lib/Header.svelte';
-    import Image from '$lib/Image.svelte';
-    import volcano from '$lib/volcano.jpg'
-    
+  import Header from '$lib/Header.svelte';
+  import Image from '$lib/Image.svelte';
+  
+  let volcano = "/images/volcano.jpg";
+
 </script>
 <Header headingTitle = "What are volcanoes" />
 

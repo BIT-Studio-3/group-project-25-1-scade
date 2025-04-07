@@ -2,7 +2,8 @@
     import Header from '$lib/Header.svelte';
     import Image from '$lib/Image.svelte';
     import Card from '$lib/Card.svelte'
-    import fire from '$lib/fire.jpg';
+
+    let fire = "/images/fire.jpg";
 </script>
 
 <Header headingTitle="Fires" />
