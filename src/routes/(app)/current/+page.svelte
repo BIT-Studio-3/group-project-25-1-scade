@@ -1,19 +1,16 @@
 <script>
-  import { onMount } from 'svelte';
   import Header from '$lib/Header.svelte';
-  import Card from '$lib/Card.svelte';
   import Maincard from '$lib/Maincard.svelte';
   import Image from '$lib/Image.svelte';
   import Footer from '$lib/Footer.svelte';
   import earthquakeCard from '$lib/Maincard.svelte';
-
   let currentTime = new Date();
-  let currentYear = currentTime.getFullYear();
+  
   let day = String(currentTime.getDate()).padStart(2, '0');
   let month = String(currentTime.getMonth() + 1).padStart(2, '0'); 
   let year = currentTime.getFullYear(); 
   let formattedDate = `${day}/${month}/${year}`;
-  
+  //date and time script
   // Earthquake data variables
   let quakeTime = "";
   let location = "";
@@ -47,7 +44,7 @@
         error = "Failed to fetch earthquake data.";
       }
     }
-
+    //test comment
   // Call the function when the component mounts
 
     getData();
@@ -56,7 +53,7 @@
 
 <body>
   <div class="top-of-body">
-    <h2><Header headingTitle="Current Events" /></h2>
+    <h2><Header headingTitle="Events" /></h2>
     <div class="current-events">
       <Maincard class="earthquake-card" where="/disasters/earthquake" title="Earthquakes" date={formattedDate} info="More about the Earthquakes" />
       <Maincard where="/disasters/fire" title="Fires" date={formattedDate} info="More about the fires" />
