@@ -7,7 +7,7 @@
     <h1><a href="/" id="logo">SCADE</a></h1>
     <nav>
         <a href="/">Home</a>
-        <a href="/current">Current Events</a>
+        <a href="/current">Events</a>
         <a href="/recent">Recent Events</a>
         <a href="/disasters">Disasters</a>
 
@@ -19,7 +19,7 @@
 <style>
     section {
         display: flex;
-        align-items: center; /* Center the image and nav vertically */
+        align-items: center; 
         background-color: rgb(40, 51, 122);
         padding: 0; /* Remove padding to fit the image */
     }
