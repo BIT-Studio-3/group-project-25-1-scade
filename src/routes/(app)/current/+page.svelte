@@ -44,7 +44,7 @@
         error = "Failed to fetch earthquake data.";
       }
     }
-
+    //test comment
   // Call the function when the component mounts
 
     getData();
