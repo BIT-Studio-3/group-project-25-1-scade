@@ -3,23 +3,29 @@
     let homepic = "/images/logoversion2.jpg";
 
     let isMenuOpen = false;
+    function toggleMenu() {
+        isMenuOpen = !isMenuOpen;
+    }
 </script>
 <section>
-    <h1><a href="/" id="logo">SCADE</a></h1>
-    <nav class={isMenuOpen ? 'open' : ''}>
-        <a href="/">Home</a>
-        <a href="/current">Events</a>
-        <a href="/recent">Recent Events</a>
-        <a href="/disasters">Disasters</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
-    </nav>
+    <nav>
+        <h1><a href="/" id="logo">SCADE</a></h1>
 
-    <div id="hamburger" on:click={() => isMobileMenuOpen = !isMobileMenuOpen}>
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
+        <div class="hamburger" on:click={toggleMenu}>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <div class="menu" class:open={isMenuOpen}>
+            <a href="/">Home</a>
+            <a href="/current">Events</a>
+            <a href="/recent">Recent Events</a>
+            <a href="/disasters">Disasters</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </nav>
 </section>
 
 <style>
@@ -37,7 +43,7 @@
         padding: 0; 
         flex-wrap: wrap;
     }
-    nav a {
+    nav .menu a {
         color: rgb(255, 255, 255);
         text-align: left; 
         padding: 30px 30px; 
@@ -46,7 +52,7 @@
         font-size: large;
         border-radius: 5px;
     }
-    nav a:hover {
+    nav .menu a:hover {
         color: rgb(255, 255, 255);
         background-color: rgb(13, 33, 55);
     }
@@ -61,47 +67,50 @@
         flex: 1;
     }
 
-    #hamburger {
+    .hamburger {
         display: none;
         flex-direction: column;
         cursor: pointer;
-        justify-content: space-around;
-        height: 25px;
-        width: 30px;
+        padding: 20px;
     }
 
-    #hamburger .bar {
-        height: 4px;
-        width: 30px;
+    .bar {
+        height: 3px;
+        width: 25px;
         background-color: white;
-        border-radius: 10px;
+        margin: 4px 0;
     }
 
-    @media (max-width: 970px) {
-        section {
-            flex-direction: column; 
-            align-items: flex-start; 
-        }
-        
-        nav {
-            width: 100%; 
-            justify-content: center; 
-            display: none;
-            flex-direction: column;
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    @media (min-width: 769px) {
+        .menu {
+            display: flex;
+            flex-direction: row;
         }
 
-        nav.open {
+        .hamburger {
+            display: none;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .hamburger {
             display: flex;
         }
-        
-        nav a {
-            padding: 10px 15px; 
-            font-size: medium; 
-            width: 100%;
-            text-align: center;
+
+        .menu:not(.open) {
+            display: none;
         }
 
-        #hamburger {
+        .menu.open {
             display: flex;
         }
     }
