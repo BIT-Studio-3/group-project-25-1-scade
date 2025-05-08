@@ -1,18 +1,10 @@
 <script>
   import Header from "$lib/Header.svelte";
   import Image from "$lib/Image.svelte";
-  export let form;
-
+  
   let name = "";
   let email = "";
   let message = "";
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Message:", message);
-  };
 </script>
 
 <div class="container">
@@ -31,39 +23,19 @@
 
   <p>If you wish to contact us, please use the contact form below.</p>
 
-  <form method = "POST" form on:submit|preventDefault={handleSubmit}>
+  <form method = "POST">
     <label for="name">Your Name</label><br />
-    <input
-      id="name"
-      name="name"
-      type="text"
-      bind:value={name}
-      class="name"
-      required
-    /><br />
+    <input id="name" name="name" type="text" bind:value={name} required /><br />
 
     <label for="email">Your Email</label><br />
-    <input
-      id="email"
-      name="email"
-      type="email"
-      bind:value={email}
-      class="email"
-      required
-    /><br />
+    <input id="email" name="email" type="email" bind:value={email} required /><br />
 
     <label for="message">Message</label><br />
-    <textarea
-      id="message"
-      name="message"
-      bind:value={message}
-      placeholder="Enter your message here..."
-      class="message"
-      required
-    ></textarea><br />
+    <textarea id="message" name="message" bind:value={message} required></textarea><br />
 
     <button type="submit">Submit</button>
   </form>
+
 </div>
 
 <style>
