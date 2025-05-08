@@ -9,13 +9,13 @@
 </script>
 <section>
     <nav>
-        <h1><a href="/" id="logo">SCADE</a></h1>
-
         <div class="hamburger" on:click={toggleMenu}>
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
+
+        <h1><a href="/" id="logo">SCADE</a></h1>
 
         <div class="menu" class:open={isMenuOpen}>
             <a href="/">Home</a>
@@ -102,8 +102,28 @@
     }
     
     @media (max-width: 768px) {
+        nav {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            padding: 15px 0;
+        }
+
         .hamburger {
             display: flex;
+            position: absolute;
+            left: 15px;
+            top: 1px;
+            z-index: 10;
         }
 
         .menu:not(.open) {
@@ -112,6 +132,13 @@
 
         .menu.open {
             display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+        }
+
+        #logo {
+            flex:none;
         }
     }
 </style>
