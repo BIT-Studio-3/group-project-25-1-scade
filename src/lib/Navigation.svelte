@@ -9,6 +9,7 @@
         <a href="/">Home</a>
         <a href="/current">Events</a>
         <a href="/recent">Recent Events</a>
+        <a href="/damage">Damage Records</a>
         <a href="/disasters">Disasters</a>
 
         <a href="/about">About</a>
