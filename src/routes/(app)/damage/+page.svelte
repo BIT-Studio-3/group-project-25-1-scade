@@ -11,7 +11,8 @@
   <div class="top-of-body">
     <h2><Header headingTitle="Damage Records" /></h2>
 
-    <form method="POST" action="?/report">
+    
+    <form method="POST" action="?/report" class="damge-form">
       <label>
           Time
       <input name="time" type="time">
@@ -32,34 +33,14 @@
       <button formaction="?/report">Submit</button>
       </form>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Time</th>
-          <th>Damage</th>
-          <th>Location</th>
-          
-        </tr>
-        <tr>
-          <td>Input 1</td>
-          <td>Input 2</td>
-          <td>Input 3</td>
-          
-        </tr>
-      </thead>
-      <tbody>
-        {#each damages as { damage, location, time}}
-          <tr>
-            <td>{time}</td>
-            <td>{damage}</td>
-            <td>{location}</td>
-            
-          </tr>
-        {/each}
-      </tbody>
-    </table>
-  
-  </div>
+      {#each damages as { damage, location, time}}
+      <tr>
+        <td>{time}</td>
+        <td>{damage}</td>
+        <td>{location}</td>
+        
+      </tr>
+    {/each}
 </body>
 
 <style>
@@ -94,4 +75,10 @@
     background-color: #f9f9f9;
   }
   
+  .damge-form{
+    width: 100%;
+
+    display: flex;
+    align-content: center;
+  }
 </style>
