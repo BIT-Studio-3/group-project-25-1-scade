@@ -11,8 +11,8 @@
   <div class="top-of-body">
     <h2><Header headingTitle="Damage Records" /></h2>
 
-    
-    <form method="POST" action="?/report" class="damge-form">
+    <div class ="center-table">
+    <form method="POST" action="?/report">
       <label>
           Time
       <input name="time" type="time">
@@ -41,6 +41,7 @@
         
       </tr>
     {/each}
+  </div>
 </body>
 
 <style>
@@ -75,10 +76,8 @@
     background-color: #f9f9f9;
   }
   
-  .damge-form{
+  .center-table{
     width: 100%;
 
-    display: flex;
-    align-content: center;
   }
 </style>
