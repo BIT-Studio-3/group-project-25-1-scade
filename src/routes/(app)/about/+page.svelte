@@ -1,6 +1,7 @@
 <script>
   import Header from "$lib/Header.svelte";
   import Image from "$lib/Image.svelte";
+  export let form;
 
   let name = "";
   let email = "";
@@ -30,7 +31,7 @@
 
   <p>If you wish to contact us, please use the contact form below.</p>
 
-  <form on:submit|preventDefault={handleSubmit}>
+  <form method = "POST" form on:submit|preventDefault={handleSubmit}>
     <label for="name">Your Name</label><br />
     <input
       id="name"
