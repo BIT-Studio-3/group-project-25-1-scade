@@ -37,23 +37,18 @@ export const actions = {
         
         //checks for matching username then matching password
         const user = users.find(u => u.username === username);
-        if (user && user.password === password) {
-
-        //sets the variables as cookies
-        cookies.set('token', user.token, { path: '/', maxAge: 86400 });
-        }
-        else
-        {
-            //insert response here
-            console.log("bad")
-            return { success: false };
+        if (!user || user.password !== password) {
+            return fail(400, { error: 'Invalid username or password' });
         }
 
-        //checks if the user variable exists
-        if (cookies.get('token')) {
-            redirect(303, '/');
-        }
+        // Set session cookie
+        cookies.set('token', user.token, {
+            path: '/',
+            httpOnly: true,
+            maxAge: 60 * 60 * 24 // 1 day
+        });
 
-        return { success: true };
+        // Redirect after login
+        throw redirect(303, '/');
     }
 };

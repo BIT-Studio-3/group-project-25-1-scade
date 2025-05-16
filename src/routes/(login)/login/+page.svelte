@@ -12,6 +12,11 @@
             <h2>Login</h2>
             username<input name="username" type="username" required>
             password<input name="password" type="password" required>
+            
+            {#if data?.error}
+                <p style="color: red; margin: 10px 0;">{data.error}</p>
+            {/if}
+            
             <button formaction="?/login">login</button>
         </form>
     </div>
