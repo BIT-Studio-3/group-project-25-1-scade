@@ -1,30 +1,7 @@
 import { redirect, fail } from "@sveltejs/kit";
 import bcrypt from 'bcrypt';
 import database from '$routes/login/database.js';
-
-// //hardcoded users
-// const users = [
-//     {
-//         username: 'daniel',
-//         password: 'admin1',
-//         token: 'token1',
-//     },
-//     {
-//         username: 'saskia',
-//         password: 'admin2',
-//         token: 'token2',
-//     },
-//     {
-//         username: 'edward',
-//         password: 'admin3',
-//         token: 'token3',
-//     },
-//     {
-//         username: 'aston',
-//         password: 'admin4',
-//         token: 'token4',
-//     }
-//   ];
+import crypto from 'crypto';
 
 export const actions = {
     login: async ({ request, cookies }) => {
@@ -41,6 +18,12 @@ export const actions = {
             return fail(400, { error: 'Invalid username or password'});
         }
 
+        //Generate new token on login
+        const token = crypto.randomBytes(32).toString('hex');
+
+        //Store it in the DB
+        database.prepare('UPDATE users SET token = ? WHERE id = ?').run(token, user.id);
+
         //for if you use the correct password
         const passwordMatch = await bcrypt.compare(password, user.password);
 
@@ -50,7 +33,7 @@ export const actions = {
         }
 
         // Set session cookie
-        cookies.set('token', user.token, {
+        cookies.set('token', token, {
             path: '/',
             httpOnly: true,
             secure: true,        // Only send over HTTPS
