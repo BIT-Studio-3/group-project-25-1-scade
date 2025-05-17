@@ -53,6 +53,8 @@ export const actions = {
         cookies.set('token', user.token, {
             path: '/',
             httpOnly: true,
+            secure: true,        // Only send over HTTPS
+            sameSite: 'strict',
             maxAge: 60 * 60 * 24 // 1 day
         });
 
