@@ -1,31 +1,30 @@
-//todo
-//add response if incorrect login
+import { redirect, fail } from "@sveltejs/kit";
+import bcrypt from 'bcrypt';
+import database from '$routes/login/database.js';
 
-import { redirect } from "@sveltejs/kit";
-
-//hardcoded users
-const users = [
-    {
-        username: 'daniel',
-        password: 'admin1',
-        token: 'token1',
-    },
-    {
-        username: 'saskia',
-        password: 'admin2',
-        token: 'token2',
-    },
-    {
-        username: 'edward',
-        password: 'admin3',
-        token: 'token3',
-    },
-    {
-        username: 'aston',
-        password: 'admin4',
-        token: 'token4',
-    }
-  ];
+// //hardcoded users
+// const users = [
+//     {
+//         username: 'daniel',
+//         password: 'admin1',
+//         token: 'token1',
+//     },
+//     {
+//         username: 'saskia',
+//         password: 'admin2',
+//         token: 'token2',
+//     },
+//     {
+//         username: 'edward',
+//         password: 'admin3',
+//         token: 'token3',
+//     },
+//     {
+//         username: 'aston',
+//         password: 'admin4',
+//         token: 'token4',
+//     }
+//   ];
 
 export const actions = {
     login: async ({ request, cookies }) => {
@@ -35,10 +34,19 @@ export const actions = {
         const username = data.get('username');
         const password = data.get('password');
         
-        //checks for matching username then matching password
-        const user = users.find(u => u.username === username);
-        if (!user || user.password !== password) {
-            return fail(400, { error: 'Invalid username or password' });
+        // Get user from DataBase
+        const statment = database.prepare('SELECT * FROM users WHERE username = ?');
+        const user = statment.get(username);
+        if (!user) {
+            return fail(400, { error: 'Invalid username or password'});
+        }
+
+        //for if you use the correct password
+        const passwordMatch = await bcrypt.compare(password, user.password);
+
+        //if the password entered is invalid
+        if (!passwordMatch) {
+            return fail(400, {error: 'Invalid username or password'});
         }
 
         // Set session cookie
