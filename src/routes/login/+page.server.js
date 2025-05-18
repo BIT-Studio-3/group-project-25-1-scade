@@ -1,6 +1,6 @@
 import { redirect, fail } from "@sveltejs/kit";
 import bcrypt from 'bcrypt';
-import database from '$routes/login/database.js';
+import database from './database.js';
 import crypto from 'crypto';
 
 export const actions = {
