@@ -19,7 +19,7 @@
     Email<input name="email" type="email" required> 
     Type your message here<textarea name="message" required rows="5" cols="30"></textarea>
     <button formaction="?/submit">Submit</button>
-</form>
+  </form>
 
 </div>
 
