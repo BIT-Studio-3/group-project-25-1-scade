@@ -1,15 +1,15 @@
 <svelte:head>
-    <title>Damage Records Database</title>
+    <title>Damage Database</title>
 </svelte:head>
 <script>
   import { onMount } from 'svelte';
-  import Header from '$lib/Header.svelte';
 
   let damages = [];
   let time = '';
   let damage = '';
   let location = '';
   let error = '';
+  let showForm = false;
 
   // Fetch damage records from the API
   async function fetchDamages() {
@@ -17,7 +17,10 @@
     damages = await res.json();
   }
 
-  // Submit a new damage report via the API
+  // On page load, fetch the damage records
+  onMount(fetchDamages);
+
+  // Handle form submission
   async function submitDamage() {
     const res = await fetch('/damage', {
       method: 'POST',
@@ -26,48 +29,33 @@
     });
 
     if (res.status === 201) {
-      await fetchDamages();
       time = '';
       damage = '';
       location = '';
       error = '';
+      showForm = false;
+      fetchDamages(); // Refresh the records
     } else {
       const data = await res.json();
       error = data.message || data.error;
     }
   }
 
-  // On page load, fetch the damage records
-  onMount(fetchDamages);
+  // Toggle form visibility
+  function toggleForm() {
+    showForm = !showForm;
+  }
 </script>
 
-<div class="top-of-body">
-  <h2><Header headingTitle="Damage Records" /></h2>
+<div class="container">
+  <h2>Damage Records</h2>
 
-  <div class="center-table">
-    <form on:submit|preventDefault={submitDamage}>
-      <label>
-        Time
-        <input bind:value={time} type="time" required />
-      </label>
+  <!-- Button to open the form -->
+  <button class="add-btn" on:click={toggleForm}>Add New Damage Report</button>
 
-      <label>
-        Damage
-        <input bind:value={damage} type="text" required />
-      </label>
-
-      <label>
-        Location
-        <input bind:value={location} type="text" required />
-      </label>
-
-      <button type="submit">Submit</button>
-      {#if error}
-        <p style="color:red">{error}</p>
-      {/if}
-    </form>
-
-    <table>
+  <!-- Damage Records Table -->
+  <div class="table-container">
+    <table class="damage-table">
       <thead>
         <tr>
           <th>Time</th>
@@ -86,4 +74,183 @@
       </tbody>
     </table>
   </div>
+
+  <!-- Popup Form -->
+  {#if showForm}
+    <div class="popup-overlay">
+      <div class="popup">
+        <h3>Add New Damage Report</h3>
+
+        <form on:submit|preventDefault={submitDamage} class="form">
+          <label for="time">Time</label>
+          <input id="time" bind:value={time} type="time" required />
+
+          <label for="damage">Damage</label>
+          <input id="damage" bind:value={damage} type="text" placeholder="Describe the damage" required />
+
+          <label for="location">Location</label>
+          <input id="location" bind:value={location} type="text" placeholder="Enter the location" required />
+
+          <button type="submit" class="submit-btn">Submit</button>
+
+          {#if error}
+            <p class="error">{error}</p>
+          {/if}
+
+          <button type="button" class="close-btn" on:click={toggleForm}>Close</button>
+        </form>
+      </div>
+    </div>
+  {/if}
 </div>
+
+<style>
+  .container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  .add-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+
+  .add-btn:hover {
+    background-color: #45a049;
+  }
+
+  .table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+
+  .damage-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  .damage-table th, .damage-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+
+  .damage-table th {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  .damage-table tr:nth-child(even) {
+    background-color: #f7f7f7;
+  }
+
+  .damage-table tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  /* Popup Style */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .popup {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .popup h3 {
+    text-align: center;
+    color: #333;
+  }
+
+  .form label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    display: block;
+    color: #5f6368;
+  }
+
+  .form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+
+  .form input:focus {
+    border-color: #4CAF50;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .submit-btn:hover {
+    background-color: #45a049;
+  }
+
+  .close-btn {
+    margin-top: 10px;
+    background-color: #f44336;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .close-btn:hover {
+    background-color: #f32f1f;
+  }
+
+  .error {
+    color: #ff3b30;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+</style>
