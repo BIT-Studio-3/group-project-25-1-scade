@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Privacy Policy</title>
+</svelte:head>
+
 <script>
   import Header from "$lib/Header.svelte";
 </script>
