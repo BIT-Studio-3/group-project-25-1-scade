@@ -11,7 +11,7 @@ export const actions = {
         const username = data.get('username');
         const password = data.get('password');
         
-        // Get user from DataBase
+        // Get user from DataBase and check if they exist
         const statment = database.prepare('SELECT * FROM users WHERE username = ?');
         const user = statment.get(username);
         if (!user) {
@@ -26,7 +26,6 @@ export const actions = {
 
         //for if you use the correct password
         const passwordMatch = await bcrypt.compare(password, user.password);
-
         //if the password entered is invalid
         if (!passwordMatch) {
             return fail(400, {error: 'Invalid username or password'});
@@ -36,7 +35,7 @@ export const actions = {
         cookies.set('token', token, {
             path: '/',
             httpOnly: true,
-            secure: true,        // Only send over HTTPS
+            secure: process.env.NODE_ENV === 'production',
             sameSite: 'strict',
             maxAge: 60 * 60 * 24 // 1 day
         });

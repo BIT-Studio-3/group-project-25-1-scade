@@ -17,6 +17,7 @@
 	"type": "module",
 	"dependencies": {
 		"bcrypt": "^6.0.0",
-		"better-sqlite3": "^11.10.0"
+		"better-sqlite3": "^11.10.0",
+		"crypto": "^1.0.1"
 	}
 }
