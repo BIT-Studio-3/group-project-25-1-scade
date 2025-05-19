@@ -11,7 +11,7 @@ export const actions = {
         const username = data.get('username');
         const password = data.get('password');
         
-        // Get user from DataBase and check if they exist
+        // Get user from DataBase
         const statment = database.prepare('SELECT * FROM users WHERE username = ?');
         const user = statment.get(username);
         if (!user) {
@@ -20,7 +20,6 @@ export const actions = {
 
         //Generate new token on login
         const token = crypto.randomBytes(32).toString('hex');
-
         //Store it in the DB
         database.prepare('UPDATE users SET token = ? WHERE id = ?').run(token, user.id);
 
@@ -35,7 +34,7 @@ export const actions = {
         cookies.set('token', token, {
             path: '/',
             httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
+            secure: true,        // Only send over HTTPS
             sameSite: 'strict',
             maxAge: 60 * 60 * 24 // 1 day
         });
