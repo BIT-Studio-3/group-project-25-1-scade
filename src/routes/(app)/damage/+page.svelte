@@ -2,49 +2,22 @@
     <title>Damage Database</title>
 </svelte:head>
 <script>
-  import { onMount } from 'svelte';
+  export let data;
+  let damageRecords = data.damageRecords;
 
-  let damages = [];
-  let time = '';
-  let damage = '';
-  let location = '';
-  let error = '';
   let showForm = false;
 
-  // Fetch damage records from the API
-  async function fetchDamages() {
-    const res = await fetch('/damage');
-    damages = await res.json();
-  }
 
-  // On page load, fetch the damage records
-  onMount(fetchDamages);
 
-  // Handle form submission
-  async function submitDamage() {
-    const res = await fetch('/damage', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ time, damage, location })
-    });
 
-    if (res.status === 201) {
-      time = '';
-      damage = '';
-      location = '';
-      error = '';
       showForm = false;
-      fetchDamages(); // Refresh the records
-    } else {
-      const data = await res.json();
-      error = data.message || data.error;
-    }
-  }
+
 
   // Toggle form visibility
   function toggleForm() {
     showForm = !showForm;
   }
+
 </script>
 
 <div class="container">
@@ -64,11 +37,11 @@
         </tr>
       </thead>
       <tbody>
-        {#each damages as { damage, location, time }}
+        {#each damageRecords as record}
           <tr>
-            <td>{time}</td>
-            <td>{damage}</td>
-            <td>{location}</td>
+            <td>{record.time}</td>
+            <td>{record.damage}</td>
+            <td>{record.location}</td>
           </tr>
         {/each}
       </tbody>
@@ -80,23 +53,11 @@
     <div class="popup-overlay">
       <div class="popup">
         <h3>Add New Damage Report</h3>
-
-        <form on:submit|preventDefault={submitDamage} class="form">
-          <label for="time">Time</label>
-          <input id="time" bind:value={time} type="time" required />
-
-          <label for="damage">Damage</label>
-          <input id="damage" bind:value={damage} type="text" placeholder="Describe the damage" required />
-
-          <label for="location">Location</label>
-          <input id="location" bind:value={location} type="text" placeholder="Enter the location" required />
-
-          <button type="submit" class="submit-btn">Submit</button>
-
-          {#if error}
-            <p class="error">{error}</p>
-          {/if}
-
+        <form method="POST" action="?/submit">
+          Time<input name="time" type="time" required>
+          Damage<input name="damage" type="text" placeholder="Describe the damage" required>
+          Location<input name="location" type="text" placeholder="Enter the location" required>
+          <button formaction="?/addDamage">Submit</button>
           <button type="button" class="close-btn" on:click={toggleForm}>Close</button>
         </form>
       </div>
