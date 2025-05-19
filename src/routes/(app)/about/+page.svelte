@@ -1,12 +1,3 @@
-<script>
-  import Header from "$lib/Header.svelte";
-  import Image from "$lib/Image.svelte";
-  
-  let name = "";
-  let email = "";
-  let message = "";
-</script>
-
 <div class="container">
   <h1>About </h1>
 
@@ -34,9 +25,11 @@
 
 <style>
   .container {
-    max-width: 700px;
+    max-width: 50%;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 25%;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 
   p {
