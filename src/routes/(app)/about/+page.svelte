@@ -8,7 +8,7 @@
 </script>
 
 <div class="container">
-  <Header headingTitle="About" />
+  <h1>About </h1>
 
   <p>
     Scade stands for <strong>System for Climate Alerts, Disasters, and Emergencies</strong>.<br />

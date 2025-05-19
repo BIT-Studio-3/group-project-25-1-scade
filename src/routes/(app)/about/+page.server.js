@@ -7,13 +7,7 @@ export const actions = {
 
 		console.log("Form submitted:", { name, email, message });
 
-		// Optional: validate inputs
-		if (!name || !email || !message) {
-			return {
-				success: false,
-				message: "Missing form data"
-			};
-		}
+
 
 		// Set the values as cookies
 		cookies.set('name', name, { path: '/', maxAge: 86400 });
