@@ -2,17 +2,8 @@
     <title>About</title>
 </svelte:head>
 
-<script>
-  import Header from "$lib/Header.svelte";
-  import Image from "$lib/Image.svelte";
-  
-  let name = "";
-  let email = "";
-  let message = "";
-</script>
-
 <div class="container">
-  <Header headingTitle="About" />
+  <h1>About </h1>
 
   <p>
     Scade stands for <strong>System for Climate Alerts, Disasters, and Emergencies</strong>.<br />
@@ -27,26 +18,22 @@
 
   <p>If you wish to contact us, please use the contact form below.</p>
 
-  <form method = "POST">
-    <label for="name">Your Name</label><br />
-    <input id="name" name="name" type="text" bind:value={name} required /><br />
-
-    <label for="email">Your Email</label><br />
-    <input id="email" name="email" type="email" bind:value={email} required /><br />
-
-    <label for="message">Message</label><br />
-    <textarea id="message" name="message" bind:value={message} required></textarea><br />
-
-    <button type="submit">Submit</button>
+  <form method="POST" action="?/login">
+    Name<input name="name" type="name" required> 
+    Email<input name="email" type="email" required> 
+    Type your message here<textarea name="message" required rows="5" cols="30"></textarea>
+    <button formaction="?/submit">Submit</button>
   </form>
 
 </div>
 
 <style>
   .container {
-    max-width: 700px;
+    max-width: 50%;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 25%;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 
   p {
