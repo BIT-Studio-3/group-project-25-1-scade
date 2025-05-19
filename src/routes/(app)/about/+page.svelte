@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>About</title>
+</svelte:head>
+
 <script>
   import Header from "$lib/Header.svelte";
   import Image from "$lib/Image.svelte";
