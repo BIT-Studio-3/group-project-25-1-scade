@@ -19,11 +19,7 @@
 
         <div class="menu" class:open={isMenuOpen}>
             <a href="/">Home</a>
-            <a href="/current">Events</a>
-            <a href="/recent">Recent Events</a>
-            <a href="/disasters">Disasters</a>
             <a href="/about">About</a>
-            <a href="/contact">Contact</a>
         </div>
     </nav>
 </section>
