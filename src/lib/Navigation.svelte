@@ -20,6 +20,9 @@
         <div class="menu" class:open={isMenuOpen}>
             <a href="/">Home</a>
             <a href="/about">About</a>
+            <a href="/user">
+                <img src="/images/profilepicture.png" alt="User Profile" class="profile-pic" />
+            </a>
         </div>
     </nav>
 </section>
@@ -76,7 +79,14 @@
         background-color: white;
         margin: 4px 0;
     }
-
+    .profile-pic {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: white;
+        padding: 2px; /* optional: gives spacing inside the white circle */
+        justify-content:flex;
+    }
     .menu {
         display: none;
         flex-direction: column;
