@@ -1,5 +1,5 @@
 import bcrypt from 'bcrypt';
-import database from '../login/database.js'
+import database from './database.js'
 
 const password = 'admin1';
 const hashed = await bcrypt.hash(password, 10);
