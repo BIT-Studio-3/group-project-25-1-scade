@@ -229,20 +229,41 @@ nav .menu a:hover {
         padding: 0;
     }
 
-    .menu:not(.open) {
+    .menu {
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        background-color: rgb(40, 51, 122);
+        border: 1px solid #222;
+        border-radius: 5px;
+        width: 150px;
+        flex-direction: column;
         display: none;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+        z-index: 999;
     }
 
     .menu.open {
         display: flex;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
+    }
+
+    .menu a {
+        padding: 10px 15px;
+        border-bottom: 1px solid #333;
+        color: white;
+        font-weight: bold;
+        font-size: large;
+        text-decoration: none;
+    }
+
+    .menu a:last-child {
+        border-bottom: none;
     }
 
     #logo {
         flex: 1;
     }
+
     .profile-pic {
         height: 32px;
         width: 32px;
