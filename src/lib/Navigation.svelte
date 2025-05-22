@@ -20,6 +20,9 @@
         <div class="menu" class:open={isMenuOpen}>
             <a href="/">Home</a>
             <a href="/about">About</a>
+        </div>
+
+        <div class="profile">
             <a href="/user">
                 <img src="/images/profilepicture.png" alt="User Profile" class="profile-pic" />
             </a>
@@ -38,14 +41,14 @@
     nav {
         display: flex;
         align-items: center;
-        background-color: transparent; 
-        padding: 0; 
-        flex-wrap: wrap;
+        justify-content: space-between; /* Distribute logo on the left and menu on the right */
+        width: 100%;
+        padding: 0 1px;
     }
     nav .menu a {
         color: rgb(255, 255, 255);
         text-align: left; 
-        padding: 30px 30px; 
+        padding: 9px 20px; /* ↓ smaller vertical padding */
         text-decoration: none;
         font-weight: bold;
         font-size: large;
@@ -61,9 +64,9 @@
         color: #f9f9f9;
         text-decoration: none;
         font-size: larger;
-        padding: 15px;
+        padding: 10px 20px;
         font-weight: lighter;
-        flex: 1;
+        flex: none;
     }
 
     .hamburger {
@@ -79,18 +82,27 @@
         background-color: white;
         margin: 4px 0;
     }
+    .profile {
+        margin-left: auto; /* This will push the profile to the far right */
+        display: flex;
+        align-items: center;
+    }
     .profile-pic {
         height: 40px;
         width: 40px;
         border-radius: 50%;
         background-color: white;
-        padding: 2px; /* optional: gives spacing inside the white circle */
-        justify-content:flex;
+        padding: 2px; 
+        flex: none;
+    }
+    .profile-pic a:hover{
+        background-color: rgba(13, 33, 55, 0);
     }
     .menu {
-        display: none;
-        flex-direction: column;
-    }
+    display: flex;
+    align-items: center; /* Vertically center contents */
+    gap: 20px; /* Optional spacing between links */
+}
 
     .menu.open {
         display: flex;
