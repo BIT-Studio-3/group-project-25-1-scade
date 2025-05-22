@@ -90,13 +90,14 @@
         
     }
     .profile-pic {
-        height: 40px;
-        width: 40px;
-        border-radius: 50%;
-        background-color: white;
-        padding: 2px; 
-        flex: none;
-    }
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 2px;
+    flex: none;
+    border: 1.5px solid black; /* ← Add this line */
+}
     .profile-pic a:hover{
         background-color: rgba(13, 33, 55, 0);
     }
