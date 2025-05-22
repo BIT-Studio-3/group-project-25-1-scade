@@ -26,7 +26,6 @@
   </form>
 
 </div>
-
 <style>
   .container {
     max-width: 50%;

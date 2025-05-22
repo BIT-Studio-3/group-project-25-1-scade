@@ -6,14 +6,19 @@
 </script>
 
 <div class="container">
-    <p>User Options:</p>
-    <button on:click={logout}>
-    Log out
-    </button>
+  <h1>Settings</h1>
+  <p>User Options:</p>
+  
+  <div class="button-list">
+    <button>Change Profile Picture</button>
+    <button>My roles</button>
+    <button>Change Password</button>
+    <button on:click={logout}>Log Out</button>
+  </div>
 </div>
 
 <style>
-.container {
+  .container {
     max-width: 50%;
     margin: 0 auto;
     padding: 25%;
@@ -26,24 +31,11 @@
     line-height: 1.6;
   }
 
-  form {
-    margin-bottom: 20px;
+  .button-list {
     display: flex;
-    flex-direction: column;
-  }
-
-  input,
-  textarea {
-    margin-bottom: 12px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: none;
-    font-size: 1rem;
-  }
-
-  textarea {
-    min-height: 120px;
+    margin-left: left;
+    flex-direction:column;
+    gap: 15px; /* Spacing between buttons */
   }
 
   button {
