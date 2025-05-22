@@ -16,7 +16,6 @@
       <button>Notification Preferences</button>
       <button on:click={logout}>Log Out</button>
     </div>
-    
 
     <img src="/images/profilepicture.png" alt="User Profile" class="profile-pic" />
   </div>
