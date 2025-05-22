@@ -3,10 +3,21 @@
     let homepic = "/images/logoversion2.jpg";
 
     let isMenuOpen = false;
+    let isProfileMenuOpen = false;
+
     function toggleMenu() {
         isMenuOpen = !isMenuOpen;
     }
+
+    function toggleProfileMenu() {
+        isProfileMenuOpen = !isProfileMenuOpen;
+    }
+
+    function closeProfileMenu() {
+        isProfileMenuOpen = false;
+    }
 </script>
+
 <section>
     <nav>
         <div class="hamburger" on:click={toggleMenu}>
@@ -23,9 +34,19 @@
         </div>
 
         <div class="profile">
-            <a href="/user">
-                <img src="/images/profilepicture.png" alt="User Profile" class="profile-pic" />
-            </a>
+            <img
+                src="/images/profilepicture.png"
+                alt="User Profile"
+                class="profile-pic"
+                on:click={toggleProfileMenu}
+            />
+
+            {#if isProfileMenuOpen}
+                <div class="dropdown-menu">
+                    <a href="/user" class="dropdown-button" on:click={closeProfileMenu}>Settings</a>
+                    <button class="dropdown-button" on:click={closeProfileMenu}>Log Out</button>
+                </div>
+            {/if}
         </div>
     </nav>
 </section>
@@ -44,6 +65,7 @@
         justify-content: space-between; /* Distribute logo on the left and menu on the right */
         width: 100%;
         padding: 0 1px;
+        position: relative; /* for dropdown positioning */
     }
     nav .menu a {
         color: rgb(255, 255, 255);
@@ -87,30 +109,67 @@
         display: flex;
         align-items: center;
         padding-right: 20px;
-        
+        position: relative; /* for dropdown */
     }
     .profile-pic {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: white;
-    padding: 2px;
-    flex: none;
-    border: 1.5px solid black; /* ← Add this line */
-}
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: white;
+        padding: 2px;
+        flex: none;
+        border: 1.5px solid black;
+        cursor: pointer;
+    }
     .profile-pic a:hover{
         background-color: rgba(13, 33, 55, 0);
     }
     .menu {
-    display: flex;
-    align-items: center; /* Vertically center contents */
-    gap: 20px; /* Optional spacing between links */
-}
+        display: flex;
+        align-items: center; /* Vertically center contents */
+        gap: 20px; /* Optional spacing between links */
+    }
 
     .menu.open {
         display: flex;
     }
 
+    /* Dropdown menu */
+    .dropdown-menu {
+        position: absolute;
+        top: 50px; /* below profile pic */
+        right: 0;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        display: flex;
+        flex-direction: column;
+        min-width: 120px;
+        z-index: 1000;
+    }
+    .dropdown-button {
+        padding: 10px 15px;
+        background: none;
+        border: none;
+        text-align: left;
+        font-weight: bold;
+        font-size: 14px;
+        color: #222;
+        cursor: pointer;
+        text-decoration: none;
+        width: 100%;
+    }
+    .dropdown-button:hover {
+        background-color: #f0f0f0;
+        color: #000;
+    }
+    .dropdown-button:focus {
+        outline: none;
+        background-color: #e0e0e0;
+    }
+    
+    /* Responsive */
     @media (min-width: 769px) {
         .menu {
             display: flex;
