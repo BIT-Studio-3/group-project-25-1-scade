@@ -24,11 +24,7 @@
     }
 
     function toggleProfileMenu() {
-        if (isMobile) {
-            goto('/user');  // <-- use client-side navigation
-        } else {
-            isProfileMenuOpen = !isProfileMenuOpen;
-        }
+        goto('/user');
     }
 
     function closeProfileMenu() {
