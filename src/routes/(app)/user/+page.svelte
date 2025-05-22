@@ -1,3 +1,6 @@
+<svelte:head>
+    <title>Settings</title>
+</svelte:head>
 <script>
   function logout() {
     // Redirect to logout route on the server
