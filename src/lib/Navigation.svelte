@@ -1,16 +1,34 @@
 <script>
-    import Image from '$lib/Image.svelte';
-    let homepic = "/images/logoversion2.jpg";
+    import { onMount, onDestroy } from 'svelte';
+    import { goto } from '$app/navigation'; // <-- add this import
 
     let isMenuOpen = false;
     let isProfileMenuOpen = false;
+    let isMobile = false;
+
+    function checkMobile() {
+        isMobile = window.innerWidth <= 768;
+    }
+
+    onMount(() => {
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+    });
+
+    onDestroy(() => {
+        window.removeEventListener('resize', checkMobile);
+    });
 
     function toggleMenu() {
         isMenuOpen = !isMenuOpen;
     }
 
     function toggleProfileMenu() {
-        isProfileMenuOpen = !isProfileMenuOpen;
+        if (isMobile) {
+            goto('/user');  // <-- use client-side navigation
+        } else {
+            isProfileMenuOpen = !isProfileMenuOpen;
+        }
     }
 
     function closeProfileMenu() {
