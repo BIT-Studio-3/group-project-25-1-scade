@@ -86,6 +86,7 @@
         margin-left: auto; /* This will push the profile to the far right */
         display: flex;
         align-items: center;
+        padding-right: 20px;
     }
     .profile-pic {
         height: 40px;
