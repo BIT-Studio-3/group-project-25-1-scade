@@ -1,14 +1,24 @@
 import bcrypt from 'bcrypt';
-import database from './database.js'
+import database from './database.js';
 
-const password = 'admin1';
-const hashed = await bcrypt.hash(password, 10);
+async function seed() {
+  const users = [
+    { username: 'daniel', password: 'admin1' },
+    { username: 'saskia', password: 'admin2' },
+    { username: 'edward', password: 'admin3' },
+    { username: 'aston', password: 'admin4' }
+  ];
 
-const statment = database.prepare(`
-  INSERT OR IGNORE INTO users (username, password, token)
-  VALUES (?, ?, ?)
-`);
+  const statement = database.prepare(`
+    INSERT OR IGNORE INTO users (username, password, token)
+    VALUES (?, ?, ?)
+  `);
 
-statment.run('daniel', hashed, 'token1');
+  for (const user of users) {
+    const hashed = await bcrypt.hash(user.password, 10);
+    statement.run(user.username.toLowerCase(), hashed, null);
+    console.log(`Seeded user: ${user.username} / ${user.password}`);
+  }
+}
 
-console.log('Seeded user: daniel / admin1');
+seed();

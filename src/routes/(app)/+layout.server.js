@@ -1,15 +1,15 @@
 import { redirect } from "@sveltejs/kit";
+import database from '../(login)/login/database.js';
 
 export async function load({ cookies }) {
-    const user = cookies.get("token");
+  const token = cookies.get('token');
 
-    const statement = database.prepare('SELECT * FROM users WHERE token = ?');
-    const users = statement.get(token);
-    
-    if (!user) {
-        throw redirect(303, "/login");
-    }
-    if (!users) {
-        throw redirect(303, "/login");
-    }
+  if (!token) throw redirect(303, '/login');
+
+  const statement = database.prepare('SELECT * FROM users WHERE token = ?');
+  const user = statement.get(token);
+
+  if (!user) throw redirect(303, '/login');
+
+  return { user };
 }
