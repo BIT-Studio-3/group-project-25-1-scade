@@ -1,57 +1,78 @@
-<script>
-  import Header from "$lib/Header.svelte";
-  import Image from "$lib/Image.svelte";
-  let email = "";
-  let message = "";
+<svelte:head>
+    <title>About</title>
+</svelte:head>
 
-</script>
+<div class="container">
+  <h1>About </h1>
 
-<Header headingTitle="About" />
+  <p>
+    Scade stands for <strong>System for Climate Alerts, Disasters, and Emergencies</strong>.<br />
+    Our mission is to build a sustainable weather API platform. <br />
+    The lack of a pre-existing system within the New Zealand government inspired us to develop this application.
+  </p>
 
-<p> 
-Scade stands for <b>System for Climate Alerts, Disasters, and Emergencies</b>.<br>
-Our mission is to build a sustainable weather API platform. <br>
-The lack of a pre-existing system within the New Zealand government inspired us to develop this application. <br>
-</p>
-<p>
-  This website is designed for the use of New Zealand emergency responders. <br>
-  Scade may also be applicable to relevant responders such as council members.
-</p>
+  <p>
+    This website is designed for the use of New Zealand emergency responders. <br />
+    Scade may also be applicable to relevant responders such as council members.
+  </p>
 
-<p>If you wish to contact us, please use the contact form below.</p>
-<form method="POST">
-	<label>
-		Your Email
-		<input name="email" type="email">
-	</label>
-  <br>
-  <textarea name="message" bind:value={message} placeholder="Enter your message here..."></textarea>
-	<button>Submit</button>
-</form>
+  <p>If you wish to contact us, please use the contact form below.</p>
+
+  <form method="POST" action="?/login">
+    Name<input name="name" type="name" required> 
+    Email<input name="email" type="email" required> 
+    Type your message here<textarea name="message" required rows="5" cols="30"></textarea>
+    <button formaction="?/submit">Submit</button>
+  </form>
+
+</div>
 
 <style>
+  .container {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 25%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
   p {
-  margin-bottom: 20px;
-}
-  form{
     margin-bottom: 20px;
-    display: flexbox;
+    line-height: 1.6;
   }
-  .email{
+
+  form {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
   }
-  .message{
-    margin-bottom: 20px;
-  }
-  textarea,
-  select {
-    width: 30%;
+
+  input,
+  textarea {
+    margin-bottom: 12px;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing:content-box;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    resize:none;
+    resize: none;
+    font-size: 1rem;
+  }
+
+  textarea {
+    min-height: 120px;
+  }
+
+  button {
+    width: fit-content;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    background-color: #007ACC;
+    color: white;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #005fa3;
   }
 </style>

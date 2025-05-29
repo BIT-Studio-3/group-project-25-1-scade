@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Home</title>
+</svelte:head>
+
 <script>
   export let data;
   console.log(data);
