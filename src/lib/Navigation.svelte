@@ -14,11 +14,11 @@
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
-
         <h1><a href="/" id="logo">SCADE</a></h1>
 
         <div class="menu" class:open={isMenuOpen}>
             <a href="/">Home</a>
+            <a href="/damage">Damage Records</a>
             <a href="/about">About</a>
         </div>
     </nav>

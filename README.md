@@ -36,3 +36,5 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+Create a backend that can receive damage information and return a full list of all damage information. the fields should a location/https://www.addressable.co.nz/. what the damage is time and check if its the same as one thats allread been entered
