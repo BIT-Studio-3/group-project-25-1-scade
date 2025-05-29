@@ -1,5 +1,4 @@
 <script>
-    import { onMount, onDestroy } from 'svelte';
     import { goto } from '$app/navigation'; // <-- add this import
 
     let isMenuOpen = false;
@@ -10,14 +9,7 @@
         isMobile = window.innerWidth <= 768;
     }
 
-    onMount(() => {
-        checkMobile();
-        window.addEventListener('resize', checkMobile);
-    });
 
-    onDestroy(() => {
-        window.removeEventListener('resize', checkMobile);
-    });
 
     function toggleMenu() {
         isMenuOpen = !isMenuOpen;
