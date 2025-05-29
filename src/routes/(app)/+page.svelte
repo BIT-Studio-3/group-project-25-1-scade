@@ -1,59 +1,100 @@
-<svelte:head>
-    <title>Home</title>
-</svelte:head>
-
 <script>
   export let data;
-  console.log(data);
   let disasters = data.data.features;
-  console.log(disasters);
-
 </script>
 
-<body>
-  <div class="card-section">
-    {#each disasters as disaster}
-    <div class="index-card">
-      <h2>{disaster.properties.locality}</h2>
-      <h3>{disaster.properties.time}</h3>
-      <h3>{disaster.properties.magnitude}</h3>
+<div class="dashboard-container">
+  <!-- Sidebar with disaster cards -->
+  <aside class="sidebar">
+    <h2>Disaster Feed</h2>
+    <div class="card-list">
+      {#each disasters as disaster}
+        <div class="disaster-card">
+          <h3>{disaster.properties.locality}</h3>
+          <p><strong>Time:</strong> {disaster.properties.time}</p>
+          <p><strong>Magnitude:</strong> <span class="magnitude">{disaster.properties.magnitude}</span></p>
+        </div>
+      {/each}
     </div>
-    {/each}
-    </div>
-</body>
+  </aside>
 
+  <!-- Map area -->
+  <main class="map-area">
+    <div class="map-placeholder">
+      <p>🗺️ Interactive Map Placeholder</p>
+    </div>
+  </main>
+</div>
 
 <style>
- .card-section{
-  display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 0.75em;
- }
-  .index-card{
-
-  height: 15em;
-  border-radius: 30px;
-  background: #ececf3;
-  padding: 1rem;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-        padding: 1em;
-        border-radius: 30px;
-
-
+  /* Layout container */
+  .dashboard-container {
+    display: flex;
+    height: 100vh;
+    background: #f4f7f9;
+    font-family: 'Segoe UI', sans-serif;
   }
-  .index-card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    }
-  
 
-  #indexCard4{grid-row-start: 3;}
-  #indexCard5{grid-row-start: 3;}
-  #indexCard6{grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-    grid-row-start: 4;}
+  /* Sidebar */
+  .sidebar {
+    width: 30%;
+    min-width: 280px;
+    background: #ffffff;
+    border-right: 1px solid #dcdcdc;
+    padding: 1.5rem;
+    overflow-y: auto;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+  }
 
+  .sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1d3557;
+  }
 
- 
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .disaster-card {
+    background: #ececf3;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease-in-out;
+  }
+
+  .disaster-card:hover {
+    transform: translateY(-3px);
+    background: #e4e4ef;
+  }
+
+  .magnitude {
+    color: #e63946;
+    font-weight: bold;
+  }
+
+  /* Map section */
+  .map-area {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .map-placeholder {
+    width: 100%;
+    height: 90%;
+    border-radius: 15px;
+    background-color: #a8dadc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1d3557;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
 </style>
