@@ -9,20 +9,15 @@ export const actions = {
     const username = data.get('username');
     const password = data.get('password');
 
-    console.log('Login attempt:', username);
-
     const statement = database.prepare('SELECT * FROM users WHERE username = ?');
-    console.log("output is" + statement);
     const user = statement.get(username);
 
     if (!user) {
-      console.log('User not found');
       return fail(400, { error: 'Invalid username or password' });
     }
 
     const passwordMatch = await bcrypt.compare(password, user.password);
     if (!passwordMatch) {
-      console.log('Password mismatch');
       return fail(400, { error: 'Invalid username or password' });
     }
 
@@ -32,12 +27,10 @@ export const actions = {
     cookies.set('token', token, {
       path: '/',
       httpOnly: true,
-      secure: false, // false for localhost development
+      secure: false,
       sameSite: 'strict',
       maxAge: 60 * 60 * 24
     });
-
-    console.log('Login successful, token set:', token);
 
     throw redirect(303, '/');
   }
