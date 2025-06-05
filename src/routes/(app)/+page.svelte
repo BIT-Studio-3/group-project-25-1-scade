@@ -1,6 +1,31 @@
 <script>
+  import { onMount } from 'svelte';
+  import '@arcgis/core/assets/esri/themes/light/main.css';
+
   export let data;
   let disasters = data.data.features;
+
+  let mapContainer;
+
+  onMount(async () => {
+    if (typeof window === 'undefined') return; // SSR guard
+
+    const [MapView, WebMap] = await Promise.all([
+      import('@arcgis/core/views/MapView'),
+      import('@arcgis/core/WebMap')
+    ]);
+
+    const view = new MapView.default({
+      container: mapContainer,
+      map: new WebMap.default({
+        basemap: 'streets-vector',
+      }),
+      center: [-90.1928, 38.6226],
+      zoom: 15,
+    });
+
+    return () => view.destroy(); // cleanup
+  });
 </script>
 
 <div class="dashboard-container">
@@ -20,13 +45,26 @@
 
   <!-- Map area -->
   <main class="map-area">
-    <div class="map-placeholder">
-      <p>🗺️ Interactive Map Placeholder</p>
-    </div>
+    <div class="view" bind:this={mapContainer}></div>
   </main>
 </div>
 
 <style>
+
+  .map-area {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    padding: 0;
+    height: 100%;
+  }
+
+  .view {
+      height: 90%;
+      width: 100%;
+    }
+
   /* Layout container */
   .dashboard-container {
     display: flex;
