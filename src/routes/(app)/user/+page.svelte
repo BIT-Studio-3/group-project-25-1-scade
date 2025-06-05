@@ -6,11 +6,14 @@
 </script>
 <div class="container">
   <h1>Settings </h1>
-  <form>
-    <button formaction="?/ChangeProfilePicture">Change Profile Picture</button>
-    <button formaction="?/Roles">My Roles</button>
-    <button formaction="?/logout">Log Out</button>
+  <!--form method="POST" action="?/ChangeProfilePicture"></form>
+  <form method="POST" action="?/roles"></form>
+  <form method="POST" action="?/logout"></form>-->
+
+  <form method="POST" action="?/logout">
+    <button formacation="?/logout">logout</button>
   </form>
+  
   
 <img src="/images/profilepicture.png" alt="Profile Picture" />
 
