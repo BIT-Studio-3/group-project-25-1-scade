@@ -1,59 +1,43 @@
-//todo
-//add response if incorrect login
-
-import { redirect } from "@sveltejs/kit";
-
-//hardcoded users
-const users = [
-    {
-        username: 'daniel',
-        password: 'admin1',
-        token: 'token1',
-    },
-    {
-        username: 'saskia',
-        password: 'admin2',
-        token: 'token2',
-    },
-    {
-        username: 'edward',
-        password: 'admin3',
-        token: 'token3',
-    },
-    {
-        username: 'aston',
-        password: 'admin4',
-        token: 'token4',
-    }
-  ];
+import { redirect, fail } from "@sveltejs/kit";
+import bcrypt from 'bcrypt';
+import database from './database.js';
+import crypto from 'crypto';
 
 export const actions = {
-    login: async ({ request, cookies }) => {
+  default: async ({ request, cookies }) => {
+    const data = await request.formData();
+    const username = data.get('username');
+    const password = data.get('password');
 
-        //pulls form data and saves them as variables
-        const data = await request.formData();
-        const username = data.get('username');
-        const password = data.get('password');
-        
-        //checks for matching username then matching password
-        const user = users.find(u => u.username === username);
-        if (user && user.password === password) {
+    console.log('Login attempt:', { username, password });
 
-        //sets the variables as cookies
-        cookies.set('token', user.token, { path: '/', maxAge: 86400 });
-        }
-        else
-        {
-            //insert response here
-            console.log("bad")
-            return { success: false };
-        }
+    const statement = database.prepare('SELECT * FROM users WHERE username = ?');
+    const user = statement.get(username);
 
-        //checks if the user variable exists
-        if (cookies.get('token')) {
-            redirect(303, '/');
-        }
+    console.log('User found:', user);
 
-        return { success: true };
+    if (!user) {
+      return fail(400, { error: 'Invalid username or password' });
     }
+
+    const passwordMatch = await bcrypt.compare(password, user.password);
+    console.log('Password match:', passwordMatch);
+
+    if (!passwordMatch) {
+      return fail(400, { error: 'Invalid username or password' });
+    }
+
+    const token = crypto.randomBytes(32).toString('hex');
+    database.prepare('UPDATE users SET token = ? WHERE id = ?').run(token, user.id);
+
+    cookies.set('token', token, {
+      path: '/',
+      httpOnly: true,
+      secure: false,
+      sameSite: 'strict',
+      maxAge: 60 * 60 * 24
+    });
+
+    throw redirect(303, '/');
+  }
 };

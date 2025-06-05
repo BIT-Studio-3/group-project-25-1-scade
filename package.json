@@ -11,8 +11,15 @@
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"db-migrate": "^0.11.14",
+		"db-migrate-sqlite3": "^1.0.2",
 		"svelte": "^4.2.7",
 		"vite": "^5.0.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"bcrypt": "^6.0.0",
+		"better-sqlite3": "^11.10.0",
+		"crypto": "^1.0.1"
+	}
 }
