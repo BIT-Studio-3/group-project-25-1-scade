@@ -20,11 +20,15 @@
             <a href="/">Home</a>
             <a href="/damage">Damage Records</a>
             <a href="/about">About</a>
+            <a href="/user">User</a>
         </div>
     </nav>
 </section>
 
 <style>
+    .user {
+        padding: 0%;
+    }
     section {
         display: flex;
         align-items: center; 
