@@ -8,7 +8,7 @@
     </div>
 
     <div class="right">
-        <form method="POST" action="?/login">
+        <form method="POST">
             <h2>Login</h2>
             username<input name="username" type="text" required />
             password<input name="password" type="password" required />

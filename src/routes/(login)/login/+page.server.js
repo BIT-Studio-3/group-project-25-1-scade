@@ -4,19 +4,25 @@ import database from './database.js';
 import crypto from 'crypto';
 
 export const actions = {
-  login: async ({ request, cookies }) => {
+  default: async ({ request, cookies }) => {
     const data = await request.formData();
     const username = data.get('username');
     const password = data.get('password');
 
+    console.log('Login attempt:', { username, password });
+
     const statement = database.prepare('SELECT * FROM users WHERE username = ?');
     const user = statement.get(username);
+
+    console.log('User found:', user);
 
     if (!user) {
       return fail(400, { error: 'Invalid username or password' });
     }
 
     const passwordMatch = await bcrypt.compare(password, user.password);
+    console.log('Password match:', passwordMatch);
+
     if (!passwordMatch) {
       return fail(400, { error: 'Invalid username or password' });
     }
