@@ -50,7 +50,6 @@
 </div>
 
 <style>
-
   .map-area {
     flex: 1;
     display: flex;
@@ -58,6 +57,7 @@
     justify-content: stretch;
     padding: 0;
     height: 100%;
+    padding: 1rem;
   }
 
   .view {
@@ -114,25 +114,24 @@
     font-weight: bold;
   }
 
-  /* Map section */
-  .map-area {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
+  @media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
   }
 
-  .map-placeholder {
+  .sidebar {
     width: 100%;
-    height: 90%;
-    border-radius: 15px;
-    background-color: #a8dadc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #1d3557;
-    font-size: 1.5rem;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    min-width: unset;
+    height: 40vh;
   }
+
+  .map-area {
+    height: 60vh;
+    padding: 0.5rem;
+  }
+
+  .view {
+    height: 100%;
+  }
+}
 </style>
