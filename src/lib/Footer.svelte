@@ -4,13 +4,11 @@
 
 <footer>
     <h3>
-        &copy; The information provided is for your personal use in accordance with The Disasters Service website 2024
+        &copy; The information provided is for your personal use in accordance with The Disasters Service website 2025
     </h3>
     <nav>
         <a href="/">SiteMap</a>
         <a href="/privacy">Privacy Policy</a>
-        <a href="/contact">Contact</a>
-        <a href="/about">Further Information</a>
     </nav>
 </footer>
 
