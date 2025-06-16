@@ -5,7 +5,8 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"arcgis": "npm install @arcgis/core --save-dev"
 	},
 	"devDependencies": {
 		"@arcgis/core": "^4.32.10",
